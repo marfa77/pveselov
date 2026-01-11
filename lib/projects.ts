@@ -173,6 +173,7 @@ export const projects: Project[] = [
       "B2B marketing website"
     ],
     status: "development",
+    url: "https://www.bench.energy/freighttender/",
     year: 2024,
     image: "/images/bench-energy.png"
   }
