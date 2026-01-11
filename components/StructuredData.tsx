@@ -15,7 +15,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           name: "PIXID Studio",
           url: "https://pixid.studio",
           logo: "https://pixid.studio/icon.svg",
-          description: "PIXID Studio creates innovative digital products and solutions including AI-powered tools, educational platforms, and automation services.",
+          description: "PIXID Studio is a leading software development company specializing in AI development, web development, and SaaS platform development. We build innovative digital products including AI-powered tools, educational platforms, automation services, and enterprise software.",
           sameAs: [
             "https://www.linkedin.com/company/pixid-studio"
           ],

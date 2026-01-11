@@ -26,16 +26,15 @@ export default function Home() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6">
-            Innovative Digital
+            Expert AI Development & Web Development Services
             <br />
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Products & Solutions
+              Innovative Digital Products
             </span>
           </h1>
 
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-            We build AI-powered tools, educational platforms, and automation services
-            that solve real-world problems with cutting-edge technology.
+            PIXID Studio specializes in AI development, web development, and SaaS platform creation. We build cutting-edge digital products including EdTech solutions, automation tools, enterprise software, and AI-powered applications using Next.js, TypeScript, and modern technologies.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -177,6 +176,59 @@ export default function Home() {
                 Intelligent bots and automation systems for social media and workflows
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Content Section */}
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+            Professional Software Development Services
+          </h2>
+          
+          <div className="prose prose-lg dark:prose-invert max-w-none space-y-6 text-gray-700 dark:text-gray-300">
+            <p>
+              <strong>PIXID Studio</strong> is a leading software development company specializing in <strong>AI development</strong>, <strong>web development</strong>, and <strong>SaaS platform development</strong>. Our team of expert developers creates innovative digital products that solve real-world business problems.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">
+              Our Development Services
+            </h3>
+            
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>AI Development:</strong> We build AI-powered applications using machine learning, computer vision, natural language processing, and automation technologies.</li>
+              <li><strong>Web Development:</strong> Modern web applications built with Next.js, React, TypeScript, and cutting-edge frontend frameworks.</li>
+              <li><strong>SaaS Development:</strong> Scalable Software-as-a-Service platforms with subscription management, user authentication, and payment integration.</li>
+              <li><strong>EdTech Solutions:</strong> Educational platforms for exam preparation, language learning, and personalized learning experiences.</li>
+              <li><strong>Enterprise Software:</strong> B2B platforms, automation tools, and custom business solutions.</li>
+              <li><strong>Mobile & Browser Extensions:</strong> Cross-platform mobile apps and Chrome extensions for enhanced productivity.</li>
+            </ul>
+
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">
+              Technologies We Use
+            </h3>
+            
+            <p>
+              Our development stack includes <strong>Next.js 14</strong>, <strong>React 18</strong>, <strong>TypeScript</strong>, <strong>NestJS</strong>, <strong>PostgreSQL</strong>, <strong>Prisma</strong>, <strong>Supabase</strong>, <strong>OpenAI</strong>, <strong>TensorFlow.js</strong>, and other modern technologies. We follow best practices for code quality, performance optimization, and SEO.
+            </p>
+
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">
+              Why Choose PIXID Studio?
+            </h3>
+            
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Proven track record with <strong>{projects.length} successful projects</strong> and <strong>{projects.filter(p => p.status === "live").length} live products</strong></li>
+              <li>Expertise in <strong>AI development</strong> and <strong>machine learning</strong> integration</li>
+              <li>Full-stack development capabilities from frontend to backend</li>
+              <li>Focus on <strong>SEO optimization</strong>, performance, and user experience</li>
+              <li>Agile development methodology with rapid iteration</li>
+              <li>Comprehensive support and maintenance services</li>
+            </ul>
+
+            <p className="mt-8">
+              Explore our <Link href="/projects" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">portfolio of projects</Link> to see examples of our work, or <Link href="/about" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">learn more about our services</Link>.
+            </p>
           </div>
         </div>
       </section>
