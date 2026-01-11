@@ -1,0 +1,60 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0" y1="0" x2="200" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e0e7ff"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="1000" cy="150" r="100" fill="white" opacity="0.1"/>
+  <circle cx="1100" cy="400" r="150" fill="white" opacity="0.05"/>
+  <circle cx="50" cy="500" r="80" fill="white" opacity="0.1"/>
+  
+  <!-- Main Content -->
+  <g transform="translate(100, 200)">
+    <!-- Logo/Icon -->
+    <rect x="0" y="0" width="120" height="120" rx="24" fill="white" opacity="0.2"/>
+    <text x="60" y="85" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="white" text-anchor="middle">P</text>
+    
+    <!-- Main Title -->
+    <text x="150" y="50" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="white">
+      PIXID Studio
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="150" y="100" font-family="Arial, sans-serif" font-size="32" fill="url(#textGradient)" opacity="0.95">
+      Expert AI &amp; Web Development Services
+    </text>
+    
+    <!-- Description -->
+    <text x="150" y="160" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.9">
+      AI Development • Web Development • SaaS Platforms
+    </text>
+    
+    <!-- Stats -->
+    <g transform="translate(150, 220)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">8</text>
+      <text x="50" y="0" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.8">Projects</text>
+      
+      <text x="200" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">5</text>
+      <text x="250" y="0" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.8">Live Products</text>
+      
+      <text x="450" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">150+</text>
+      <text x="530" y="0" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.8">Countries</text>
+    </g>
+  </g>
+  
+  <!-- Bottom text -->
+  <text x="600" y="580" font-family="Arial, sans-serif" font-size="20" fill="white" opacity="0.7" text-anchor="middle">
+    pixid.studio
+  </text>
+</svg>
