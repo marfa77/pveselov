@@ -154,6 +154,27 @@ export const projects: Project[] = [
     url: "https://webmorp.art",
     year: 2024,
     image: "/images/webmorp.png"
+  },
+  {
+    id: "bench-energy",
+    title: "Bench Energy (FreightTender)",
+    description: "B2B platform for closed freight tenders in commodity trading",
+    longDescription: "Enterprise B2B platform enabling commodity trading companies to run closed tenders for freight services. Features invitation-only broker access, structured offer submission, immutable audit trail, and full management visibility. Built with React, NestJS, PostgreSQL, and Prisma. Includes a Next.js marketing website for sales enablement.",
+    category: "B2B SaaS",
+    techStack: ["React 18", "TypeScript", "NestJS", "PostgreSQL", "Prisma", "Next.js 14", "Material-UI", "JWT Auth"],
+    features: [
+      "Closed tender system (invitation-only)",
+      "Structured offer submission",
+      "Immutable audit trail",
+      "Role-based access control",
+      "Management visibility dashboard",
+      "Tender awarding system",
+      "Email notifications",
+      "B2B marketing website"
+    ],
+    status: "development",
+    year: 2024,
+    image: "/images/bench-energy.png"
   }
 ];
 
