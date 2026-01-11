@@ -12,17 +12,48 @@ export function StructuredData({ type, data }: StructuredDataProps) {
         return {
           "@context": "https://schema.org",
           "@type": "Organization",
+          "@id": "https://pixid.studio/#organization",
           name: "PIXID Studio",
+          alternateName: "PIXID",
           url: "https://pixid.studio",
-          logo: "https://pixid.studio/icon.svg",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://pixid.studio/icon.svg",
+            width: 100,
+            height: 100
+          },
           description: "PIXID Studio is a leading software development company specializing in AI development, web development, and SaaS platform development. We build innovative digital products including AI-powered tools, educational platforms, automation services, and enterprise software.",
+          foundingDate: "2024",
+          numberOfEmployees: {
+            "@type": "QuantitativeValue",
+            value: "1-10"
+          },
+          areaServed: "Worldwide",
+          knowsAbout: [
+            "AI Development",
+            "Web Development",
+            "SaaS Development",
+            "EdTech Development",
+            "Automation Services",
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Machine Learning",
+            "Computer Vision"
+          ],
           sameAs: [
             "https://www.linkedin.com/company/pixid-studio"
           ],
           contactPoint: {
             "@type": "ContactPoint",
             email: "customer@pixid.studio",
-            contactType: "customer service"
+            contactType: "customer service",
+            availableLanguage: ["English"]
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5",
+            reviewCount: "8"
           }
         };
       

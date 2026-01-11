@@ -94,6 +94,17 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://pixid.studio" />
         <link rel="manifest" href="/manifest.json" />
+        {/* AI Search Engine Meta Tags */}
+        <meta name="ai:description" content="PIXID Studio is a software development company specializing in AI development, web development, and SaaS platform creation. We build AI-powered applications, EdTech platforms, automation tools, and enterprise software using Next.js, TypeScript, React, and modern technologies." />
+        <meta name="ai:category" content="Software Development, AI Development, Web Development, SaaS Development" />
+        <meta name="ai:services" content="AI Development, Web Development, SaaS Development, EdTech Development, Automation Services, Enterprise Software, Custom Software Development" />
+        <meta name="ai:technologies" content="Next.js, React, TypeScript, NestJS, PostgreSQL, Prisma, Supabase, OpenAI, TensorFlow.js, Machine Learning, Computer Vision" />
+        <meta name="ai:expertise" content="AI-powered applications, educational platforms, automation bots, real estate AI, crypto news automation, visa photo processing, exam preparation platforms, freight tender platforms" />
+        <meta name="ai:contact" content="customer@pixid.studio" />
+        <meta name="ai:location" content="Global" />
+        <meta name="ai:year-established" content="2024" />
+        <meta name="ai:projects-count" content="8" />
+        <meta name="ai:live-products" content="5" />
       </head>
       <body className="antialiased" suppressHydrationWarning>
         {/* Google Analytics */}

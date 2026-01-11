@@ -3,6 +3,7 @@ import { ArrowRight, Sparkles, Code, Zap, Brain } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { ProjectCard } from "@/components/ProjectCard";
 import { StructuredData } from "@/components/StructuredData";
+import { FAQStructuredData } from "@/components/FAQStructuredData";
 import { projects } from "@/lib/projects";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <StructuredData type="Organization" />
       <StructuredData type="WebSite" />
       <StructuredData type="ItemList" data={{ projects }} />
+      <FAQStructuredData />
       <Navigation />
 
       {/* Hero Section */}
@@ -229,6 +231,62 @@ export default function Home() {
             <p className="mt-8">
               Explore our <Link href="/projects" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">portfolio of projects</Link> to see examples of our work, or <Link href="/about" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">learn more about our services</Link>.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section for AI Search */}
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-gray-50 dark:bg-gray-900">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+            Frequently Asked Questions
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                What services does PIXID Studio offer?
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                PIXID Studio offers AI development, web development, SaaS platform development, EdTech solutions, automation services, and enterprise software development. We specialize in Next.js, React, TypeScript, NestJS, and AI-powered applications.
+              </p>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                What technologies does PIXID Studio use?
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                We use modern technologies including Next.js 14, React 18, TypeScript, NestJS, PostgreSQL, Prisma, Supabase, OpenAI, TensorFlow.js, and various AI/ML frameworks for computer vision and natural language processing.
+              </p>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                How many projects has PIXID Studio completed?
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                PIXID Studio has completed {projects.length} projects, with {projects.filter(p => p.status === "live").length} live products currently in production. Our portfolio includes AI-powered tools, educational platforms, automation services, and enterprise software.
+              </p>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                What types of AI applications does PIXID Studio build?
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                We build various AI applications including computer vision systems (visa photo processing, face detection), natural language processing tools, automation bots (crypto news, real estate AI), speech-to-text systems, and machine learning models for educational platforms.
+              </p>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                How can I contact PIXID Studio?
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                You can contact PIXID Studio via email at <a href="mailto:customer@pixid.studio" className="text-blue-600 dark:text-blue-400 hover:underline">customer@pixid.studio</a> for inquiries about our development services, project consultations, or collaboration opportunities.
+              </p>
+            </div>
           </div>
         </div>
       </section>
