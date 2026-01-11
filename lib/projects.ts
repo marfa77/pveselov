@@ -97,19 +97,21 @@ export const projects: Project[] = [
     id: "uae-property-ai",
     title: "UAE Property AI Bot",
     description: "AI-powered real estate assistant for UAE property market",
-    longDescription: "Intelligent Telegram bot for searching and analyzing UAE real estate. Integrates with Google BigQuery for property data, uses OpenAI for natural language understanding, and provides comprehensive property information including developers, projects, transactions, and rental contracts.",
+    longDescription: "Intelligent Telegram bot for searching and analyzing UAE real estate. Integrates with Google BigQuery for property data, uses OpenAI for natural language understanding, and provides comprehensive property information including developers, projects, transactions, and rental contracts. Features AI-powered search, comprehensive analytics, developer portfolios, investment intelligence, and price trends.",
     category: "AI Bot",
-    techStack: ["n8n Workflows", "Google BigQuery", "OpenAI GPT-4", "Telegram Bot API", "Python"],
+    techStack: ["n8n Workflows", "Google BigQuery", "OpenAI GPT-4", "Telegram Bot API", "Python", "Next.js"],
     features: [
       "Natural language property search",
       "BigQuery data integration",
       "Developer and project information",
       "Transaction history analysis",
       "Rental contract data",
-      "AI-powered query routing"
+      "AI-powered query routing",
+      "Investment intelligence",
+      "Price trends analysis"
     ],
-    status: "live",
-    url: "https://t.me/UAEPropertyAIBot",
+    status: "coming",
+    url: "https://uae-property-ai-bot.vercel.app",
     year: 2024,
     image: "/images/uae-property.png"
   },
