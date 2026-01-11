@@ -69,6 +69,7 @@ npm start
 5. **UAE Property AI Bot** - Real estate AI assistant
 6. **SurfaceCheck** - Chrome extension for website analysis
 7. **webmorp.art** - Fast website transformation service
+8. **Bench Energy (FreightTender)** - B2B platform for closed freight tenders
 
 ## License
 
