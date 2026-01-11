@@ -159,7 +159,7 @@ export const projects: Project[] = [
     id: "bench-energy",
     title: "Bench Energy (FreightTender)",
     description: "B2B platform for closed freight tenders in commodity trading",
-    longDescription: "Enterprise B2B platform enabling commodity trading companies to run closed tenders for freight services. Features invitation-only broker access, structured offer submission, immutable audit trail, and full management visibility. Built with React, NestJS, PostgreSQL, and Prisma. Includes a Next.js marketing website for sales enablement.",
+    longDescription: "Enterprise B2B platform enabling commodity trading companies to run closed tenders for freight services. Features invitation-only broker access, structured offer submission, immutable audit trail, and full management visibility. Built with React, NestJS, PostgreSQL, and Prisma. Includes a Next.js marketing website for sales enablement. Replaces email-based freight tendering with structured offers, closed competition, and full auditability.",
     category: "B2B SaaS",
     techStack: ["React 18", "TypeScript", "NestJS", "PostgreSQL", "Prisma", "Next.js 14", "Material-UI", "JWT Auth"],
     features: [
@@ -173,6 +173,7 @@ export const projects: Project[] = [
       "B2B marketing website"
     ],
     status: "development",
+    url: "https://www.bench.energy/freighttender/",
     year: 2024,
     image: "/images/bench-energy.png"
   }
