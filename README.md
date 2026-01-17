@@ -64,12 +64,11 @@ npm start
 
 1. **PixID Studio** - AI-powered visa and ID photo creation
 2. **CIPLE A2 Master** - Portuguese citizenship exam preparation
-3. **CoinSpillX** - Automated crypto news bot
-4. **SAT Navigator** - SAT exam preparation platform
-5. **UAE Property AI Bot** - Real estate AI assistant
-6. **SurfaceCheck** - Chrome extension for website analysis
-7. **webmorp.art** - Fast website transformation service
-8. **Bench Energy (FreightTender)** - B2B platform for closed freight tenders
+3. **SAT Navigator** - SAT exam preparation platform
+4. **UAE Property AI Bot** - Real estate AI assistant
+5. **SurfaceCheck** - Chrome extension for website analysis
+6. **webmorp.art** - Fast website transformation service
+7. **Bench Energy (FreightTender)** - B2B platform for closed freight tenders
 
 ## License
 
