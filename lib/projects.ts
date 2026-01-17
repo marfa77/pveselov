@@ -55,26 +55,6 @@ export const projects: Project[] = [
     image: "/images/ciple-a2.png"
   },
   {
-    id: "coinspillx",
-    title: "CoinSpillX",
-    description: "Automated crypto news aggregation and posting bot",
-    longDescription: "Intelligent automation system that searches for financial and crypto news using Google Gemini, generates engaging posts with AI, and publishes them to Telegram channels and Threads. Features intelligent news selection, image generation, and scheduled posting.",
-    category: "Automation",
-    techStack: ["Python", "Google Gemini", "OpenRouter API", "Telegram API", "Threads API", "Image Generation"],
-    features: [
-      "Automated news search",
-      "AI-powered post generation",
-      "Multi-platform posting (Telegram, Threads)",
-      "Image generation",
-      "Scheduled posting",
-      "State management and deduplication"
-    ],
-    status: "live",
-    url: "https://t.me/coinspillx",
-    year: 2024,
-    image: "/images/coinspillx.png"
-  },
-  {
     id: "sat-navigator",
     title: "SAT Navigator",
     description: "Exam-agnostic test preparation platform with adaptive learning",
@@ -110,7 +90,7 @@ export const projects: Project[] = [
       "Investment intelligence",
       "Price trends analysis"
     ],
-    status: "coming",
+    status: "live",
     url: "https://uae-property-ai-bot.vercel.app",
     year: 2024,
     image: "/images/uae-property.png"
