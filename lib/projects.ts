@@ -156,6 +156,27 @@ export const projects: Project[] = [
     url: "https://www.bench.energy/freighttender/",
     year: 2024,
     image: "/images/bench-energy.png"
+  },
+  {
+    id: "trading-bot",
+    title: "Binance Trading Bot",
+    description: "Semi-automated cryptocurrency trading bot with trend pullback strategy",
+    longDescription: "Advanced trading bot for Binance with trend pullback sniper strategy. Features real-time market data dashboard, technical indicators (ADX, EMA, RSI, ATR), automated risk management, Telegram integration for trade confirmations, and comprehensive reporting. Built with Next.js 14, TypeScript, and Binance API integration. Includes kill rules, correlation protection, and position synchronization.",
+    category: "Trading",
+    techStack: ["Next.js 14", "TypeScript", "Binance API", "Telegram Bot API", "SQLite", "Technical Indicators", "Tailwind CSS", "Shadcn/UI"],
+    features: [
+      "Trend pullback sniper strategy",
+      "Real-time market data dashboard",
+      "Technical indicators (ADX, EMA, RSI, ATR)",
+      "Automated risk management",
+      "Telegram integration for confirmations",
+      "Daily and weekly reports",
+      "Kill rules and safety features",
+      "Position synchronization"
+    ],
+    status: "live",
+    year: 2024,
+    image: "/images/trading-bot.png"
   }
 ];
 
