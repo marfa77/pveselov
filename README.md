@@ -69,6 +69,7 @@ npm start
 5. **SurfaceCheck** - Chrome extension for website analysis
 6. **webmorp.art** - Fast website transformation service
 7. **Bench Energy (FreightTender)** - B2B platform for closed freight tenders
+8. **Binance Trading Bot** - Semi-automated cryptocurrency trading bot
 
 ## License
 
