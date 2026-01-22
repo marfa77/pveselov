@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['pixid.studio'],
+    domains: ['pixid.studio', 'www.pixidstudio.online'],
   },
   // SEO оптимизация
   compress: true,

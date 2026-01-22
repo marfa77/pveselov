@@ -45,7 +45,7 @@
       <text x="0" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">8</text>
       <text x="50" y="0" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.8">Projects</text>
       
-      <text x="200" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">5</text>
+      <text x="200" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">6</text>
       <text x="250" y="0" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.8">Live Products</text>
       
       <text x="450" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">150+</text>
@@ -55,6 +55,6 @@
   
   <!-- Bottom text -->
   <text x="600" y="580" font-family="Arial, sans-serif" font-size="20" fill="white" opacity="0.7" text-anchor="middle">
-    pixid.studio
+    pixidstudio.online
   </text>
 </svg>
