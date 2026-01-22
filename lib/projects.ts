@@ -175,6 +175,7 @@ export const projects: Project[] = [
       "Position synchronization"
     ],
     status: "live",
+    url: "https://t.me/trendpullbacksniper",
     year: 2024,
     image: "/images/trading-bot.png"
   }
