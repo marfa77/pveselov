@@ -24,7 +24,7 @@ export function FAQStructuredData() {
         name: "How many projects has PIXID Studio completed?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "PIXID Studio has completed 8 projects, with 5 live products currently in production. Our portfolio includes AI-powered tools, educational platforms, automation services, and enterprise software."
+          text: "PIXID Studio has completed 8 projects, with 6 live products currently in production. Our portfolio includes AI-powered tools, educational platforms, automation services, trading bots, and enterprise software."
         }
       },
       {

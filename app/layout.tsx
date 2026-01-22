@@ -104,7 +104,7 @@ export default function RootLayout({
         <meta name="ai:location" content="Global" />
         <meta name="ai:year-established" content="2024" />
         <meta name="ai:projects-count" content="8" />
-        <meta name="ai:live-products" content="5" />
+        <meta name="ai:live-products" content="6" />
       </head>
       <body className="antialiased" suppressHydrationWarning>
         {/* Google Analytics */}
