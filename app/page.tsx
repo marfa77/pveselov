@@ -266,7 +266,7 @@ export default function Home() {
                 How many projects has PIXID Studio completed?
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
-                PIXID Studio has completed {projects.length} projects, with {projects.filter(p => p.status === "live").length} live products currently in production. Our portfolio includes AI-powered tools, educational platforms, automation services, and enterprise software.
+                PIXID Studio has completed {projects.length} projects, with {projects.filter(p => p.status === "live").length} live products currently in production. Our portfolio includes AI-powered tools, educational platforms, automation services, trading bots, and enterprise software.
               </p>
             </div>
 
