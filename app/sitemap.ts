@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next';
 import { projects } from '@/lib/projects';
+import { siteConfig } from '@/lib/config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://pixid.studio';
+  const baseUrl = siteConfig.url;
 
   const routes = [
     {

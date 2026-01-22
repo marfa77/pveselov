@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowLeft, ExternalLink, Github, Calendar, Tag, CheckCircle2 } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { StructuredData } from "@/components/StructuredData";
+import { siteConfig } from "@/lib/config";
 import { getProjectById, projects } from "@/lib/projects";
 import { cn } from "@/lib/utils";
 
@@ -36,9 +37,9 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     openGraph: {
       title: `${project.title} | PIXID Studio`,
       description: project.description,
-      url: `https://pixid.studio/projects/${project.id}`,
+      url: `${siteConfig.url}/projects/${project.id}`,
       type: "website",
-      images: project.image ? [`https://pixid.studio${project.image}`] : [],
+      images: project.image ? [`${siteConfig.url}${project.image}`] : [],
     },
     twitter: {
       card: "summary_large_image",

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Navigation } from "@/components/Navigation";
 import { StructuredData } from "@/components/StructuredData";
+import { siteConfig } from "@/lib/config";
 import { Sparkles, Code, Zap, Brain, Target, Users } from "lucide-react";
 import { projects } from "@/lib/projects";
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Us | PIXID Studio",
     description: "Learn about PIXID Studio - building innovative digital products and solutions.",
-    url: "https://pixid.studio/about",
+    url: `${siteConfig.url}/about`,
   },
 };
 

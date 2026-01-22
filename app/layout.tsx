@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { siteConfig } from "@/lib/config";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://pixid.studio'),
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: "PIXID Studio — Portfolio | AI-Powered Digital Products",
     template: "%s | PIXID Studio"
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://pixid.studio",
+    url: siteConfig.url,
     siteName: "PIXID Studio",
     title: "PIXID Studio — Expert AI & Web Development Services | Portfolio",
     description: "Professional AI development and web development services. We build innovative SaaS platforms, EdTech solutions, automation tools, and enterprise software. Specializing in Next.js, TypeScript, and AI-powered applications.",
@@ -92,7 +93,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://pixid.studio" />
+        <link rel="canonical" href={siteConfig.url} />
         <link rel="manifest" href="/manifest.json" />
         {/* AI Search Engine Meta Tags */}
         <meta name="ai:description" content="PIXID Studio is a software development company specializing in AI development, web development, and SaaS platform creation. We build AI-powered applications, EdTech platforms, automation tools, and enterprise software using Next.js, TypeScript, React, and modern technologies." />
@@ -100,7 +101,7 @@ export default function RootLayout({
         <meta name="ai:services" content="AI Development, Web Development, SaaS Development, EdTech Development, Automation Services, Enterprise Software, Custom Software Development" />
         <meta name="ai:technologies" content="Next.js, React, TypeScript, NestJS, PostgreSQL, Prisma, Supabase, OpenAI, TensorFlow.js, Machine Learning, Computer Vision" />
         <meta name="ai:expertise" content="AI-powered applications, educational platforms, automation bots, real estate AI, crypto news automation, visa photo processing, exam preparation platforms, freight tender platforms" />
-        <meta name="ai:contact" content="customer@pixid.studio" />
+        <meta name="ai:contact" content={siteConfig.email} />
         <meta name="ai:location" content="Global" />
         <meta name="ai:year-established" content="2024" />
         <meta name="ai:projects-count" content="8" />

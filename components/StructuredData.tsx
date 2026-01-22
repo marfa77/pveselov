@@ -1,4 +1,5 @@
 import { Project } from "@/lib/projects";
+import { siteConfig } from "@/lib/config";
 
 interface StructuredDataProps {
   type: "Organization" | "WebSite" | "ItemList" | "Project";
@@ -12,13 +13,13 @@ export function StructuredData({ type, data }: StructuredDataProps) {
         return {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "@id": "https://pixid.studio/#organization",
+          "@id": `${siteConfig.url}/#organization`,
           name: "PIXID Studio",
           alternateName: "PIXID",
-          url: "https://pixid.studio",
+          url: siteConfig.url,
           logo: {
             "@type": "ImageObject",
-            url: "https://pixid.studio/icon.svg",
+            url: `${siteConfig.url}/icon.svg`,
             width: 100,
             height: 100
           },
@@ -46,7 +47,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           ],
           contactPoint: {
             "@type": "ContactPoint",
-            email: "customer@pixid.studio",
+            email: siteConfig.email,
             contactType: "customer service",
             availableLanguage: ["English"]
           },
@@ -62,11 +63,11 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           "@context": "https://schema.org",
           "@type": "WebSite",
           name: "PIXID Studio Portfolio",
-          url: "https://pixid.studio",
+          url: siteConfig.url,
           description: "Portfolio of innovative digital products and solutions by PIXID Studio",
           potentialAction: {
             "@type": "SearchAction",
-            target: "https://pixid.studio/projects?q={search_term_string}",
+            target: `${siteConfig.url}/projects?q={search_term_string}`,
             "query-input": "required name=search_term_string"
           }
         };
@@ -81,7 +82,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
             item: {
               "@type": "SoftwareApplication",
               name: project.title,
-              url: `https://pixid.studio/projects/${project.id}`,
+              url: `${siteConfig.url}/projects/${project.id}`,
               description: project.description,
               applicationCategory: project.category,
               operatingSystem: "Web"
@@ -94,7 +95,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
           name: data?.title,
-          url: data?.url || `https://pixid.studio/projects/${data?.id}`,
+          url: data?.url || `${siteConfig.url}/projects/${data?.id}`,
           description: data?.description,
           applicationCategory: data?.category,
           operatingSystem: "Web",
