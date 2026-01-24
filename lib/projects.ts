@@ -155,7 +155,7 @@ export const projects: Project[] = [
       "Hourly automated synchronization"
     ],
     status: "live",
-    url: "https://marfa77.github.io/bench-energy-news",
+    url: "https://bench.energy",
     year: 2024,
     image: "/images/bench-energy.png"
   },
