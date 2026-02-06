@@ -2,7 +2,7 @@ import { Project } from "@/lib/projects";
 import { siteConfig } from "@/lib/config";
 
 interface StructuredDataProps {
-  type: "Organization" | "WebSite" | "ItemList" | "Project";
+  type: "Organization" | "WebSite" | "ItemList" | "Project" | "Person";
   data?: any;
 }
 
@@ -58,18 +58,32 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           }
         };
       
+      case "Person":
+        return {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Pavel Veselov",
+          url: siteConfig.url,
+          image: `${siteConfig.url}/avatar.png`,
+          description: siteConfig.description,
+          sameAs: [
+            siteConfig.links.linkedin,
+            siteConfig.links.reddit,
+            siteConfig.links.quora,
+            siteConfig.links.github,
+            siteConfig.links.twitter,
+            siteConfig.links.tableau,
+          ].filter(Boolean),
+        };
+
       case "WebSite":
         return {
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "PIXID Studio Portfolio",
+          name: siteConfig.name,
           url: siteConfig.url,
-          description: "Portfolio of innovative digital products and solutions by PIXID Studio",
-          potentialAction: {
-            "@type": "SearchAction",
-            target: `${siteConfig.url}/projects?q={search_term_string}`,
-            "query-input": "required name=search_term_string"
-          }
+          description: siteConfig.description,
+          publisher: { "@type": "Person", name: "Pavel Veselov" },
         };
       
       case "ItemList":

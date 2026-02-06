@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ExternalLink, Github, Sparkles } from "lucide-react";
+import { ArrowRight, Github, Sparkles } from "lucide-react";
 import { Project } from "@/lib/projects";
 import { cn } from "@/lib/utils";
 
@@ -56,10 +56,15 @@ export function ProjectCard({ project }: ProjectCardProps) {
             <Sparkles className="w-5 h-5 text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity" />
           </div>
 
-          {/* Description */}
-          <p className="text-gray-600 dark:text-gray-300 line-clamp-2">
+          {/* Description + audience (where to go next) */}
+          <p className="text-gray-600 dark:text-gray-300">
             {project.description}
           </p>
+          {project.audience && (
+            <p className="text-sm text-gray-500 dark:text-gray-400 italic">
+              {project.audience}
+            </p>
+          )}
 
           {/* Tech Stack */}
           <div className="flex flex-wrap gap-2">
@@ -78,7 +83,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             )}
           </div>
 
-          {/* Links */}
+          {/* Links — clear "where to go" (navigation, not selling) */}
           <div 
             className="flex items-center gap-4 pt-2 border-t border-gray-200 dark:border-gray-800"
             onClick={(e) => e.stopPropagation()}
@@ -88,10 +93,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                className="flex items-center gap-1.5 text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
               >
-                <ExternalLink className="w-4 h-4" />
-                Visit
+                <ArrowRight className="w-4 h-4" />
+                → {project.url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
               </a>
             )}
             {project.github && (

@@ -2,6 +2,8 @@ export interface Project {
   id: string;
   title: string;
   description: string;
+  /** One line: who it's for / what problem — used for "where to go next" on cards */
+  audience?: string;
   longDescription: string;
   category: string;
   techStack: string[];
@@ -17,7 +19,9 @@ export const projects: Project[] = [
   {
     id: "pixid-studio",
     title: "PixID Studio",
-    description: "AI-powered visa and ID photo creation service for 150+ countries",
+    description: "Passport & visa photo compliance tool",
+    audience: "For people whose applications get rejected due to photo issues.",
+    url: "https://pixid.studio",
     longDescription: "Professional online service for creating compliant ID and visa photos. Features AI-powered background removal, automatic face detection and alignment, privacy-safe local processing, and 100% official size guarantee. Supports 150+ country formats including US, UK, Canada, Australia, UAE, and Schengen countries.",
     category: "SaaS",
     techStack: ["TypeScript", "TensorFlow.js", "Computer Vision", "Express.js", "AI Background Removal"],
@@ -30,15 +34,16 @@ export const projects: Project[] = [
       "Instant processing"
     ],
     status: "live",
-    url: "https://pixid.studio",
     year: 2024,
     image: "/images/pixid-studio.png"
   },
   {
     id: "ciple-a2",
-    title: "CIPLE A2 Master",
-    description: "Premium B2C SaaS for Portuguese citizenship exam preparation",
-    longDescription: "Comprehensive learning platform for Portuguese citizenship exam (Level A2). Features multi-modal learning with speech-to-text (Whisper), image analysis, Anki card integration, and personalized learning paths. Built with Next.js 14, Supabase, and AI-powered content generation.",
+    title: "Prep2Go",
+    description: "Citizenship exam preparation — Portugal, France, Spain, Italy",
+    audience: "For people preparing for language/citizenship tests (CIPLE A2, TCF, DELE, CILS, etc.).",
+    url: "https://www.prep2go.study",
+    longDescription: "Learning platform for citizenship and language exams: Portugal (CIPLE A2), France (TCF), Spain (DELE), Italy (CILS). Multi-modal learning with speech-to-text (Whisper), image analysis, Anki integration, and personalized paths. Built with Next.js 14, Supabase, and AI-powered content generation.",
     category: "EdTech",
     techStack: ["Next.js 14", "TypeScript", "Supabase", "OpenRouter API", "Whisper", "Anki Integration", "Tailwind CSS"],
     features: [
@@ -50,7 +55,6 @@ export const projects: Project[] = [
       "AI-powered content generation"
     ],
     status: "live",
-    url: "https://www.prep2go.study",
     year: 2024,
     image: "/images/ciple-a2.png"
   },
