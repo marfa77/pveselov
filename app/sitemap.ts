@@ -5,6 +5,7 @@ import { siteConfig } from '@/lib/config';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url;
 
+  // /about redirects to / — don't list it in sitemap
   const routes = [
     {
       url: baseUrl,
@@ -17,12 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
     },
   ];
 

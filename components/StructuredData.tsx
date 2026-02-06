@@ -64,6 +64,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           "@type": "Person",
           name: "Pavel Veselov",
           url: siteConfig.url,
+          email: siteConfig.email,
           image: `${siteConfig.url}/avatar.png`,
           description: siteConfig.description,
           sameAs: [

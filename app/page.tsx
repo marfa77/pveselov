@@ -171,7 +171,12 @@ export default function Home() {
             Tableau
           </a>
         </div>
-        <div className="max-w-2xl mx-auto mt-6 pt-6 border-t border-gray-200 dark:border-gray-800">
+        <div className="max-w-2xl mx-auto mt-6 pt-6 border-t border-gray-200 dark:border-gray-800 space-y-1">
+          <p className="text-xs text-gray-400 dark:text-gray-500">
+            <a href={`mailto:${siteConfig.email}`} className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors">
+              {siteConfig.email}
+            </a>
+          </p>
           <p className="text-xs text-gray-400 dark:text-gray-500">
             © {new Date().getFullYear()} Pavel Veselov
           </p>
