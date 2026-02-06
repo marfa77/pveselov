@@ -71,7 +71,6 @@ export function StructuredData({ type, data }: StructuredDataProps) {
             siteConfig.links.reddit,
             siteConfig.links.quora,
             siteConfig.links.github,
-            siteConfig.links.twitter,
             siteConfig.links.tableau,
           ].filter(Boolean),
         };

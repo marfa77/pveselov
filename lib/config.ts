@@ -10,8 +10,7 @@ export const siteConfig = {
     linkedin: 'https://www.linkedin.com/in/pveselov/',
     reddit: 'https://www.reddit.com/user/ExcellentBrief1537/',
     quora: 'https://www.quora.com/profile/Pavel-Veselov',
-    github: 'https://github.com/pavelveselov',
-    twitter: 'https://twitter.com/pavelveselov',
+    github: 'https://github.com/marfa77',
     tableau: 'https://public.tableau.com/app/profile/sapphire.consulting/vizzes',
   },
 };
