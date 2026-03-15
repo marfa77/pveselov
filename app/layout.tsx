@@ -71,6 +71,12 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="ai:description" content={siteConfig.description} />
         <meta name="ai:contact" content={siteConfig.email} />
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="icftG/jsH1c1x8gPh06fxQ"
+          strategy="beforeInteractive"
+          async
+        />
       </head>
       <body className="antialiased" suppressHydrationWarning>
         {/* Google Analytics */}
@@ -86,11 +92,6 @@ export default function RootLayout({
             gtag('config', 'G-46B86TE9LK');
           `}
         </Script>
-        <Script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="icftG/jsH1c1x8gPh06fxQ"
-          strategy="afterInteractive"
-        />
         {children}
       </body>
     </html>
