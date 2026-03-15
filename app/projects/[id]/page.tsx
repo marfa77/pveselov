@@ -109,7 +109,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
           {/* Links */}
           {(project.url || project.github) && (
-            <div className="flex gap-4 mb-12">
+            <div className="flex flex-wrap gap-4 mb-12">
               {project.url && (
                 <a
                   href={project.url}
@@ -118,7 +118,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                   className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 transition-colors"
                 >
                   <ExternalLink className="w-5 h-5" />
-                  Visit Website
+                  {project.url.includes("apps.apple.com") ? "App Store" : "Website"}
                 </a>
               )}
               {project.github && (

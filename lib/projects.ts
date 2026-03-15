@@ -59,6 +59,27 @@ export const projects: Project[] = [
     image: "/images/ciple-a2.png"
   },
   {
+    id: "prep2go-app",
+    title: "Prep2Go: Exam Flashcards",
+    description: "iOS app — language exams & citizenship tests (CIPLE, DELE, DELF, Goethe, NT2, Norskprøve, CELI, etc.)",
+    audience: "For people preparing for residency and citizenship: language exams and official citizenship tests (Germany, France, US, UK, Canada, Australia). Plus survival guides (UAE, Saudi, Singapore, South Africa, USA).",
+    url: "https://apps.apple.com/ae/app/prep2go-exam-flashcards/id6759856853",
+    longDescription: "iPhone app for language and citizenship exam prep. Spaced repetition, native speaker audio, real images, official exam-style questions. Language decks: Portuguese A2 (CIPLE), Spanish (DELE), French (DELF/TCF), German (Goethe/telc/ÖSD), Italian (CELI/CILS/PLIDA), Dutch (Inburgering/NT2), Danish (Prove i Dansk), Norwegian (Norskprøve). Citizenship tests: Germany, France, US, UK, Canada, Australia. Survival guides: UAE, Saudi Arabia, Singapore, South Africa, Portugal, USA, Thailand. Free tier with in-app subscription. Developer: Pavel Veselov.",
+    category: "EdTech",
+    techStack: ["iOS", "Swift", "Spaced Repetition", "In-App Purchases", "Native Audio"],
+    features: [
+      "Spaced repetition (science-backed)",
+      "Language exams: CIPLE, DELE, DELF, Goethe, NT2, CELI, Danish, Norwegian",
+      "Citizenship tests: Germany, France, US, UK, Canada, Australia",
+      "Survival guides: UAE, Saudi, Singapore, South Africa, Portugal, USA",
+      "Native speaker audio & exam-style questions",
+      "Daily streak, XP, achievements, study heatmap"
+    ],
+    status: "live",
+    year: 2025,
+    image: "/images/ciple-a2.png"
+  },
+  {
     id: "sat-navigator",
     title: "SAT Navigator",
     description: "Exam-agnostic test preparation platform with adaptive learning",
