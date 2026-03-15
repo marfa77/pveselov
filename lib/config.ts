@@ -3,7 +3,7 @@
 export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.pixidstudio.online',
   name: 'Pavel Veselov',
-  description: 'I build small, focused tools that solve very specific problems. Education, compliance, automation.',
+  description: 'I build small, focused tools that solve very specific problems. Most of my work is around education, compliance, and automation. Portfolio and links.',
   email: 'pv.inform@gmail.com',
   // Bottom links — replace with your profiles
   links: {

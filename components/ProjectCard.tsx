@@ -46,9 +46,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
           {/* Title and Icon */}
           <div className="flex items-start justify-between">
             <div className="flex-1">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              <Link href={`/projects/${project.id}`} className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                 {project.title}
-              </h3>
+              </Link>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                 {project.category} • {project.year}
               </p>

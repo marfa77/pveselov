@@ -24,7 +24,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
             height: 100
           },
           description: "PIXID Studio is a leading software development company specializing in AI development, web development, and SaaS platform development. We build innovative digital products including AI-powered tools, educational platforms, automation services, and enterprise software.",
-          foundingDate: "2024",
+          foundingDate: "2025",
           numberOfEmployees: {
             "@type": "QuantitativeValue",
             value: "1-10"

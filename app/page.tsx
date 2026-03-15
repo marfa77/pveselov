@@ -5,6 +5,10 @@ import { Navigation } from "@/components/Navigation";
 import { StructuredData } from "@/components/StructuredData";
 import { siteConfig } from "@/lib/config";
 
+export const metadata = {
+  alternates: { canonical: siteConfig.url },
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">

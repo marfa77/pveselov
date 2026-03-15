@@ -34,7 +34,7 @@ export const projects: Project[] = [
       "Instant processing"
     ],
     status: "live",
-    year: 2024,
+    year: 2025,
     image: "/images/pixid-studio.png"
   },
   {
@@ -55,7 +55,7 @@ export const projects: Project[] = [
       "AI-powered content generation"
     ],
     status: "live",
-    year: 2024,
+    year: 2025,
     image: "/images/ciple-a2.png"
   },
   {
@@ -74,7 +74,7 @@ export const projects: Project[] = [
       "Progress tracking"
     ],
     status: "coming",
-    year: 2024,
+    year: 2025,
     image: "/images/sat-navigator.png"
   },
   {
@@ -95,8 +95,8 @@ export const projects: Project[] = [
       "Price trends analysis"
     ],
     status: "live",
-    url: "https://uae-property-ai-bot.vercel.app",
-    year: 2024,
+    url: "https://www.uaeproperty.vip/",
+    year: 2025,
     image: "/images/uae-property.png"
   },
   {
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     ],
     status: "live",
     url: "https://chrome.google.com/webstore",
-    year: 2024,
+    year: 2025,
     image: "/images/surfacecheck.png"
   },
   {
@@ -136,7 +136,7 @@ export const projects: Project[] = [
     ],
     status: "live",
     url: "https://webmorp.art",
-    year: 2024,
+    year: 2025,
     image: "/images/webmorp.png"
   },
   {
@@ -162,7 +162,7 @@ export const projects: Project[] = [
     ],
     status: "live",
     url: "https://bench.energy",
-    year: 2024,
+    year: 2025,
     image: "/images/bench-energy.png"
   },
   {
@@ -184,7 +184,7 @@ export const projects: Project[] = [
     ],
     status: "live",
     url: "https://t.me/trendpullbacksniper",
-    year: 2024,
+    year: 2025,
     image: "/images/trading-bot.png"
   }
 ];

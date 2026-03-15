@@ -8,9 +8,10 @@ import { projects, categories } from "@/lib/projects";
 export const metadata: Metadata = {
   title: "Projects",
   description: "Independent projects built to solve very specific problems. Each has its own audience and documentation.",
+  alternates: { canonical: `${siteConfig.url}/projects` },
   openGraph: {
     title: "Projects | Pavel Veselov",
-    description: "Independent projects built to solve very specific problems.",
+    description: "Independent projects built to solve very specific problems. Each has its own audience and documentation.",
     url: `${siteConfig.url}/projects`,
   },
 };

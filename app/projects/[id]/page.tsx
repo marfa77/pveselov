@@ -23,28 +23,24 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     };
   }
 
+  const canonicalUrl = `${siteConfig.url}/projects/${project.id}`;
+  const metaDescription = (project.longDescription || project.description).slice(0, 160);
+
   return {
-    title: `${project.title} | PIXID Studio Portfolio`,
-    description: project.longDescription || project.description,
-    keywords: [
-      project.title,
-      project.category,
-      ...project.techStack,
-      "PIXID Studio",
-      "portfolio",
-      "digital products"
-    ],
+    title: `${project.title} | Pavel Veselov`,
+    description: metaDescription,
+    alternates: { canonical: canonicalUrl },
     openGraph: {
-      title: `${project.title} | PIXID Studio`,
-      description: project.description,
-      url: `${siteConfig.url}/projects/${project.id}`,
+      title: `${project.title} | Pavel Veselov`,
+      description: metaDescription,
+      url: canonicalUrl,
       type: "website",
       images: project.image ? [`${siteConfig.url}${project.image}`] : [],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${project.title} | PIXID Studio`,
-      description: project.description,
+      title: `${project.title} | Pavel Veselov`,
+      description: metaDescription,
     },
   };
 }

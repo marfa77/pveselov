@@ -6,10 +6,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Pavel Veselov",
+    default: "Pavel Veselov — Independent products (education, compliance, automation)",
     template: "%s | Pavel Veselov",
   },
-  description: siteConfig.description,
+  description: "I build small, focused tools that solve very specific problems. Most of my work is around education, compliance, and automation. Portfolio and links.",
   authors: [{ name: "Pavel Veselov" }],
   creator: "Pavel Veselov",
   formatDetection: {
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Pavel Veselov",
-    description: siteConfig.description,
+    title: "Pavel Veselov — Independent products (education, compliance, automation)",
+    description: "I build small, focused tools that solve very specific problems. Most of my work is around education, compliance, and automation. Portfolio and links.",
     images: [
       {
         url: "/og-image.png",
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pavel Veselov",
-    description: siteConfig.description,
+    title: "Pavel Veselov — Independent products (education, compliance, automation)",
+    description: "I build small, focused tools that solve very specific problems. Most of my work is around education, compliance, and automation.",
     images: ["/og-image.png"],
   },
   robots: {
