@@ -6,6 +6,9 @@ export const siteConfig = {
   description: 'Pavel Veselov is an IT and Digital Transformation Leader / Advisory Partner for CEOs and CFOs in trading, finance, and data-heavy businesses.',
   keywords: [
     'Pavel Veselov',
+    'Pavel Veselov MBA PMP',
+    'MBA IT Transformation Leader',
+    'PMP Digital Transformation',
     'IT Director Dubai',
     'Digital Transformation Leader',
     'IT Advisory Partner',

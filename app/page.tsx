@@ -68,6 +68,16 @@ export default function Home() {
               <p className="mt-4 max-w-2xl text-base leading-7 text-gray-500 dark:text-gray-400">
                 {profile.availability}
               </p>
+              <div className="mt-6 flex flex-wrap gap-2">
+                {profile.credentials.map((credential) => (
+                  <span
+                    key={credential}
+                    className="rounded-full border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-700 dark:border-gray-800 dark:text-gray-300"
+                  >
+                    {credential}
+                  </span>
+                ))}
+              </div>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
@@ -100,9 +110,9 @@ export default function Home() {
               />
               <div className="mt-6 space-y-4 text-sm leading-6 text-gray-600 dark:text-gray-300">
                 <p>
-                  Senior IT leader with an MBA and 18+ years across commodities
-                  trading, consulting, enterprise finance systems, and digital
-                  transformation.
+                  Senior IT leader with an MBA, PMP, and 18+ years across
+                  commodities trading, consulting, enterprise finance systems,
+                  and digital transformation.
                 </p>
                 <p>
                   Useful when the problem sits between business ownership,

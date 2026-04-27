@@ -2,9 +2,14 @@ export const profile = {
   headline:
     "IT & Digital Transformation Leader / Advisory Partner for trading, finance, and data-heavy businesses.",
   summary:
-    "I help CEOs and CFOs build, run, and transform technology where finance, operations, compliance, and uptime all matter. My background combines 18+ years in enterprise IT, SAP/CTRM, CFO systems, data platforms, multi-vendor delivery, and hands-on product building.",
+    "I help CEOs and CFOs build, run, and transform technology where finance, operations, compliance, and uptime all matter. My background combines 18+ years in enterprise IT, SAP/CTRM, CFO systems, data platforms, multi-vendor delivery, MBA-level business education, PMP discipline, and hands-on product building.",
   availability:
     "Available for selected executive roles, advisory engagements, and transformation partnerships.",
+  credentials: [
+    "MBA, University of Cape Town GSB",
+    "PMP",
+    "UAE Golden Visa holder",
+  ],
   metrics: [
     { value: "18+", label: "years in IT transformation and enterprise delivery" },
     { value: "$100M", label: "enterprise IT programme portfolio managed" },

@@ -62,11 +62,32 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           alumniOf: [
             {
               "@type": "CollegeOrUniversity",
-              name: "Graduate School of Business, University of Cape Town"
+              name: "Graduate School of Business, University of Cape Town",
+              description: "MBA, Business Administration"
             },
             {
               "@type": "CollegeOrUniversity",
               name: "Moscow University of Cooperation"
+            }
+          ],
+          hasCredential: [
+            {
+              "@type": "EducationalOccupationalCredential",
+              name: "MBA",
+              credentialCategory: "degree",
+              recognizedBy: {
+                "@type": "CollegeOrUniversity",
+                name: "Graduate School of Business, University of Cape Town"
+              }
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              name: "PMP",
+              credentialCategory: "professional certification",
+              recognizedBy: {
+                "@type": "Organization",
+                name: "Project Management Institute"
+              }
             }
           ],
           knowsLanguage: ["English", "Russian"],
@@ -89,7 +110,9 @@ export function StructuredData({ type, data }: StructuredDataProps) {
             "Enterprise Reporting",
             "Data Warehousing",
             "Vendor Management",
-            "Technology Advisory"
+            "Technology Advisory",
+            "PMP Project Management",
+            "MBA Business Administration"
           ],
           sameAs: [
             siteConfig.links.linkedin,
