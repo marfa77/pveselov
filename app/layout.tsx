@@ -79,7 +79,7 @@ export default function RootLayout({
         <meta name="ai:contact" content={siteConfig.email} />
         <Script
           src="https://analytics.ahrefs.com/analytics.js"
-          data-key="icftG/jsH1c1x8gPh06fxQ"
+          data-key="ZeNKdZVrESRS+mu6E/R9Mg"
           strategy="beforeInteractive"
           async
         />
