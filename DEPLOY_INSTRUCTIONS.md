@@ -19,7 +19,7 @@ In GitHub, open the repo then:
 1. `Settings` -> `Pages`
 2. Under `Build and deployment`, set `Source` to `GitHub Actions` (not `Deploy from a branch`).
 
-The workflow `Deploy to GitHub Pages` (`.github/workflows/deploy.yml`) uses `actions/configure-pages` with `enablement: false` so the Action does not try to create the site via the API, which can fail with `Resource not accessible by integration` for `GITHUB_TOKEN`.
+This step must be done once. Until Pages is set to `GitHub Actions` and a site record exists, deployment may fail. If the workflow used `actions/configure-pages`, that step can fail with `Not Found` (no site) or with `Resource not accessible by integration` (token cannot create the site via the API) — the deploy workflow in this repository omits that step; you still need the one-time `Settings` enablement.
 
 ## Deploy Steps
 
