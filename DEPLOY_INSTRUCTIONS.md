@@ -1,52 +1,131 @@
-# Deployment Instructions
+# Deployment Instructions for Auto Agents
 
-The site is now configured for GitHub Pages, not Vercel.
+This project deploys to GitHub Pages. Do not use Vercel.
 
 ## Target
 
-- Repository: `marfa77/pveselov`
+- Local project: `/Users/pavelveselov/Projects/Archieve/miniSAAS/pixid-portfolio`
+- Remote: use the configured `origin`
+- Branch: `main`
 - Domain: `https://pveselov.space`
-- Deployment: GitHub Actions -> GitHub Pages
+- Hosting: GitHub Pages
+- Deploy trigger: push `main` to GitHub
+- Build artifact: `out/`
 
-## Deploy
+## One-time: enable GitHub Pages in the repository
 
-1. Push the repository to `marfa77/pveselov`.
-2. In GitHub, open `Settings` -> `Pages`.
-3. Select `GitHub Actions` as the Pages source.
-4. Push to `main` or run `Deploy to GitHub Pages` manually from the Actions tab.
+In GitHub, open the repo then:
 
-The workflow builds the static site with:
+1. `Settings` -> `Pages`
+2. Under `Build and deployment`, set `Source` to `GitHub Actions` (not `Deploy from a branch`).
+
+The workflow `Deploy to GitHub Pages` (`.github/workflows/deploy.yml`) uses `actions/configure-pages` with `enablement: false` so the Action does not try to create the site via the API, which can fail with `Resource not accessible by integration` for `GITHUB_TOKEN`.
+
+## Deploy Steps
+
+1. Go to the project directory:
+
+```bash
+cd /Users/pavelveselov/Projects/Archieve/miniSAAS/pixid-portfolio
+```
+
+2. Check the current state:
+
+```bash
+git status --short --branch
+```
+
+3. If there are uncommitted changes, review them first:
+
+```bash
+git diff
+```
+
+4. If the changes are intentional, commit them:
+
+```bash
+git add .
+git commit -m "chore: update site"
+```
+
+5. Check GitHub CLI authentication:
+
+```bash
+gh auth status
+```
+
+If not logged in, stop and ask the user to run:
+
+```bash
+gh auth login
+```
+
+6. Push `main` using the GitHub CLI token. Use this exact command because a plain `git push` can fail with `could not read Username for 'https://github.com': Device not configured`.
+
+```bash
+GH_TOKEN="$(gh auth token)" git -c credential.helper='!f() { echo username=x-access-token; echo password=$GH_TOKEN; }; f' push origin main
+```
+
+7. Check the latest GitHub Actions runs:
+
+```bash
+gh run list --limit 5
+```
+
+8. If needed, watch the newest run:
+
+```bash
+gh run watch
+```
+
+9. After the workflow succeeds, verify the live site:
+
+```bash
+curl -I https://pveselov.space
+curl -I https://pveselov.space/robots.txt
+curl -I https://pveselov.space/sitemap.xml
+```
+
+## Local Build Check
+
+Run this before pushing if the change touches app code, routing, metadata, or deployment config:
 
 ```bash
 npm ci
 npm run build
 ```
 
-and uploads the generated `out/` directory.
+The build must generate the static export in `out/`.
 
-## DNS
+Expected files:
 
-Create these records for `pveselov.space`:
+- `out/index.html`
+- `out/CNAME`
+- `out/robots.txt`
+- `out/sitemap.xml`
+- `out/.nojekyll`
 
-```text
-@  A  185.199.108.153
-@  A  185.199.109.153
-@  A  185.199.110.153
-@  A  185.199.111.153
-```
+## Hard Rules
 
-Optional:
+- Do not use Vercel.
+- Do not delete `.github/workflows/deploy.yml`.
+- Do not delete `public/CNAME`.
+- Do not delete `public/.nojekyll`.
+- Do not run `git reset --hard`.
+- Do not run `git checkout --` on user changes.
+- Do not change the `origin` remote unless the user explicitly asks.
+- Deployment is considered triggered only after a successful `push origin main`.
 
-```text
-www  CNAME  marfa77.github.io
-```
+## SEO / Indexing Checks
 
-## SEO Check
-
-After deployment:
+After deployment, these URLs should be reachable:
 
 - `https://pveselov.space`
 - `https://pveselov.space/robots.txt`
 - `https://pveselov.space/sitemap.xml`
 
-Submit the sitemap in Google Search Console.
+Use the HTTPS sitemap URL in Google Search Console:
+
+```text
+https://pveselov.space/sitemap.xml
+```

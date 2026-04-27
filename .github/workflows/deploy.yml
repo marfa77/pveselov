@@ -32,7 +32,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
-          enablement: true
+          # do not call the Pages "create/enable" API: GITHUB_TOKEN in Actions often
+          # cannot create a site the first time ("Resource not accessible by integration").
+          # Enable once in repo Settings > Pages (Source: GitHub Actions), then this works.
+          enablement: false
 
       - name: Install dependencies
         run: npm ci

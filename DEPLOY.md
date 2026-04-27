@@ -15,7 +15,7 @@ This site is deployed as a static Next.js export to GitHub Pages.
 In the GitHub repository:
 
 1. Go to `Settings` -> `Pages`.
-2. Set `Source` to `GitHub Actions`.
+2. Set `Source` to `GitHub Actions` (required one-time; do not rely on `configure-pages` to auto-create the site — the default `GITHUB_TOKEN` may be denied the Pages "create" API with `Resource not accessible by integration`).
 3. Push to `main`.
 4. The workflow `.github/workflows/deploy.yml` builds the site and deploys `out/`.
 
