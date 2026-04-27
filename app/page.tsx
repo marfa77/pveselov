@@ -22,6 +22,10 @@ export const metadata: Metadata = {
     "Enterprise reporting and data warehouse",
     "Technology advisor Dubai",
     "BenchEnergy",
+    "UAE Property AI",
+    "Dubai property DLD analysis",
+    "OGKit",
+    "Open Graph image API",
   ],
   alternates: { canonical: siteConfig.url },
   openGraph: {
@@ -41,9 +45,10 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const benchEnergy = projects.find((project) => project.id === "bench-energy");
-  const sideProjects = projects
-    .filter((project) => project.id !== "bench-energy")
-    .slice(0, 4);
+  const sideProjectIds = ["uae-property-ai", "webmorp-art", "pixid-studio", "ciple-a2"];
+  const sideProjects = sideProjectIds
+    .map((id) => projects.find((project) => project.id === id))
+    .filter((project): project is NonNullable<typeof project> => Boolean(project));
 
   return (
     <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-950 dark:text-white">

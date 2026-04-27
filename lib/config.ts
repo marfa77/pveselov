@@ -22,6 +22,10 @@ export const siteConfig = {
     'Dubai IT Leader',
     'Energy Analytics',
     'BenchEnergy',
+    'UAE Property AI',
+    'Dubai Property DLD Analysis',
+    'OGKit',
+    'Open Graph Image API',
   ],
   email: 'pv.inform@gmail.com',
   // Bottom links — replace with your profiles
