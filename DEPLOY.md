@@ -1,82 +1,69 @@
-# Инструкция по деплою
+# Deploy to GitHub Pages
 
-## GitHub
+This site is deployed as a static Next.js export to GitHub Pages.
 
-Репозиторий: https://github.com/marfa77/pixid_portfolio (приватный)
+## Current setup
 
-### Первый деплой на GitHub
+- Domain: `https://pveselov.space`
+- GitHub target: `marfa77/pveselov`
+- Hosting: GitHub Pages, GitHub Actions
+- Build output: `out/`
+- Custom domain file: `public/CNAME`
 
-```bash
-git add .
-git commit -m "Initial commit"
-git push -u origin main
+## GitHub Pages settings
+
+In the GitHub repository:
+
+1. Go to `Settings` -> `Pages`.
+2. Set `Source` to `GitHub Actions`.
+3. Push to `main`.
+4. The workflow `.github/workflows/deploy.yml` builds the site and deploys `out/`.
+
+## DNS for pveselov.space
+
+For the apex domain, configure these A records at the domain registrar:
+
+```text
+@  A  185.199.108.153
+@  A  185.199.109.153
+@  A  185.199.110.153
+@  A  185.199.111.153
 ```
 
-Если репозиторий еще не создан на GitHub:
-1. Создайте приватный репозиторий `pixid_portfolio` на GitHub
-2. Затем выполните команды выше
+Optional IPv6 records:
 
-## Vercel (Рекомендуется для Next.js)
+```text
+@  AAAA  2606:50c0:8000::153
+@  AAAA  2606:50c0:8001::153
+@  AAAA  2606:50c0:8002::153
+@  AAAA  2606:50c0:8003::153
+```
 
-### Автоматический деплой через GitHub
+If using `www.pveselov.space`, add:
 
-1. Зайдите на [Vercel](https://vercel.com)
-2. Войдите через GitHub
-3. Нажмите "Add New Project"
-4. Выберите репозиторий `marfa77/pixid_portfolio`
-5. Vercel автоматически определит настройки Next.js
-6. Нажмите "Deploy"
+```text
+www  CNAME  marfa77.github.io
+```
 
-### Настройки окружения (если нужны)
+## Google Search Console
 
-Если в будущем понадобятся переменные окружения:
-- Зайдите в Settings → Environment Variables
-- Добавьте необходимые переменные
+After DNS is live:
 
-### Домен
+1. Add property `https://pveselov.space`.
+2. Submit sitemap: `https://pveselov.space/sitemap.xml`.
+3. If using HTML meta verification, add repository secret `GOOGLE_SITE_VERIFICATION`.
 
-После деплоя Vercel предоставит домен вида: `pixid-portfolio.vercel.app`
-
-Для использования кастомного домена:
-1. Settings → Domains
-2. Добавьте домен `www.pixidstudio.online` (основной домен портфолио)
-3. Настройте DNS записи согласно инструкциям Vercel
-4. Убедитесь, что домен настроен в `lib/config.ts`
-
-## Альтернативные варианты деплоя
-
-### Netlify
-
-1. Зайдите на [Netlify](https://www.netlify.com)
-2. Подключите GitHub репозиторий
-3. Настройки:
-   - Build command: `npm run build`
-   - Publish directory: `.next`
-
-### Self-hosted
-
-Для деплоя на собственный сервер:
+## Local verification
 
 ```bash
+npm ci
 npm run build
-npm start
 ```
 
-Или используйте PM2:
+The build must create `out/` and include:
 
-```bash
-npm install -g pm2
-pm2 start npm --name "pixid-portfolio" -- start
-pm2 save
-pm2 startup
-```
-
-## Проверка после деплоя
-
-После деплоя проверьте:
-- ✅ Главная страница загружается
-- ✅ Все страницы работают
-- ✅ Иконки отображаются
-- ✅ Sitemap доступен: `/sitemap.xml`
-- ✅ Robots.txt доступен: `/robots.txt`
-- ✅ SEO мета-теги работают
+- `out/index.html`
+- `out/CNAME`
+- `out/robots.txt`
+- `out/sitemap.xml`
+- `out/.nojekyll`

@@ -2,7 +2,7 @@ import { Project } from "@/lib/projects";
 import { siteConfig } from "@/lib/config";
 
 interface StructuredDataProps {
-  type: "Organization" | "WebSite" | "ItemList" | "Project" | "Person";
+  type: "Organization" | "WebSite" | "ItemList" | "Project" | "Person" | "ProfessionalService";
   data?: any;
 }
 
@@ -14,8 +14,8 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           "@context": "https://schema.org",
           "@type": "Organization",
           "@id": `${siteConfig.url}/#organization`,
-          name: "PIXID Studio",
-          alternateName: "PIXID",
+          name: "Pavel Veselov Advisory",
+          alternateName: "Pavel Veselov",
           url: siteConfig.url,
           logo: {
             "@type": "ImageObject",
@@ -23,38 +23,23 @@ export function StructuredData({ type, data }: StructuredDataProps) {
             width: 100,
             height: 100
           },
-          description: "PIXID Studio is a leading software development company specializing in AI development, web development, and SaaS platform development. We build innovative digital products including AI-powered tools, educational platforms, automation services, and enterprise software.",
-          foundingDate: "2025",
+          description: siteConfig.description,
           numberOfEmployees: {
             "@type": "QuantitativeValue",
-            value: "1-10"
+            value: "1"
           },
           areaServed: "Worldwide",
-          knowsAbout: [
-            "AI Development",
-            "Web Development",
-            "SaaS Development",
-            "EdTech Development",
-            "Automation Services",
-            "Next.js",
-            "React",
-            "TypeScript",
-            "Machine Learning",
-            "Computer Vision"
-          ],
+          knowsAbout: siteConfig.keywords,
           sameAs: [
-            "https://www.linkedin.com/company/pixid-studio"
+            siteConfig.links.linkedin,
+            siteConfig.links.github,
+            siteConfig.links.tableau
           ],
           contactPoint: {
             "@type": "ContactPoint",
             email: siteConfig.email,
-            contactType: "customer service",
+            contactType: "business inquiries",
             availableLanguage: ["English"]
-          },
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: "5",
-            reviewCount: "8"
           }
         };
       
@@ -62,11 +47,50 @@ export function StructuredData({ type, data }: StructuredDataProps) {
         return {
           "@context": "https://schema.org",
           "@type": "Person",
+          "@id": `${siteConfig.url}/#person`,
           name: "Pavel Veselov",
+          jobTitle: "IT & Digital Transformation Leader / Advisory Partner",
           url: siteConfig.url,
           email: siteConfig.email,
           image: `${siteConfig.url}/avatar.png`,
           description: siteConfig.description,
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Dubai",
+            addressCountry: "AE"
+          },
+          alumniOf: [
+            {
+              "@type": "CollegeOrUniversity",
+              name: "Graduate School of Business, University of Cape Town"
+            },
+            {
+              "@type": "CollegeOrUniversity",
+              name: "Moscow University of Cooperation"
+            }
+          ],
+          knowsLanguage: ["English", "Russian"],
+          hasOccupation: {
+            "@type": "Occupation",
+            name: "IT & Digital Transformation Leader",
+            occupationLocation: {
+              "@type": "Country",
+              name: "United Arab Emirates"
+            },
+            skills: siteConfig.keywords
+          },
+          knowsAbout: [
+            "IT Strategy",
+            "Digital Transformation",
+            "Commodities Trading Systems",
+            "CTRM",
+            "SAP S/4HANA",
+            "CFO Systems",
+            "Enterprise Reporting",
+            "Data Warehousing",
+            "Vendor Management",
+            "Technology Advisory"
+          ],
           sameAs: [
             siteConfig.links.linkedin,
             siteConfig.links.reddit,
@@ -80,10 +104,48 @@ export function StructuredData({ type, data }: StructuredDataProps) {
         return {
           "@context": "https://schema.org",
           "@type": "WebSite",
+          "@id": `${siteConfig.url}/#website`,
           name: siteConfig.name,
           url: siteConfig.url,
           description: siteConfig.description,
-          publisher: { "@type": "Person", name: "Pavel Veselov" },
+          inLanguage: "en",
+          publisher: { "@id": `${siteConfig.url}/#person` },
+        };
+
+      case "ProfessionalService":
+        return {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id": `${siteConfig.url}/#advisory-service`,
+          name: "IT Advisory and Digital Transformation Partner",
+          url: siteConfig.url,
+          description:
+            "Executive IT advisory and digital transformation support for CEOs and CFOs in trading, finance, energy, SAP/CTRM, enterprise reporting, and data-heavy operations.",
+          provider: { "@id": `${siteConfig.url}/#person` },
+          areaServed: ["United Arab Emirates", "Gulf Region", "Worldwide"],
+          serviceType: [
+            "IT Advisory",
+            "Digital Transformation",
+            "CFO Systems Transformation",
+            "SAP and ERP Transformation",
+            "Commodities Trading IT Advisory",
+            "Enterprise Reporting and Data Advisory"
+          ],
+          audience: [
+            {
+              "@type": "BusinessAudience",
+              audienceType: "CEOs"
+            },
+            {
+              "@type": "BusinessAudience",
+              audienceType: "CFOs"
+            }
+          ],
+          offers: {
+            "@type": "Offer",
+            availability: "https://schema.org/InStock",
+            businessFunction: "https://schema.org/Consulting"
+          }
         };
       
       case "ItemList":

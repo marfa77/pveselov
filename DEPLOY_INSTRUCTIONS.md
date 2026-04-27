@@ -1,103 +1,52 @@
-# Инструкция по деплою через GitHub + Vercel
+# Deployment Instructions
 
-## ✅ Текущий статус
+The site is now configured for GitHub Pages, not Vercel.
 
-- ✅ Все изменения запушены в GitHub: `https://github.com/marfa77/pixid_portfolio`
-- ✅ Проект успешно собирается (`npm run build`)
-- ✅ Домен настроен: `https://www.pixidstudio.online`
-- ✅ Конфигурация Vercel готова (`vercel.json`)
+## Target
 
-## 🚀 Автоматический деплой через Vercel
+- Repository: `marfa77/pveselov`
+- Domain: `https://pveselov.space`
+- Deployment: GitHub Actions -> GitHub Pages
 
-### Вариант 1: Через веб-интерфейс Vercel (Рекомендуется)
+## Deploy
 
-1. **Зайдите на [Vercel](https://vercel.com)**
-2. **Войдите через GitHub** (используйте тот же аккаунт, что и для репозитория)
-3. **Нажмите "Add New Project"**
-4. **Выберите репозиторий** `marfa77/pixid_portfolio`
-5. **Vercel автоматически определит настройки:**
-   - Framework: Next.js
-   - Build Command: `npm run build`
-   - Output Directory: `.next`
-   - Install Command: `npm install`
-6. **Нажмите "Deploy"**
+1. Push the repository to `marfa77/pveselov`.
+2. In GitHub, open `Settings` -> `Pages`.
+3. Select `GitHub Actions` as the Pages source.
+4. Push to `main` or run `Deploy to GitHub Pages` manually from the Actions tab.
 
-### Настройка домена
-
-После первого деплоя:
-
-1. Перейдите в **Settings → Domains**
-2. Добавьте домен: `www.pixidstudio.online`
-3. Следуйте инструкциям Vercel для настройки DNS записей:
-   - Добавьте CNAME запись: `www` → `cname.vercel-dns.com`
-   - Или A-запись, если указано в инструкциях Vercel
-
-### Переменные окружения (если нужны)
-
-Если в будущем понадобятся переменные окружения:
-
-1. **Settings → Environment Variables**
-2. Добавьте переменную `NEXT_PUBLIC_SITE_URL` со значением `https://www.pixidstudio.online`
-3. Передеплойте проект
-
-### Вариант 2: Через Vercel CLI
-
-Если хотите использовать CLI:
+The workflow builds the static site with:
 
 ```bash
-# Установите Vercel CLI (локально в проект)
-npm install --save-dev vercel
-
-# Задеплойте
-npx vercel
-
-# Или для production деплоя
-npx vercel --prod
+npm ci
+npm run build
 ```
 
-При первом запуске нужно будет:
-1. Войти в Vercel аккаунт
-2. Выбрать проект или создать новый
-3. Подтвердить настройки
+and uploads the generated `out/` directory.
 
-## 🔄 Автоматический деплой
+## DNS
 
-После настройки через веб-интерфейс Vercel:
+Create these records for `pveselov.space`:
 
-- ✅ Каждый push в `main` ветку автоматически задеплоит проект
-- ✅ Pull Request'ы получат preview деплой
-- ✅ Все изменения из GitHub будут автоматически синхронизироваться
+```text
+@  A  185.199.108.153
+@  A  185.199.109.153
+@  A  185.199.110.153
+@  A  185.199.111.153
+```
 
-## ✅ Проверка после деплоя
+Optional:
 
-После деплоя проверьте:
+```text
+www  CNAME  marfa77.github.io
+```
 
-- ✅ Главная страница: `https://www.pixidstudio.online`
-- ✅ Все страницы работают
-- ✅ Sitemap: `https://www.pixidstudio.online/sitemap.xml`
-- ✅ Robots.txt: `https://www.pixidstudio.online/robots.txt`
-- ✅ Open Graph изображение: `https://www.pixidstudio.online/og-image.png`
-- ✅ SEO мета-теги работают (проверьте через View Source)
+## SEO Check
 
-## 📝 Текущая конфигурация
+After deployment:
 
-- **Домен:** `https://www.pixidstudio.online`
-- **GitHub:** `https://github.com/marfa77/pixid_portfolio`
-- **Framework:** Next.js 14 (App Router)
-- **Build:** Статическая генерация (SSG)
-- **Регионы:** iad1, fra1, sfo1 (настроено в vercel.json)
+- `https://pveselov.space`
+- `https://pveselov.space/robots.txt`
+- `https://pveselov.space/sitemap.xml`
 
-## 🔧 Troubleshooting
-
-### Если деплой не работает:
-
-1. Проверьте, что репозиторий не приватный или Vercel имеет доступ
-2. Убедитесь, что `package.json` содержит все зависимости
-3. Проверьте логи деплоя в Vercel Dashboard
-4. Убедитесь, что домен правильно настроен в `lib/config.ts`
-
-### Если домен не работает:
-
-1. Проверьте DNS записи (может занять до 24 часов)
-2. Убедитесь, что домен добавлен в Vercel Settings → Domains
-3. Проверьте SSL сертификат (Vercel выдает автоматически)
+Submit the sitemap in Google Search Console.

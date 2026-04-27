@@ -1,7 +1,7 @@
 {
-  "name": "PIXID Studio Portfolio",
-  "short_name": "PIXID",
-  "description": "Portfolio of innovative digital products and solutions by PIXID Studio",
+  "name": "Pavel Veselov",
+  "short_name": "Pavel Veselov",
+  "description": "IT and Digital Transformation Leader / Advisory Partner for trading, finance, and data-heavy businesses.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

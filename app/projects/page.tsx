@@ -7,11 +7,20 @@ import { projects, categories } from "@/lib/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Independent projects built to solve very specific problems. Each has its own audience and documentation.",
+  description: "Independent products and side ventures by Pavel Veselov, spanning energy analytics, automation, compliance, and education.",
+  keywords: [
+    "Pavel Veselov projects",
+    "BenchEnergy",
+    "energy analytics",
+    "IT automation projects",
+    "SaaS side ventures",
+    "PixID",
+    "Prep2Go",
+  ],
   alternates: { canonical: `${siteConfig.url}/projects` },
   openGraph: {
     title: "Projects | Pavel Veselov",
-    description: "Independent projects built to solve very specific problems. Each has its own audience and documentation.",
+    description: "Independent products and side ventures by Pavel Veselov, spanning energy analytics, automation, compliance, and education.",
     url: `${siteConfig.url}/projects`,
   },
 };
@@ -30,8 +39,8 @@ export default function ProjectsPage() {
               Projects
             </h1>
             <p className="text-sm text-gray-500 dark:text-gray-400 max-w-xl">
-              Independent projects built to solve very specific problems.
-              Each has its own audience and documentation.
+              Independent products and side ventures built around energy
+              analytics, automation, compliance, and education.
             </p>
           </div>
 
@@ -69,14 +78,14 @@ export default function ProjectsPage() {
       <footer className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200 dark:border-gray-800 mt-20">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-600 dark:text-gray-400">
-            © {new Date().getFullYear()} PIXID Studio. All rights reserved.
+            © {new Date().getFullYear()} Pavel Veselov. All rights reserved.
           </p>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">
             <a 
-              href="mailto:customer@pixid.studio" 
+              href={`mailto:${siteConfig.email}`}
               className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
-              customer@pixid.studio
+              {siteConfig.email}
             </a>
           </p>
         </div>

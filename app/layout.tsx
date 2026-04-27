@@ -5,13 +5,21 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  applicationName: siteConfig.name,
   title: {
-    default: "Pavel Veselov — Independent products (education, compliance, automation)",
+    default: "Pavel Veselov | IT & Digital Transformation Leader / Advisory Partner",
     template: "%s | Pavel Veselov",
   },
-  description: "I build small, focused tools that solve very specific problems. Most of my work is around education, compliance, and automation. Portfolio and links.",
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  manifest: "/manifest.json",
   authors: [{ name: "Pavel Veselov" }],
   creator: "Pavel Veselov",
+  publisher: "Pavel Veselov",
+  alternates: {
+    canonical: siteConfig.url,
+  },
+  referrer: "origin-when-cross-origin",
   formatDetection: {
     email: false,
     address: false,
@@ -22,11 +30,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Pavel Veselov — Independent products (education, compliance, automation)",
-    description: "I build small, focused tools that solve very specific problems. Most of my work is around education, compliance, and automation. Portfolio and links.",
+    title: "Pavel Veselov | IT & Digital Transformation Leader / Advisory Partner",
+    description: siteConfig.description,
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "Pavel Veselov",
@@ -35,9 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pavel Veselov — Independent products (education, compliance, automation)",
-    description: "I build small, focused tools that solve very specific problems. Most of my work is around education, compliance, and automation.",
-    images: ["/og-image.png"],
+    title: "Pavel Veselov | IT & Digital Transformation Leader / Advisory Partner",
+    description: siteConfig.description,
+    images: ["/og-image.svg"],
   },
   robots: {
     index: true,
@@ -55,7 +63,7 @@ export const metadata: Metadata = {
     apple: '/icon.svg',
   },
   verification: {
-    google: 'your-google-verification-code', // Замените на реальный код из Google Search Console
+    google: process.env.GOOGLE_SITE_VERIFICATION,
   },
 };
 
@@ -67,8 +75,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href={siteConfig.url} />
-        <link rel="manifest" href="/manifest.json" />
         <meta name="ai:description" content={siteConfig.description} />
         <meta name="ai:contact" content={siteConfig.email} />
         <Script

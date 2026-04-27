@@ -1,9 +1,25 @@
-// Site configuration — personal site (pixidstudio.online or pavelveselov.com)
+// Site configuration — personal site (pveselov.space)
 
 export const siteConfig = {
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.pixidstudio.online',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://pveselov.space',
   name: 'Pavel Veselov',
-  description: 'I build small, focused tools that solve very specific problems. Most of my work is around education, compliance, and automation. Portfolio and links.',
+  description: 'Pavel Veselov is an IT and Digital Transformation Leader / Advisory Partner for CEOs and CFOs in trading, finance, and data-heavy businesses.',
+  keywords: [
+    'Pavel Veselov',
+    'IT Director Dubai',
+    'Digital Transformation Leader',
+    'IT Advisory Partner',
+    'CEO CFO IT Advisor',
+    'Commodities Trading IT',
+    'CTRM',
+    'SAP S/4HANA',
+    'CFO Systems',
+    'Enterprise Reporting',
+    'Technology Transformation',
+    'Dubai IT Leader',
+    'Energy Analytics',
+    'BenchEnergy',
+  ],
   email: 'pv.inform@gmail.com',
   // Bottom links — replace with your profiles
   links: {

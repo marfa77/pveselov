@@ -1,3 +1,5 @@
+import { siteConfig } from "@/lib/config";
+
 export function FAQStructuredData() {
   const faqData = {
     "@context": "https://schema.org",
@@ -5,42 +7,42 @@ export function FAQStructuredData() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What services does PIXID Studio offer?",
+        name: "What does Pavel Veselov help CEOs and CFOs with?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "PIXID Studio offers AI development, web development, SaaS platform development, EdTech solutions, automation services, and enterprise software development. We specialize in Next.js, React, TypeScript, NestJS, and AI-powered applications."
+          text: "Pavel Veselov helps CEOs and CFOs with IT strategy, digital transformation, SAP and ERP programmes, CTRM and trading systems, CFO reporting, data platforms, vendor governance, and mission-critical IT operations."
         }
       },
       {
         "@type": "Question",
-        name: "What technologies does PIXID Studio use?",
+        name: "What industries does Pavel Veselov have experience in?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We use modern technologies including Next.js 14, React 18, TypeScript, NestJS, PostgreSQL, Prisma, Supabase, OpenAI, TensorFlow.js, and various AI/ML frameworks for computer vision and natural language processing."
+          text: "His experience spans commodities trading, energy analytics, consulting, pharma, enterprise finance systems, infrastructure, and data-heavy international operations."
         }
       },
       {
         "@type": "Question",
-        name: "How many projects has PIXID Studio completed?",
+        name: "Is Pavel Veselov available for advisory work?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "PIXID Studio has completed 8 projects, with 6 live products currently in production. Our portfolio includes AI-powered tools, educational platforms, automation services, trading bots, and enterprise software."
+          text: "Yes. Pavel is available for selected executive roles, advisory engagements, and transformation partnerships where technology, finance, operations, vendors, and delivery risk need to be handled together."
         }
       },
       {
         "@type": "Question",
-        name: "What types of AI applications does PIXID Studio build?",
+        name: "What is BenchEnergy?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We build various AI applications including computer vision systems (visa photo processing, face detection), natural language processing tools, automation bots (crypto news, real estate AI), speech-to-text systems, and machine learning models for educational platforms."
+          text: "BenchEnergy is a professional proof point that turns commodities and energy market expertise into structured analytics, trading workflow tooling, expert commentary, and automated publishing."
         }
       },
       {
         "@type": "Question",
-        name: "How can I contact PIXID Studio?",
+        name: "How can I contact Pavel Veselov?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "You can contact PIXID Studio via email at customer@pixid.studio for inquiries about our development services, project consultations, or collaboration opportunities."
+          text: `You can contact Pavel Veselov via email at ${siteConfig.email} or through LinkedIn for selected executive, advisory, and transformation conversations.`
         }
       }
     ]

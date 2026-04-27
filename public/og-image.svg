@@ -2,8 +2,8 @@
   <!-- Background Gradient -->
   <defs>
     <linearGradient id="bgGradient" x1="0" y1="0" x2="1200" y2="630">
-      <stop offset="0%" stop-color="#2563eb"/>
-      <stop offset="100%" stop-color="#9333ea"/>
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#374151"/>
     </linearGradient>
     <linearGradient id="textGradient" x1="0" y1="0" x2="200" y2="0">
       <stop offset="0%" stop-color="#ffffff"/>
@@ -27,34 +27,34 @@
     
     <!-- Main Title -->
     <text x="150" y="50" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="white">
-      PIXID Studio
+      Pavel Veselov
     </text>
     
     <!-- Subtitle -->
     <text x="150" y="100" font-family="Arial, sans-serif" font-size="32" fill="url(#textGradient)" opacity="0.95">
-      Expert AI &amp; Web Development Services
+      IT &amp; Digital Transformation Leader
     </text>
     
     <!-- Description -->
     <text x="150" y="160" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.9">
-      AI Development • Web Development • SaaS Platforms
+      Advisory partner for CEOs/CFOs in trading, finance, and data-heavy businesses
     </text>
     
     <!-- Stats -->
     <g transform="translate(150, 220)">
-      <text x="0" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">8</text>
-      <text x="50" y="0" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.8">Projects</text>
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">18+</text>
+      <text x="90" y="0" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.8">Years</text>
       
-      <text x="200" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">6</text>
-      <text x="250" y="0" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.8">Live Products</text>
+      <text x="220" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">$100M</text>
+      <text x="390" y="0" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.8">Portfolio</text>
       
-      <text x="450" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">150+</text>
-      <text x="530" y="0" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.8">Countries</text>
+      <text x="560" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">6</text>
+      <text x="610" y="0" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.8">Countries</text>
     </g>
   </g>
   
   <!-- Bottom text -->
   <text x="600" y="580" font-family="Arial, sans-serif" font-size="20" fill="white" opacity="0.7" text-anchor="middle">
-    pixidstudio.online
+    pveselov.space
   </text>
 </svg>

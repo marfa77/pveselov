@@ -209,14 +209,14 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
       <footer className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200 dark:border-gray-800 mt-20">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-600 dark:text-gray-400">
-            © {new Date().getFullYear()} PIXID Studio. All rights reserved.
+            © {new Date().getFullYear()} Pavel Veselov. All rights reserved.
           </p>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">
             <a 
-              href="mailto:customer@pixid.studio" 
+              href={`mailto:${siteConfig.email}`}
               className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
-              customer@pixid.studio
+              {siteConfig.email}
             </a>
           </p>
         </div>

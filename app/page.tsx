@@ -1,189 +1,382 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink, Mail } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { StructuredData } from "@/components/StructuredData";
 import { siteConfig } from "@/lib/config";
+import { profile } from "@/lib/profile";
+import { projects } from "@/lib/projects";
 
-export const metadata = {
+export const metadata: Metadata = {
+  title: "IT & Digital Transformation Leader / Advisory Partner",
+  description:
+    "Pavel Veselov helps CEOs and CFOs build, run, and transform IT for trading, finance, SAP/CTRM, enterprise reporting, and data-heavy operations.",
+  keywords: [
+    "IT advisory partner for CEOs and CFOs",
+    "IT Director Dubai",
+    "Digital Transformation Leader Dubai",
+    "Commodities Trading IT",
+    "CTRM and SAP Finance",
+    "CFO systems transformation",
+    "Enterprise reporting and data warehouse",
+    "Technology advisor Dubai",
+    "BenchEnergy",
+  ],
   alternates: { canonical: siteConfig.url },
+  openGraph: {
+    title: "Pavel Veselov | IT & Digital Transformation Leader / Advisory Partner",
+    description:
+      "Executive IT leadership and advisory for CEOs/CFOs in trading, finance, SAP/CTRM, enterprise reporting, and data-heavy businesses.",
+    url: siteConfig.url,
+    type: "profile",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pavel Veselov | IT & Digital Transformation Leader / Advisory Partner",
+    description:
+      "Executive IT leadership and advisory for CEOs/CFOs in trading, finance, SAP/CTRM, enterprise reporting, and data-heavy businesses.",
+  },
 };
 
 export default function Home() {
+  const benchEnergy = projects.find((project) => project.id === "bench-energy");
+  const sideProjects = projects
+    .filter((project) => project.id !== "bench-energy")
+    .slice(0, 4);
+
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950">
+    <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-950 dark:text-white">
       <StructuredData type="Person" />
+      <StructuredData type="WebSite" />
+      <StructuredData type="ProfessionalService" />
       <Navigation />
 
-      {/* 1. Hero */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 sm:pt-32 sm:pb-28">
-        <div className="max-w-2xl mx-auto animate-fade-in">
-          <div className="mb-8">
-            <Image
-              src="/avatar.png"
-              alt="Pavel Veselov"
-              width={120}
-              height={120}
-              className="rounded-full object-cover border-2 border-gray-200 dark:border-gray-700"
-              priority
-            />
-          </div>
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Pavel Veselov
-          </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
-            I build small, focused tools that solve very specific problems.
-            Most of my work is around education, compliance, and automation.
-          </p>
-        </div>
-      </section>
+      <main>
+        <section className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 sm:pt-28 sm:pb-24">
+          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_320px] lg:items-end">
+            <div className="animate-fade-in">
+              <p className="mb-5 text-sm font-medium uppercase tracking-[0.24em] text-gray-500 dark:text-gray-400">
+                Pavel Veselov · Dubai
+              </p>
+              <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-gray-950 dark:text-white sm:text-6xl">
+                {profile.headline}
+              </h1>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600 dark:text-gray-300 sm:text-xl">
+                {profile.summary}
+              </p>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-gray-500 dark:text-gray-400">
+                {profile.availability}
+              </p>
 
-      {/* 2. What I'm working on */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200 dark:border-gray-800">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-6">
-            What I'm working on
-          </h2>
-          <ul className="space-y-6">
-            <li>
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
-                <span className="font-semibold text-gray-900 dark:text-white">PixID</span>
-                <span className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">
-                  Passport & visa photo compliance tool
-                </span>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href={`mailto:${siteConfig.email}?subject=Executive%20or%20advisory%20conversation`}
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-gray-950 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-gray-800 dark:bg-white dark:text-gray-950 dark:hover:bg-gray-200"
+                >
+                  <Mail className="h-4 w-4" />
+                  Discuss an engagement
+                </a>
+                <a
+                  href={siteConfig.links.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-300 px-5 py-3 text-sm font-semibold text-gray-800 transition-colors hover:border-gray-900 hover:text-gray-950 dark:border-gray-700 dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-white"
+                >
+                  LinkedIn
+                  <ExternalLink className="h-4 w-4" />
+                </a>
               </div>
-              <a
-                href="https://pixid.studio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 mt-1 text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
-              >
-                <ArrowRight className="w-4 h-4" />
-                pixid.studio
-              </a>
-            </li>
-            <li>
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
-                <span className="font-semibold text-gray-900 dark:text-white">Prep2Go</span>
-                <span className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">
-                  Exam preparation focused on real failure modes
-                </span>
+            </div>
+
+            <aside className="rounded-3xl border border-gray-200 bg-gray-50 p-6 dark:border-gray-800 dark:bg-gray-900/50">
+              <Image
+                src="/avatar.png"
+                alt="Pavel Veselov"
+                width={96}
+                height={96}
+                className="rounded-full border-2 border-white object-cover shadow-sm dark:border-gray-800"
+                priority
+              />
+              <div className="mt-6 space-y-4 text-sm leading-6 text-gray-600 dark:text-gray-300">
+                <p>
+                  Senior IT leader with an MBA and 18+ years across commodities
+                  trading, consulting, enterprise finance systems, and digital
+                  transformation.
+                </p>
+                <p>
+                  Useful when the problem sits between business ownership,
+                  technology execution, vendors, finance, and operational risk.
+                </p>
               </div>
-              <a
-                href="https://www.prep2go.study"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 mt-1 text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
+            </aside>
+          </div>
+        </section>
+
+        <section className="border-y border-gray-200 bg-gray-50/70 dark:border-gray-800 dark:bg-gray-900/30">
+          <div className="container mx-auto px-4 py-10 sm:px-6 lg:px-8">
+            <div className="mx-auto grid max-w-6xl gap-5 sm:grid-cols-2 lg:grid-cols-5">
+              {profile.metrics.map((metric) => (
+                <div key={metric.value} className="animate-fade-in">
+                  <p className="text-3xl font-semibold tracking-tight text-gray-950 dark:text-white">
+                    {metric.value}
+                  </p>
+                  <p className="mt-2 text-sm leading-5 text-gray-500 dark:text-gray-400">
+                    {metric.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-6xl">
+            <div className="max-w-2xl">
+              <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500 dark:text-gray-400">
+                Where I help
+              </p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-gray-950 dark:text-white">
+                Technology leadership for moments when the stakes are high.
+              </h2>
+            </div>
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              {profile.focusAreas.map((area) => (
+                <article
+                  key={area.title}
+                  className="rounded-2xl border border-gray-200 p-6 transition-colors hover:border-gray-300 dark:border-gray-800 dark:hover:border-gray-700"
+                >
+                  <h3 className="text-lg font-semibold text-gray-950 dark:text-white">
+                    {area.title}
+                  </h3>
+                  <p className="mt-3 leading-7 text-gray-600 dark:text-gray-300">
+                    {area.description}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-gray-200 dark:border-gray-800">
+          <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-6xl">
+              <div className="grid gap-10 lg:grid-cols-[280px_1fr]">
+                <div>
+                  <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500 dark:text-gray-400">
+                    Selected experience
+                  </p>
+                  <h2 className="mt-3 text-3xl font-semibold tracking-tight text-gray-950 dark:text-white">
+                    Enterprise delivery, trading systems, and CFO-facing
+                    transformation.
+                  </h2>
+                </div>
+                <div className="space-y-8">
+                  {profile.experience.map((item) => (
+                    <article
+                      key={`${item.company}-${item.role}`}
+                      className="border-b border-gray-200 pb-8 last:border-b-0 last:pb-0 dark:border-gray-800"
+                    >
+                      <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                        <h3 className="text-xl font-semibold text-gray-950 dark:text-white">
+                          {item.role}
+                        </h3>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">
+                          {item.period}
+                        </p>
+                      </div>
+                      <p className="mt-1 font-medium text-gray-700 dark:text-gray-300">
+                        {item.company}
+                      </p>
+                      <p className="mt-4 leading-7 text-gray-600 dark:text-gray-300">
+                        {item.description}
+                      </p>
+                      <ul className="mt-4 space-y-2 text-sm leading-6 text-gray-500 dark:text-gray-400">
+                        {item.outcomes.map((outcome) => (
+                          <li key={outcome} className="flex gap-3">
+                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gray-400 dark:bg-gray-500" />
+                            <span>{outcome}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {benchEnergy && (
+          <section className="border-t border-gray-200 bg-gray-950 text-white dark:border-gray-800">
+            <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
+              <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_360px] lg:items-center">
+                <div>
+                  <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-400">
+                    Professional proof point
+                  </p>
+                  <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+                    BenchEnergy turns energy market knowledge into structured
+                    analytics and trading workflow tooling.
+                  </h2>
+                  <p className="mt-5 max-w-3xl leading-8 text-gray-300">
+                    BenchEnergy is where domain expertise in commodities,
+                    trading operations, freight workflows, and market
+                    intelligence becomes a working product: closed tender
+                    workflows, industry analytics, expert commentary, and
+                    automated publishing for energy professionals.
+                  </p>
+                  <a
+                    href={benchEnergy.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-gray-950 transition-colors hover:bg-gray-200"
+                  >
+                    Visit bench.energy
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
+                </div>
+
+                <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+                  <p className="text-sm font-medium text-gray-400">
+                    Built around
+                  </p>
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {benchEnergy.features.slice(0, 7).map((feature) => (
+                      <span
+                        key={feature}
+                        className="rounded-full border border-white/10 px-3 py-1.5 text-sm text-gray-200"
+                      >
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        <section className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-6xl">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <div className="max-w-2xl">
+                <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500 dark:text-gray-400">
+                  Side ventures
+                </p>
+                <h2 className="mt-3 text-3xl font-semibold tracking-tight text-gray-950 dark:text-white">
+                  Independent SaaS projects that show hands-on execution.
+                </h2>
+                <p className="mt-4 leading-7 text-gray-600 dark:text-gray-300">
+                  These products are not the main professional identity; they
+                  demonstrate product thinking, automation, AI workflows, and
+                  the ability to ship independently.
+                </p>
+              </div>
+              <Link
+                href="/projects"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-gray-950 hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
               >
-                <ArrowRight className="w-4 h-4" />
-                prep2go.study
-              </a>
-            </li>
-          </ul>
-          <p className="mt-8">
-            <Link
-              href="/projects"
-              className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300"
+                All projects
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+
+            <div className="mt-10 grid gap-5 md:grid-cols-2">
+              {sideProjects.map((project) => (
+                <article
+                  key={project.id}
+                  className="rounded-2xl border border-gray-200 p-6 transition-colors hover:border-gray-300 dark:border-gray-800 dark:hover:border-gray-700"
+                >
+                  <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
+                    <h3 className="text-lg font-semibold text-gray-950 dark:text-white">
+                      {project.title}
+                    </h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      {project.category}
+                    </p>
+                  </div>
+                  <p className="mt-3 leading-7 text-gray-600 dark:text-gray-300">
+                    {project.description}
+                  </p>
+                  {project.url && (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:underline dark:text-blue-400"
+                    >
+                      {project.url
+                        .replace(/^https?:\/\/(www\.)?/, "")
+                        .replace(/\/$/, "")}
+                      <ExternalLink className="h-4 w-4" />
+                    </a>
+                  )}
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-gray-200 dark:border-gray-800">
+          <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-6xl rounded-3xl bg-gray-50 p-8 dark:bg-gray-900/60 sm:p-10">
+              <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500 dark:text-gray-400">
+                Contact
+              </p>
+              <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight text-gray-950 dark:text-white">
+                Open to selected executive, advisory, and transformation
+                conversations.
+              </h2>
+              <p className="mt-4 max-w-3xl leading-7 text-gray-600 dark:text-gray-300">
+                The best fit is a CEO/CFO agenda where technology, finance,
+                operations, vendors, and delivery risk need to be handled
+                together.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href={`mailto:${siteConfig.email}`}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-gray-950 hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
+                >
+                  {siteConfig.email}
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+                <a
+                  href={siteConfig.links.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-gray-950 hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
+                >
+                  LinkedIn
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 border-t border-gray-200 pt-8 text-sm text-gray-500 dark:border-gray-800 dark:text-gray-400 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {new Date().getFullYear()} Pavel Veselov</p>
+          <div className="flex flex-wrap gap-5">
+            <a
+              href={siteConfig.links.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-950 dark:hover:text-white"
             >
-              All projects →
-            </Link>
-          </p>
-        </div>
-      </section>
-
-      {/* 3. How I think */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200 dark:border-gray-800">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-6">
-            How I think
-          </h2>
-          <div className="prose prose-gray dark:prose-invert max-w-none space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-            <p>
-              I tend to work on problems where people fail not because they lack information,
-              but because systems are rigid, automated, or poorly explained.
-            </p>
-            <p>
-              Most tools try to add more content.
-              I usually try to remove friction instead.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 4. Background — data, systems, edge cases (no titles, no CV tone) */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200 dark:border-gray-800">
-        <div className="max-w-2xl mx-auto">
-          <div className="prose prose-gray dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 leading-relaxed">
-            <p>
-              Before working on independent products, I spent years working with data-heavy systems and cross-functional teams.
-              That experience shaped how I think about edge cases, automation, and why systems fail in practice.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 5. Minimal credibility */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200 dark:border-gray-800">
-        <div className="max-w-2xl mx-auto">
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            Built and shipped multiple independent products used internationally.
-          </p>
-        </div>
-      </section>
-
-      {/* 6. Links (bottom) */}
-      <footer className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200 dark:border-gray-800">
-        <div className="max-w-2xl mx-auto flex flex-wrap items-center gap-6 text-sm">
-          <a
-            href={siteConfig.links.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-          >
-            LinkedIn
-          </a>
-          <a
-            href={siteConfig.links.reddit}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-          >
-            Reddit
-          </a>
-          <a
-            href={siteConfig.links.quora}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-          >
-            Quora
-          </a>
-          <a
-            href={siteConfig.links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-          >
-            GitHub
-          </a>
-          <a
-            href={siteConfig.links.tableau}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-          >
-            Tableau
-          </a>
-        </div>
-        <div className="max-w-2xl mx-auto mt-6 pt-6 border-t border-gray-200 dark:border-gray-800 space-y-1">
-          <p className="text-xs text-gray-400 dark:text-gray-500">
-            <a href={`mailto:${siteConfig.email}`} className="hover:text-gray-600 dark:hover:text-gray-400 transition-colors">
-              {siteConfig.email}
+              GitHub
             </a>
-          </p>
-          <p className="text-xs text-gray-400 dark:text-gray-500">
-            © {new Date().getFullYear()} Pavel Veselov
-          </p>
+            <a
+              href={siteConfig.links.tableau}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-950 dark:hover:text-white"
+            >
+              Tableau
+            </a>
+          </div>
         </div>
       </footer>
     </div>
