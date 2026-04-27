@@ -6,7 +6,7 @@ This site is deployed as a static Next.js export to GitHub Pages.
 
 - Domain: `https://pveselov.space`
 - GitHub target: `marfa77/pveselov`
-- Remote URL: `https://github.com/marfa77/pveselov.git`
+- Remote URL: `git@github.com:marfa77/pveselov.git`
 - Hosting: GitHub Pages, GitHub Actions
 - Build output: `out/`
 - Custom domain file: `public/CNAME`

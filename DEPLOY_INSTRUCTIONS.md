@@ -5,8 +5,9 @@ This project deploys to GitHub Pages. Do not use Vercel.
 ## Target
 
 - Local project: `/Users/pavelveselov/Projects/Archieve/miniSAAS/pixid-portfolio`
-- Expected remote: `https://github.com/marfa77/pveselov.git`
+- Expected remote: `git@github.com:marfa77/pveselov.git`
 - Wrong/old remote: `https://github.com/marfa77/pixid_portfolio.git` (do not deploy there)
+- Wrong/old SSH remote: `git@github.com:marfa77/pixid_portfolio.git` (do not deploy there)
 - Branch: `main`
 - Domain: `https://pveselov.space`
 - Hosting: GitHub Pages
@@ -40,7 +41,7 @@ git remote -v
 3. Verify `origin` points to the correct repository. If it points to `pixid_portfolio`, fix it before doing anything else:
 
 ```bash
-git remote set-url origin https://github.com/marfa77/pveselov.git
+git remote set-url origin git@github.com:marfa77/pveselov.git
 ```
 
 4. If there are uncommitted changes, review them first:
@@ -68,10 +69,10 @@ If not logged in, stop and ask the user to run:
 gh auth login
 ```
 
-7. Push `main` using the GitHub CLI token. Use this exact command because a plain `git push` can fail with `could not read Username for 'https://github.com': Device not configured`.
+7. Push `main`. The remote should be SSH, so a plain push is enough:
 
 ```bash
-GH_TOKEN="$(gh auth token)" git -c credential.helper='!f() { echo username=x-access-token; echo password=$GH_TOKEN; }; f' push origin main
+git push origin main
 ```
 
 8. Check the latest GitHub Actions runs:
