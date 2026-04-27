@@ -5,7 +5,8 @@ This project deploys to GitHub Pages. Do not use Vercel.
 ## Target
 
 - Local project: `/Users/pavelveselov/Projects/Archieve/miniSAAS/pixid-portfolio`
-- Remote: use the configured `origin`
+- Expected remote: `https://github.com/marfa77/pveselov.git`
+- Wrong/old remote: `https://github.com/marfa77/pixid_portfolio.git` (do not deploy there)
 - Branch: `main`
 - Domain: `https://pveselov.space`
 - Hosting: GitHub Pages
@@ -33,22 +34,29 @@ cd /Users/pavelveselov/Projects/Archieve/miniSAAS/pixid-portfolio
 
 ```bash
 git status --short --branch
+git remote -v
 ```
 
-3. If there are uncommitted changes, review them first:
+3. Verify `origin` points to the correct repository. If it points to `pixid_portfolio`, fix it before doing anything else:
+
+```bash
+git remote set-url origin https://github.com/marfa77/pveselov.git
+```
+
+4. If there are uncommitted changes, review them first:
 
 ```bash
 git diff
 ```
 
-4. If the changes are intentional, commit them:
+5. If the changes are intentional, commit them:
 
 ```bash
 git add .
 git commit -m "chore: update site"
 ```
 
-5. Check GitHub CLI authentication:
+6. Check GitHub CLI authentication:
 
 ```bash
 gh auth status
@@ -60,25 +68,25 @@ If not logged in, stop and ask the user to run:
 gh auth login
 ```
 
-6. Push `main` using the GitHub CLI token. Use this exact command because a plain `git push` can fail with `could not read Username for 'https://github.com': Device not configured`.
+7. Push `main` using the GitHub CLI token. Use this exact command because a plain `git push` can fail with `could not read Username for 'https://github.com': Device not configured`.
 
 ```bash
 GH_TOKEN="$(gh auth token)" git -c credential.helper='!f() { echo username=x-access-token; echo password=$GH_TOKEN; }; f' push origin main
 ```
 
-7. Check the latest GitHub Actions runs:
+8. Check the latest GitHub Actions runs:
 
 ```bash
 gh run list --limit 5
 ```
 
-8. If needed, watch the newest run:
+9. If needed, watch the newest run:
 
 ```bash
 gh run watch
 ```
 
-9. After the workflow succeeds, verify the live site:
+10. After the workflow succeeds, verify the live site:
 
 ```bash
 curl -I https://pveselov.space
