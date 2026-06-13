@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowRight, ExternalLink, Mail } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { StructuredData } from "@/components/StructuredData";
+import { FooterCredit } from "@/components/FooterCredit";
 import { siteConfig } from "@/lib/config";
 import { profile } from "@/lib/profile";
 import { projects } from "@/lib/projects";
@@ -393,6 +394,11 @@ export default function Home() {
             </a>
           </div>
         </div>
+        <FooterCredit
+          variant="card"
+          locale="en"
+          className="footer-credit mx-auto mt-4 max-w-6xl text-center text-xs text-gray-400"
+        />
       </footer>
     </div>
   );
