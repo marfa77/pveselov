@@ -3,7 +3,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ExternalLink, Github, Calendar, Tag, CheckCircle2 } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
+import { FooterCredit } from "@/components/FooterCredit";
 import { StructuredData } from "@/components/StructuredData";
+import { FooterCredit } from "@/components/FooterCredit";
 import { siteConfig } from "@/lib/config";
 import { getProjectById, projects } from "@/lib/projects";
 import { cn } from "@/lib/utils";
@@ -219,6 +221,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
               {siteConfig.email}
             </a>
           </p>
+          <FooterCredit className="footer-credit mt-4 text-xs text-gray-500 dark:text-gray-400" />
         </div>
       </footer>
     </div>

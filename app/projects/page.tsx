@@ -1,5 +1,5 @@
-import { Metadata } from "next";
 import { Navigation } from "@/components/Navigation";
+import { FooterCredit } from "@/components/FooterCredit";
 import { ProjectCard } from "@/components/ProjectCard";
 import { StructuredData } from "@/components/StructuredData";
 import { siteConfig } from "@/lib/config";
@@ -88,6 +88,7 @@ export default function ProjectsPage() {
               {siteConfig.email}
             </a>
           </p>
+          <FooterCredit className="footer-credit mt-4 text-xs text-gray-500 dark:text-gray-400" />
         </div>
       </footer>
     </div>

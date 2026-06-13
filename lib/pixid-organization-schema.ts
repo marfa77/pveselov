@@ -1,3 +1,4 @@
+/** Canonical PixID Studio Organization JSON-LD — identical on every domain. */
 export const pixidOrganizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",

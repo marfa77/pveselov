@@ -24,7 +24,12 @@ export function FooterCredit({
   return (
     <p className={className ?? "footer-credit"}>
       {copy.before}
-      <a href={hrefByVariant[variant]}>{copy.anchor}</a>
+      <a
+        href={hrefByVariant[variant]}
+        className="underline decoration-gray-300 underline-offset-4 transition hover:text-gray-950 dark:decoration-gray-700 dark:hover:text-white"
+      >
+        {copy.anchor}
+      </a>
     </p>
   );
 }
