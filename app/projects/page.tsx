@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Navigation } from "@/components/Navigation";
 import { FooterCredit } from "@/components/FooterCredit";
 import { ProjectCard } from "@/components/ProjectCard";
