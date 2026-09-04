@@ -5,7 +5,6 @@ import { ArrowLeft, ExternalLink, Github, Calendar, Tag, CheckCircle2 } from "lu
 import { Navigation } from "@/components/Navigation";
 import { FooterCredit } from "@/components/FooterCredit";
 import { StructuredData } from "@/components/StructuredData";
-import { FooterCredit } from "@/components/FooterCredit";
 import { siteConfig } from "@/lib/config";
 import { getProjectById, projects } from "@/lib/projects";
 import { cn } from "@/lib/utils";
