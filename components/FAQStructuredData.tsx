@@ -7,45 +7,37 @@ export function FAQStructuredData() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What does Pavel Veselov help CEOs and CFOs with?",
+        name: "How does Pavel Veselov work with a CIO?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Pavel Veselov helps CEOs and CFOs with IT strategy, digital transformation, SAP and ERP programmes, CTRM and trading systems, CFO reporting, data platforms, vendor governance, and mission-critical IT operations."
-        }
+          text: "As a right hand: he takes a real slice of the CIO agenda — programmes, vendors, SAP/CTRM delivery, operating rhythm, or a turnaround workstream — so the CIO stays on strategy and stakeholders. He is not competing for the CIO title.",
+        },
       },
       {
         "@type": "Question",
-        name: "What industries does Pavel Veselov have experience in?",
+        name: "What does both sides of IT mean?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "His experience spans commodities trading, energy analytics, consulting, pharma, enterprise finance systems, infrastructure, and data-heavy international operations."
-        }
+          text: "Pavel has been Head of IT inside a multi-country commodity trading group and has led SAP S/4HANA finance programmes from the integrator side at BearingPoint. He understands client ownership and SI delivery politics.",
+        },
       },
       {
         "@type": "Question",
-        name: "Is Pavel Veselov available for advisory work?",
+        name: "Does Pavel also take full-time Head of IT roles?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Pavel is available for selected executive roles, advisory engagements, and transformation partnerships where technology, finance, operations, vendors, and delivery risk need to be handled together."
-        }
-      },
-      {
-        "@type": "Question",
-        name: "What is BenchEnergy?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "BenchEnergy is a professional proof point that turns commodities and energy market expertise into structured analytics, trading workflow tooling, expert commentary, and automated publishing."
-        }
+          text: "Yes. Selected Head of IT / CIO and fractional leadership roles in trading, industrial, and multi-entity groups, alongside advisory and CIO-support mandates.",
+        },
       },
       {
         "@type": "Question",
         name: "How can I contact Pavel Veselov?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: `You can contact Pavel Veselov via email at ${siteConfig.email} or through LinkedIn for selected executive, advisory, and transformation conversations.`
-        }
-      }
-    ]
+          text: `Email ${siteConfig.email} or LinkedIn (${siteConfig.links.linkedin}). Dubai resident; available immediately.`,
+        },
+      },
+    ],
   };
 
   return (

@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { siteConfig } from "@/lib/config";
-import { PixidOrganizationSchema } from "@/components/PixidOrganizationSchema";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   applicationName: siteConfig.name,
   title: {
-    default: "Pavel Veselov | IT & Digital Transformation Leader / Advisory Partner",
+    default: "Pavel Veselov | Right Hand to the CIO · Dubai",
     template: "%s | Pavel Veselov",
   },
   description: siteConfig.description,
@@ -31,7 +30,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Pavel Veselov | IT & Digital Transformation Leader / Advisory Partner",
+    title: "Pavel Veselov | Right hand to the CIO — both sides of IT",
     description: siteConfig.description,
     images: [
       {
@@ -44,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pavel Veselov | IT & Digital Transformation Leader / Advisory Partner",
+    title: "Pavel Veselov | Right hand to the CIO — both sides of IT",
     description: siteConfig.description,
     images: ["/og-image.svg"],
   },
@@ -86,7 +85,6 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased" suppressHydrationWarning>
-        <PixidOrganizationSchema />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-46B86TE9LK"

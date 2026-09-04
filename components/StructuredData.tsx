@@ -49,7 +49,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           "@type": "Person",
           "@id": `${siteConfig.url}/#person`,
           name: "Pavel Veselov",
-          jobTitle: "IT & Digital Transformation Leader / Advisory Partner",
+          jobTitle: "Right Hand to the CIO / Head of IT / Fractional IT Lead",
           url: siteConfig.url,
           email: siteConfig.email,
           image: `${siteConfig.url}/avatar.png`,
@@ -93,7 +93,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           knowsLanguage: ["English", "Russian"],
           hasOccupation: {
             "@type": "Occupation",
-            name: "IT & Digital Transformation Leader",
+            name: "Right Hand to the CIO and Head of IT",
             occupationLocation: {
               "@type": "Country",
               name: "United Arab Emirates"
@@ -101,6 +101,10 @@ export function StructuredData({ type, data }: StructuredDataProps) {
             skills: siteConfig.keywords
           },
           knowsAbout: [
+            "Right hand to CIO",
+            "Fractional CIO",
+            "Client-side and integrator IT",
+            "Second look at IT",
             "IT Strategy",
             "Digital Transformation",
             "Commodities Trading Systems",
@@ -108,7 +112,6 @@ export function StructuredData({ type, data }: StructuredDataProps) {
             "SAP S/4HANA",
             "CFO Systems",
             "Enterprise Reporting",
-            "Data Warehousing",
             "Vendor Management",
             "Technology Advisory",
             "PMP Project Management",
@@ -140,19 +143,20 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
           "@id": `${siteConfig.url}/#advisory-service`,
-          name: "IT Advisory and Digital Transformation Partner",
+          name: "CIO Support, Fractional IT Lead & Advisory",
           url: siteConfig.url,
           description:
-            "Executive IT advisory and digital transformation support for CEOs and CFOs in trading, finance, energy, SAP/CTRM, enterprise reporting, and data-heavy operations.",
+            "Right-hand support to CIOs, fractional IT leadership, and independent second looks for CEOs/CFOs — from someone with both client-side Head of IT and integrator SAP experience.",
           provider: { "@id": `${siteConfig.url}/#person` },
           areaServed: ["United Arab Emirates", "Gulf Region", "Worldwide"],
           serviceType: [
-            "IT Advisory",
+            "Right Hand to the CIO",
+            "Fractional CIO",
+            "IT Advisory / Second Look",
             "Digital Transformation",
-            "CFO Systems Transformation",
             "SAP and ERP Transformation",
-            "Commodities Trading IT Advisory",
-            "Enterprise Reporting and Data Advisory"
+            "Commodities Trading IT",
+            "Vendor and Programme Governance"
           ],
           audience: [
             {
