@@ -5,6 +5,7 @@ import Link from "next/link";
 const links = [
   { href: "/#how-i-engage", label: "Engage" },
   { href: "/#experience", label: "Experience" },
+  { href: "/ai", label: "AI playbook" },
   { href: "/#contact", label: "Contact" },
 ];
 

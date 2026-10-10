@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight, ExternalLink, Mail } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { StructuredData } from "@/components/StructuredData";
 import { FAQStructuredData } from "@/components/FAQStructuredData";
 import { siteConfig } from "@/lib/config";
 import { profile } from "@/lib/profile";
+import { libraryEntries } from "@/lib/library";
+import { getAllPlaybookSteps } from "@/lib/playbook";
+
+const stepCount = getAllPlaybookSteps().length;
 
 export const metadata: Metadata = {
   title: "Right Hand to the CIO | Consulting + Head of IT + Applied AI",
@@ -253,6 +258,46 @@ export default function Home() {
                       </ul>
                     </article>
                   ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="library"
+          className="border-t border-gray-200 dark:border-gray-800"
+        >
+          <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
+            <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-[280px_1fr] lg:items-start">
+              <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500 dark:text-gray-400">
+                AI for CIOs
+              </p>
+              <div>
+                <h2 className="text-3xl font-semibold tracking-tight text-gray-950 dark:text-white">
+                  How I would help a CIO build AI.
+                </h2>
+                <p className="mt-4 max-w-3xl leading-7 text-gray-600 dark:text-gray-300">
+                  A living playbook of {stepCount} steps, from auditing AI spend
+                  and shadow AI to governing agents and passing a finance-signed
+                  scale gate. Every step rests on research I read and keep
+                  current: {libraryEntries.length} sources from McKinsey, BCG, HBR,
+                  MIT, a16z and Anthropic.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-6">
+                  <Link
+                    href="/ai"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-gray-950 hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
+                  >
+                    Open the playbook
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                  <Link
+                    href="/ai/library"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-gray-950 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    The research behind it
+                  </Link>
                 </div>
               </div>
             </div>
