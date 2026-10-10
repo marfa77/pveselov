@@ -101,7 +101,20 @@ Pavel's own stories only as he tells them. Third-party numbers always with autho
     - A short question to the author is welcome when it is natural.
     - No links, no "Great post!", no pitch.
     - Example: "Agree. I think it shows up much earlier than the exit, in the monthly P&L. The CEOs who really changed the work are usually the ones asking for the number every month."
-  - If the author or a reader replies, continue the thread. That is where connections start.
+  - How a comment should sound:
+    - Pick up one concrete detail from the post, in the author's own words. It shows he read it, and no template does this.
+    - Vary the opening ("Agree", "Same in trading", "This is so true for month-end"), and sometimes skip it and go straight to the point.
+    - Add something small from his world: trading, a Dubai multinational, teams in six countries, SAP. A setting, not a story with numbers. Only what is true.
+    - Contractions are fine (I'd, it's, don't). Sentences can be short. Stop after the thought, no closing line.
+    - Vary length: some comments are one line.
+  - Which posts:
+    - People over company pages. A person can reply; a page rarely does.
+    - Posts with fewer than about 20 comments, so his comment is seen and the author is likely to answer.
+    - Topics he can talk about without research. Not only AI: teams, Dubai, moving countries, consulting vs client side.
+    - The same author at most once in two weeks.
+  - How Claude drafts:
+    - Two options: a one-liner and a slightly longer one. Pavel picks, changes a few words or writes his own.
+    - Never reuse a phrase or figure from his posts or the playbook in a comment.
   - Track which authors reply and which comments bring profile visits; keep a short list of the best authors to watch.
 
 ## Never post
