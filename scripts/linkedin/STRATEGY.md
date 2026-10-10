@@ -93,9 +93,14 @@ Pavel's own stories only as he tells them. Third-party numbers always with autho
 
 - Reply to every comment on his posts within about two hours of seeing it. End with a question when it fits.
 - Comments on other people's posts are the main reach lever for an account of this size: a good comment under a big post is seen by the author's audience, which is where the buyers are.
-  - Two or three times a week, about 15 minutes. Claude reads the feed and search, picks three to five fresh posts (ideally under two hours old) with strong reach, and drafts comments in the built-in browser. Pavel edits and clicks Comment.
+  - Not often: about once a week, one or two comments. Claude reads the feed and search, picks a few fresh posts with strong reach, and drafts comments in the built-in browser. Pavel edits and clicks Comment.
   - Authors: CIOs and CFOs, trading and logistics leaders, authors of the research behind the playbook (BCG, MIT, HBR, McKinsey), interim management firms, PE operating partners, well-known enterprise AI voices.
-  - Comment: two to four sentences in Pavel's voice. A fact from his experience, a counterpoint or a precise question. No links, no "Great post!", no pitch.
+  - Comment: one to three short sentences, the way Pavel would type it himself on his phone. It must not look written by someone else.
+    - Friendly. Join the author's point and add a small piece from his own view or experience. No contradiction, no "I would be careful with", no correcting the author.
+    - Simple words. Not too clever: no report names, no exact figures in brackets, no neat thesis-evidence-conclusion structure. A figure at most once in a while, said casually.
+    - A short question to the author is welcome when it is natural.
+    - No links, no "Great post!", no pitch.
+    - Example: "Agree. I think it shows up much earlier than the exit, in the monthly P&L. The CEOs who really changed the work are usually the ones asking for the number every month."
   - If the author or a reader replies, continue the thread. That is where connections start.
   - Track which authors reply and which comments bring profile visits; keep a short list of the best authors to watch.
 
