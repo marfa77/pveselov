@@ -6,7 +6,8 @@
 - `a-number-card.html` — dark card for a post built on one number.
 - `d-hybrid.html` — occasional: model illustration (`illustration.jpg`, empty top third, no text) + typeset headline and source.
 
-Illustrations: Nano Banana Pro (`google/gemini-3-pro-image`) via OpenRouter, with a previous illustration as style reference. Flat editorial, navy `#0f172a`, slate, one amber `#f59e0b` accent. No photoreal people, robots or glowing brains.
+Illustrations: Nano Banana Pro (`google/gemini-3-pro-image`) via OpenRouter, with `style-reference.png` as style reference:
+`OPENROUTER_API_KEY=… python3 nano-banana.py "<prompt>" style-reference.png out.png` (key from `~/Projects/Garmin/wellness-dashboard/.env`; about $0.14 per image). Flat editorial, navy `#0f172a`, slate, one amber `#f59e0b` accent. No photoreal people, robots or glowing brains.
 
 Render:
 
