@@ -104,7 +104,7 @@ Pavel's own stories only as he tells them. Third-party numbers always with autho
   - How a comment should sound:
     - Pick up one concrete detail from the post, in the author's own words. It shows he read it, and no template does this.
     - Vary the opening ("Agree", "Same in trading", "This is so true for month-end"), and sometimes skip it and go straight to the point.
-    - Add something small from his world: trading, a Dubai multinational, teams in six countries, SAP. A setting, not a story with numbers. Only what is true.
+    - Add something small from his world: trading, a Dubai multinational, teams in six countries, SAP, his MBA at UCT Graduate School of Business in Cape Town (2022–2023) and the South African view he got there. A setting, not a story with numbers. Only what is true; concrete MBA details only as Pavel tells them.
     - Contractions are fine (I'd, it's, don't). Sentences can be short. Stop after the thought, no closing line.
     - Vary length: some comments are one line.
   - Which posts:
