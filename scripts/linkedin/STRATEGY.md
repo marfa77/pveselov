@@ -14,13 +14,18 @@ Formats:
 
 Best fit: trading, commodities, logistics, multinational groups, PE-owned companies.
 
-Rates: day rate and monthly retainer to agree with Pavel. Full-time floor for comparison: AED 60–63k a month.
+Rates and terms:
+- Preferred: fixed price for a defined result (audit, plan, rescue of one project).
+- Otherwise a monthly retainer for part-time work: about €3,000 a month for 2–3 hours a day, remote. That is roughly €60 an hour; use it as the floor when estimating a fixed price.
+- Remote first. On-site only for short visits or when the price covers it.
+- Two or three engagements in parallel.
+- Prices are never published in posts. They are discussed in conversation.
 
 Posts stay value-first with no "DM me". The offer lives in the profile (headline, About, Featured, Services) and on the site.
 
 ## Geography
 
-Gulf and Europe. From 22.10.2026 the profile location is Porto. The UAE Golden Visa stays visible in About and Experience, so Gulf roles still look realistic. Posts are written for an international reader, not for one city.
+Gulf and Europe, remote first. From 22.10.2026 the profile location is Porto. The UAE Golden Visa stays visible in About and Experience, so Gulf roles still look realistic. Posts are written for an international reader, not for one city.
 
 ## Who we write for
 
