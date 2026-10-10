@@ -151,6 +151,8 @@ Secondary: profile viewers, search appearances, followers, impressions and react
 
 Baseline 10.10.2026: 1,597 followers; 247 profile viewers (LinkedIn sidebar); the "Founder" post had 6.7k impressions and 17 reactions in 17 hours.
 
+Best post so far, "Founder" (09.10.2026), at about 24 hours: 24,463 impressions, 100 profile viewers, 3 new followers, 31 reactions, 8 comments. What worked: a short personal story with one concrete change (one word removed) and a result, two plain takeaways, a question at the end. Commenters were mostly founders, engineers and recruiters, not buyers. Lesson: keep the format, point the next stories at the buyers' world (Head of IT decisions, CFO and CEO conversations). 100 viewers but 3 followers means the profile itself must convert: headline, About and Featured.
+
 Monthly output: what to repeat, what to drop, next month's calendar.
 
 ## Calendar (October 2026)
