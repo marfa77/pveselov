@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- Render: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars --window-size=1920,1080 --screenshot=playbook-hub-cover.png file://$PWD/playbook-hub-cover.html -->
+<html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1920px;height:1080px;background:#fff;color:#111827;font-family:-apple-system,"SF Pro Display","Inter","Helvetica Neue",Arial,sans-serif}
+.wrap{position:relative;width:1920px;height:1080px;padding:96px 110px 0}
+.kicker{font-size:26px;letter-spacing:.16em;text-transform:uppercase;color:#6b7280;font-weight:600}
+h1{font-size:68px;line-height:1.08;font-weight:700;letter-spacing:-.02em;margin-top:18px}
+.row{position:absolute;left:110px;right:110px;top:440px;display:flex;gap:40px;z-index:2}
+.ph{flex:1;border:2px solid #e5e7eb;background:#f8fafc;border-radius:22px;padding:22px 22px 24px;height:176px}
+.ph .n{width:48px;height:48px;border-radius:50%;border:3px solid #f59e0b;color:#b45309;font-weight:700;font-size:23px;display:flex;align-items:center;justify-content:center;background:#fff}
+.ph b{display:block;font-size:27px;white-space:nowrap;margin-top:12px}
+.ph span{display:block;font-size:20px;color:#6b7280;margin-top:4px}
+canvas{position:absolute;left:0;top:0;z-index:1}
+.labels{position:absolute;left:0;top:0;z-index:3}
+.lbl{position:absolute;transform:translate(-50%,-50%);background:#fffbeb;color:#b45309;border:2px solid #fcd34d;font-size:22px;font-weight:600;padding:4px 14px;border-radius:999px;white-space:nowrap}
+.lbl.g{background:#fff;color:#4b5563;border-color:#d1d5db}
+.foot{position:absolute;left:110px;right:110px;bottom:70px;display:flex;justify-content:space-between;font-size:24px;color:#9ca3af}
+</style></head><body>
+<div class="wrap" id="wrap">
+  <div class="kicker">The CIO's AI Playbook</div>
+  <h1>Six phases, and what each one feeds.</h1>
+  <div class="row">
+    <div class="ph" id="p1"><div class="n">1</div><b>Diagnose</b><span>spend, shadow AI</span></div>
+    <div class="ph" id="p2"><div class="n">2</div><b>Choose</b><span>3–5 domains</span></div>
+    <div class="ph" id="p3"><div class="n">3</div><b>Redesign</b><span>whole workflows</span></div>
+    <div class="ph" id="p4"><div class="n">4</div><b>Govern</b><span>controls, owners</span></div>
+    <div class="ph" id="p5"><div class="n">5</div><b>Measure</b><span>P&amp;L, cost, retention</span></div>
+    <div class="ph" id="p6"><div class="n">6</div><b>Fund and scale</b><span>one program, a gate</span></div>
+  </div>
+  <div class="foot"><span>23 steps, each with a done-when and its sources · pveselov.space/ai</span><span>Pavel Veselov</span></div>
+  <canvas id="cv"></canvas>
+  <div class="labels" id="labels"></div>
+</div>
+<script>
+const wrap=document.getElementById("wrap"),cv=document.getElementById("cv");
+const W=1920,H=1080,dpr=window.devicePixelRatio||1;
+cv.width=W*dpr;cv.height=H*dpr;cv.style.width=W+"px";cv.style.height=H+"px";
+const ctx=cv.getContext("2d");ctx.scale(dpr,dpr);
+const o=wrap.getBoundingClientRect();
+const box=id=>{const r=document.getElementById(id).getBoundingClientRect();return{l:r.left-o.left,r:r.right-o.left,t:r.top-o.top,b:r.bottom-o.top,cx:(r.left+r.right)/2-o.left}};
+const labels=document.getElementById("labels");
+function label(t,x,y,cls){const e=document.createElement("div");e.className="lbl "+(cls||"");e.textContent=t;e.style.left=x+"px";e.style.top=y+"px";labels.appendChild(e)}
+function head(x,y,a,c,s){ctx.save();ctx.fillStyle=c;ctx.translate(x,y);ctx.rotate(a);ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(-s,-s*.55);ctx.lineTo(-s,s*.55);ctx.closePath();ctx.fill();ctx.restore()}
+function arc(x1,y1,x2,y2,depth,c,w,dash){
+  const cx1=x1,cy1=y1+depth,cx2=x2,cy2=y2+depth;
+  ctx.strokeStyle=c;ctx.lineWidth=w;ctx.setLineDash(dash);ctx.beginPath();ctx.moveTo(x1,y1);
+  ctx.bezierCurveTo(cx1,cy1,cx2,cy2,x2,y2-(depth>0?-10:10)*0+ (depth>0?12:-12));ctx.stroke();ctx.setLineDash([]);
+  head(x2,y2,depth>0?-Math.PI/2:Math.PI/2,c,16);
+  return{x:(x1+x2)/2,y:y1+depth*0.75};
+}
+const P={};for(let i=1;i<=6;i++)P[i]=box("p"+i);
+const grey="#9ca3af",amber="#d97706";
+for(const[a,b,t] of [[1,2,"renewals"],[3,4,"controls before autonomy"],[5,6,"cost per transaction"]]){
+  const m=arc(P[a].cx+30,P[a].t-4,P[b].cx-30,P[b].t-4,-95,grey,3,[]);
+  label(t,m.x,m.y,"g");
+}
+for(const[a,b,t,d,dx] of [[3,5,"baseline",110,0],[2,5,"baseline",190,0],[1,5,"retention",270,0],[1,6,"surviving pilots",350,0]]){
+  const off={1:a===1&&b===6?-40:a===1?40:0,2:0,3:0}[a];
+  const x1=P[a].cx+off,x2=P[b].cx+(b===5?(a===3?40:a===2?0:-40):0);
+  const m=arc(x1,P[a].b+4,x2,P[b].b+4,d,amber,2.8,[11,8]);
+  label(t,m.x+dx,m.y);
+}
+</script>
+</body></html>
