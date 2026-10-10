@@ -7,7 +7,7 @@ Key takeaways:
 - Keep in-house what needs your firm's context. Buy what can be specified without it
 - AI takes over routine IT work. The people who know the business become more valuable
 
-[CONFIRM] As Head of IT at a trading group, I kept getting the same question from the COO and the CFO: how should we structure IT, and how much should we keep in-house?
+COOs and CFOs at trading firms often ask me the same question: how should we structure IT, and how much should we keep in-house?
 
 There is no simple answer.
 
@@ -17,7 +17,7 @@ Deloitte surveyed more than 500 executives for its 2024 Global Outsourcing Surve
 
 So companies are not leaving outsourcing. They keep in-house what builds capability and buy the rest.
 
-[CONFIRM] I have seen the same pattern in trading. Small firms outsource a lot because they have no choice. They don't have the people to cover everything. As they grow, the work that needs the firm's own context moves in-house.
+In trading the logic is easy to follow. Small firms outsource a lot because they have no choice. They don't have the people to cover everything. As they grow, the work that needs the firm's own context moves in-house.
 
 ## Why trading is different
 
@@ -35,7 +35,7 @@ My rule is simple. Keep in-house the work that needs your firm's context. Outsou
 
 Infrastructure management, first-line helpdesk, security operations and project development are in the second group. A 300-person trading firm with a well-run cloud setup does not need its own cloud engineer. A regional provider with clear SLAs can run desktop support. The market does this work well and at a fair price.
 
-CTRM administration, data architecture, business analysis between commercial and IT, and IT leadership are in the first group. In my experience, outsourcing these roles usually disappoints in trading. Contractors are often skilled. The problem is that this work needs context, and context takes years to build.
+CTRM administration, data architecture, business analysis between commercial and IT, and IT leadership are in the first group. In trading, outsourcing these roles usually disappoints. Contractors are often skilled. The problem is that this work needs context, and context takes years to build.
 
 ## How AI changes the picture
 
@@ -49,7 +49,7 @@ Take a business analyst who knows your freight procurement well. This person can
 
 ## The model that works
 
-[CONFIRM] For a trading firm with $500M to $2B in annual volume, I would keep IT leadership, CTRM and business applications, data and integration, and infrastructure oversight in-house. In my experience that is a team of about 6 to 12 people. Contractors handle specialist and project work.
+For a trading firm with $500M to $2B in annual volume, I would keep IT leadership, CTRM and business applications, data and integration, and infrastructure oversight in-house. In my experience that is a team of about 6 to 12 people. Contractors handle specialist and project work.
 
 The firms that do this well don't have the biggest IT teams or the most outsourcing contracts. They know which roles need knowledge of the business, they keep those in-house, and they use the rest of the budget, and more and more AI tools, to run the basics well.
 

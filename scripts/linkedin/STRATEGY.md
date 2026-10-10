@@ -4,11 +4,19 @@ One page. How to post (attribution, cadence, images, account safety) lives in th
 
 ## Goal (next 3–6 months)
 
-Inbound from recruiters and hiring managers for a senior IT leadership role. Consulting is not a goal of LinkedIn content, so no consulting CTAs.
+Inbound for project and advisory roles with interesting problems. Pavel can run several engagements in parallel, so the target is a portfolio of two or three, not one employer.
 
-Target roles: Head of IT, IT Director, CIO or Head of Technology, Head of Enterprise Applications or transformation lead. Best fit: trading, commodities, logistics, multinational groups.
+Formats:
+- Interim or fractional Head of IT / CIO for a defined period
+- Right hand to the CIO on the AI agenda: spend audit, portfolio, vendor claims, governance, business case (the `pveselov.space/ai` playbook is this offer)
+- Transformation or programme lead for one project: SAP, CTRM, infrastructure, IT carve-out or set-up
+- Advisor to a CEO, CFO or board on IT and AI decisions, a few days a month
 
-Floor: AED 60–63k a month in the Gulf. European equivalent: to agree with Pavel.
+Best fit: trading, commodities, logistics, multinational groups, PE-owned companies.
+
+Rates: day rate and monthly retainer to agree with Pavel. Full-time floor for comparison: AED 60–63k a month.
+
+Posts stay value-first with no "DM me". The offer lives in the profile (headline, About, Featured, Services) and on the site.
 
 ## Geography
 
@@ -16,15 +24,21 @@ Gulf and Europe. From 22.10.2026 the profile location is Porto. The UAE Golden V
 
 ## Who we write for
 
-1. Recruiters and executive search for Gulf and European tech leadership roles. They decide in ten seconds from the headline, Featured and the last three posts.
-2. Hiring managers: CEO, CFO and COO of mid-size trading and multinational groups.
-3. Peer CIOs and IT directors. Their engagement carries posts to the first two groups.
+1. Buyers of projects: CEO, CFO and COO of mid-size trading and multinational groups, and operating partners at PE funds. They need a problem solved, not a hire.
+2. CIOs and IT directors who need a second pair of hands for the AI agenda or a big programme. They are both buyers and the network that carries posts.
+3. Interim management firms and consulting boutiques that staff senior people on projects. They decide in ten seconds from the headline, Featured and the last three posts.
 
 ## Positioning
 
 Three sides of the table: consulting (IBS, BearingPoint, SAP programmes), client-side Head of IT across six countries (Norilsk, Ashon), and a year hands-on with applied AI. Not "Head of AI", not "Founder", not only Head of IT.
 
-What the reader should take away: he speaks the CFO's language, he has run multicultural teams, and he can tell AI that works from vendor marketing.
+What the reader should take away: he speaks the CFO's language, he has run multicultural teams, he can tell AI that works from vendor marketing, and he can walk into a messy situation and fix it in months, not years.
+
+Profile to match (Pavel edits, Claude drafts):
+- Headline: add the project angle, for example "Interim and advisory IT leadership".
+- About: last paragraph says what kind of projects he takes and how to reach him.
+- Services section on: IT consulting, IT strategy, AI governance, SAP.
+- Featured: the playbook article first.
 
 ## Voice
 
@@ -55,10 +69,12 @@ Example:
 
 | Pillar | Share | Examples |
 |---|---|---|
-| Head of IT judgment | ~40% | budget in CFO language, vendors, outages, insource or outsource |
+| Head of IT judgment | ~35% | budget in CFO language, vendors, outages, insource or outsource |
 | Applied AI and the playbook | up to 25%, max one per two weeks | playbook hub, one step per post, the $14 scale gate |
-| Consulting and the client side | ~20% | what integrators don't tell you, SAP lessons |
+| How I would fix it | ~25% | first 30 days in a messy IT function, how to rescue a stalled SAP or CTRM project, what to check before signing an integrator |
 | People and career | ~15% | multicultural teams, Founder back to corporate, Porto |
+
+"How I would fix it" posts show the project offer without selling it: a concrete situation, the first three moves, what to measure.
 
 Pavel's own stories only as he tells them. Third-party numbers always with author and source.
 
@@ -75,14 +91,14 @@ Pavel's own stories only as he tells them. Third-party numbers always with autho
 
 ## Never post
 
-- Job-market frustration ("hiring is frozen", "impossible to find a mandate").
+- Job-market frustration ("hiring is frozen", "impossible to find a mandate") or "open to work" framing. He is available for projects, not looking for a job.
 - Founder mode (equity offers, "looking for a partner").
 - BenchEnergy or FreightTender as a live business, with traction or metrics.
 - Unverified figures, AI infographics with numbers baked in, engagement bait.
 
 ## Metrics (reviewed monthly, first Monday)
 
-Primary: inbound from recruiters and hiring managers (messages, calls, InMails). Pavel confirms the count.
+Primary: inbound project and advisory conversations (messages, calls, intros from interim firms) and how many turn into a proposal. Pavel confirms the count.
 
 Secondary: profile viewers, search appearances, followers, impressions and reactions per pillar, top post of the month, visits to `/ai` if tracked.
 
