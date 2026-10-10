@@ -92,7 +92,12 @@ Pavel's own stories only as he tells them. Third-party numbers always with autho
 ## Engagement
 
 - Reply to every comment on his posts within about two hours of seeing it. End with a question when it fits.
-- Comments on other people's posts: once a week Claude picks three to five posts by CIOs, CFOs, PE operating partners and trading leaders and drafts real comments (a fact, a counterpoint or a question, never "Great post!"). Pavel posts them.
+- Comments on other people's posts are the main reach lever for an account of this size: a good comment under a big post is seen by the author's audience, which is where the buyers are.
+  - Two or three times a week, about 15 minutes. Claude reads the feed and search, picks three to five fresh posts (ideally under two hours old) with strong reach, and drafts comments in the built-in browser. Pavel edits and clicks Comment.
+  - Authors: CIOs and CFOs, trading and logistics leaders, authors of the research behind the playbook (BCG, MIT, HBR, McKinsey), interim management firms, PE operating partners, well-known enterprise AI voices.
+  - Comment: two to four sentences in Pavel's voice. A fact from his experience, a counterpoint or a precise question. No links, no "Great post!", no pitch.
+  - If the author or a reader replies, continue the thread. That is where connections start.
+  - Track which authors reply and which comments bring profile visits; keep a short list of the best authors to watch.
 
 ## Never post
 
