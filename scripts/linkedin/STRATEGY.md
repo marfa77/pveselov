@@ -68,7 +68,7 @@ Do:
 
 Never (AI tells):
 - Words and phrases: delve, landscape, leverage, unlock, navigate, robust, seamless, crucial, pivotal, game-changer, journey, elevate, foster, harness, testament, realm, synergy, "in today's fast-paced world", "here's the thing", "let that sink in", "the result?", "spoiler", "at the end of the day", "move the needle", "low-hanging fruit".
-- Constructions: "it's not X, it's Y" flips (at most one per post); groups of three parallel phrases; stacks of one-line paragraphs for drama; a rhetorical question answered in the next line; aphorism closers like "The experience didn't change. Only the label did."; colon reveals.
+- Constructions: "it's not X, it's Y" flips (at most one per post); groups of three parallel phrases; stacks of one-line paragraphs for drama; a rhetorical question answered in the next line; colon reveals. Aphorism lines like "The experience didn't change. Only the label did." at most once per post, and only when it is the real point of a true story (it worked in the Founder post); never as a closer on every post.
 - Em dashes. Use a full stop or a comma.
 - Emojis, arrows, unicode bold, more than three hashtags.
 - Over-hedging and filler: "I believe it's important to note that".
@@ -89,6 +89,29 @@ Example:
 | People and career | ~15% | multicultural teams, Founder back to corporate, Porto |
 
 "How I would fix it" posts show the project offer without selling it: a concrete situation, the first three moves, what to measure.
+
+## What works: the story formula (from the Founder post, 09.10.2026)
+
+24,463 impressions and 100 profile viewers in a day, about four times anything before. Use this shape for personal posts, and check every new draft against it.
+
+1. First line = a small concrete action and its result. "I removed "Founder" from my LinkedIn. A recruiter called within weeks." Both fit before "…see more".
+2. Two lines of context: who he was, what he was doing.
+3. What he believed at the time, honestly.
+4. The turn: how others actually saw it, in their imagined words, in quotes.
+5. One honest, slightly vulnerable line ("Nobody said this to me directly. But silence after an application says a lot.").
+6. What he changed, concretely, and why it was not a trick.
+7. What happened next: a real result, small is fine.
+8. One short line with the point.
+9. Two takeaways for two kinds of readers (the people who decide, and people in his situation). Practical, kind, no lecturing.
+10. A simple question the reader can answer from their own life.
+
+Rules that come with it:
+- The story must be true and his own. Claude never invents the event, the result or the quotes; it asks Pavel for real moments.
+- One change, one result. No lists of lessons, no frameworks, no figures needed.
+- Career topics are fine when they end in a useful lesson and a good outcome. Complaining about the market or "open to work" stays forbidden.
+- Point new stories at the buyers' world: a decision as Head of IT, a talk with a CFO or CEO, a vendor, a team in another country. Same shape, buyer audience.
+- Data point: published Friday afternoon Dubai time and still did well. Keep Tue–Thu mornings as default, but a strong story can go out on Friday.
+- After it goes out: reply to every comment simply, and make sure the profile converts (headline, About, Featured), because the story sends people there.
 
 Pavel's own stories only as he tells them. Third-party numbers always with author and source.
 
