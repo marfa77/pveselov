@@ -87,7 +87,7 @@ Pavel's own stories only as he tells them. Third-party numbers always with autho
 ## Engagement
 
 - Reply to every comment on his posts within about two hours of seeing it. End with a question when it fits.
-- Comments on other people's posts: once a week Claude picks three to five posts by CIOs, recruiters and trading leaders and drafts real comments (a fact, a counterpoint or a question, never "Great post!"). Pavel posts them.
+- Comments on other people's posts: once a week Claude picks three to five posts by CIOs, CFOs, PE operating partners and trading leaders and drafts real comments (a fact, a counterpoint or a question, never "Great post!"). Pavel posts them.
 
 ## Never post
 
