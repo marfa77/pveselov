@@ -98,6 +98,14 @@ Pavel's own stories only as he tells them. Third-party numbers always with autho
 - LinkedIn article "The CIO's AI Playbook", pinned in Featured. Playbook posts link to it in the first comment.
 - Featured order: the playbook article, then the best Head of IT post.
 
+## Podcast on the playbook (planned)
+
+- A series on `pveselov.space/ai`, recorded in two languages in parallel.
+- English episodes go to LinkedIn (a 60–90 second clip as a native video post, full episode on `/ai` and YouTube).
+- Russian episodes go only to YouTube and Telegram, never to LinkedIn, so the LinkedIn audience stays one language.
+- On LinkedIn the episodes count towards the AI and playbook share: at most one AI item every two weeks, unless Pavel decides otherwise.
+- Same attribution rules as posts: every third-party figure is said with its author and source. Pavel's own stories only as he tells them.
+
 ## Engagement
 
 - Reply to every comment on his posts within about two hours of seeing it. End with a question when it fits.
