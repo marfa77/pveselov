@@ -4,7 +4,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://pveselov.space",
   name: "Pavel Veselov",
   description:
-    "Pavel Veselov — right hand to the CIO, fractional IT lead, and Head of IT in Dubai. Both sides of IT: operator inside the business and integrator (BearingPoint SAP). Trading, finance, CTRM, SAP.",
+    "Pavel Veselov — right hand to the CIO, fractional IT lead, and senior technology leader. Every side of IT: Head of IT inside the business, integrator (BearingPoint SAP), and a year hands-on with applied AI. Trading, finance, CTRM, SAP. UAE Golden Visa · Dubai / Porto.",
   keywords: [
     "Pavel Veselov",
     "right hand to CIO",
@@ -18,6 +18,8 @@ export const siteConfig = {
     "CTRM SAP Finance",
     "SAP S/4HANA transformation",
     "IT operating model",
+    "applied AI governance",
+    "AI adoption IT leader",
     "UAE Golden Visa IT leader",
   ],
   email: "pv.inform@gmail.com",

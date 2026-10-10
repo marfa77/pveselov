@@ -113,6 +113,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
             "CFO Systems",
             "Enterprise Reporting",
             "Vendor Management",
+            "Applied AI and AI Governance",
             "Technology Advisory",
             "PMP Project Management",
             "MBA Business Administration"
@@ -146,7 +147,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           name: "CIO Support, Fractional IT Lead & Advisory",
           url: siteConfig.url,
           description:
-            "Right-hand support to CIOs, fractional IT leadership, and independent second looks for CEOs/CFOs — from someone with both client-side Head of IT and integrator SAP experience.",
+            "Right-hand support to CIOs, fractional IT leadership, and independent second looks for CEOs/CFOs — from someone with client-side Head of IT, integrator SAP, and hands-on applied AI experience.",
           provider: { "@id": `${siteConfig.url}/#person` },
           areaServed: ["United Arab Emirates", "Gulf Region", "Worldwide"],
           serviceType: [

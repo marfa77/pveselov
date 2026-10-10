@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Pavel Veselov | Right hand to the CIO — both sides of IT",
+    title: "Pavel Veselov | Right hand to the CIO — consulting, Head of IT, applied AI",
     description: siteConfig.description,
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Pavel Veselov",
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pavel Veselov | Right hand to the CIO — both sides of IT",
+    title: "Pavel Veselov | Right hand to the CIO — consulting, Head of IT, applied AI",
     description: siteConfig.description,
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,

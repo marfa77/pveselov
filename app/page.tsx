@@ -8,20 +8,22 @@ import { siteConfig } from "@/lib/config";
 import { profile } from "@/lib/profile";
 
 export const metadata: Metadata = {
-  title: "Right Hand to the CIO | IT Leader Dubai — Both Sides",
+  title: "Right Hand to the CIO | Consulting + Head of IT + Applied AI",
   description: siteConfig.description,
   keywords: siteConfig.keywords,
   alternates: { canonical: siteConfig.url },
   openGraph: {
-    title: "Pavel Veselov | Right hand to the CIO — both sides of IT",
+    title: "Pavel Veselov | Right hand to the CIO — consulting, Head of IT, applied AI",
     description: siteConfig.description,
     url: siteConfig.url,
     type: "profile",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Pavel Veselov" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pavel Veselov | Right hand to the CIO — both sides of IT",
+    title: "Pavel Veselov | Right hand to the CIO — consulting, Head of IT, applied AI",
     description: siteConfig.description,
+    images: ["/og-image.png"],
   },
 };
 
@@ -104,11 +106,12 @@ export default function Home() {
                 <p>
                   Inside: Head of IT for a multi-country commodity trading
                   group. Outside: BearingPoint SAP S/4HANA programmes. Plus a
-                  $100M Norilsk Nickel portfolio.
+                  $100M Norilsk Nickel portfolio. And a year hands-on with
+                  applied AI.
                 </p>
                 <p>
                   Useful to a CIO who needs capacity without politics — or to a
-                  CEO/CFO who wants someone who has sat on both sides of the SI
+                  CEO/CFO who wants someone who has sat on every side of the
                   table.
                 </p>
               </div>
@@ -216,7 +219,8 @@ export default function Home() {
                     Selected experience
                   </p>
                   <h2 className="mt-3 text-3xl font-semibold tracking-tight text-gray-950 dark:text-white">
-                    Trading IT, SAP programmes, and delivery at scale.
+                    Trading IT, SAP programmes, delivery at scale — and applied
+                    AI.
                   </h2>
                 </div>
                 <div className="space-y-8">
@@ -265,13 +269,15 @@ export default function Home() {
                 Contact
               </p>
               <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight text-gray-950 dark:text-white">
-                CIO needs capacity — or the business needs someone who has
-                owned both sides of IT?
+                CIO needs capacity — or the business needs someone who has sat
+                on every side of IT?
               </h2>
               <p className="mt-4 max-w-3xl leading-7 text-gray-600 dark:text-gray-300">
                 Best fit: a CIO who wants a senior operator on programmes and
                 vendors, or a CEO/CFO who wants a second look without a
-                consulting theatre. Dubai resident. Available immediately.
+                consulting theatre. UAE Golden Visa holder, based between Dubai
+                and Porto — no sponsorship or relocation needed. Available
+                immediately.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <a

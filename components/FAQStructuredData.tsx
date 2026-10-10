@@ -15,10 +15,10 @@ export function FAQStructuredData() {
       },
       {
         "@type": "Question",
-        name: "What does both sides of IT mean?",
+        name: "What does every side of the IT table mean?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Pavel has been Head of IT inside a multi-country commodity trading group and has led SAP S/4HANA finance programmes from the integrator side at BearingPoint. He understands client ownership and SI delivery politics.",
+          text: "Pavel has been Head of IT inside a multi-country commodity trading group, has led SAP S/4HANA finance programmes from the integrator side at BearingPoint, and has spent the past year hands-on with applied AI. He understands client ownership, SI delivery politics, and what AI really does in operations.",
         },
       },
       {
@@ -34,7 +34,7 @@ export function FAQStructuredData() {
         name: "How can I contact Pavel Veselov?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: `Email ${siteConfig.email} or LinkedIn (${siteConfig.links.linkedin}). Dubai resident; available immediately.`,
+          text: `Email ${siteConfig.email} or LinkedIn (${siteConfig.links.linkedin}). UAE Golden Visa holder, based between Dubai and Porto; available immediately.`,
         },
       },
     ],

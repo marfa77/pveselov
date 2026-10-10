@@ -1,12 +1,12 @@
 export const profile = {
   brandLine: "Pavel Veselov",
-  locationLine: "Dubai · UAE Golden Visa · Available immediately",
+  locationLine: "UAE Golden Visa · Dubai / Porto · Available immediately",
   headline:
-    "I take a slice of the CIO’s work — with both sides of IT in my hands.",
+    "I take a slice of the CIO’s work — having sat on every side of the IT table.",
   summary:
-    "I know IT from the inside as Head of IT, and from the integrator side as a BearingPoint SAP programme lead. That means I can own delivery, vendors, and transformation without needing the CIO title — or give the CIO a second set of hands that already speaks business, finance systems, and SI politics.",
+    "I know IT from the inside as Head of IT, from the integrator side as a BearingPoint SAP programme lead, and — for the past year — from the builder’s side, hands-on with applied AI. That means I can own delivery, vendors, and transformation without needing the CIO title — or give the CIO a second set of hands that already speaks business, finance systems, SI politics, and what AI really does in operations.",
   availability:
-    "Open as right hand to a CIO, fractional / interim technology lead, independent second look for CEO/CFO, or selected Head of IT roles.",
+    "Open as right hand to a CIO, fractional / interim technology lead, independent second look for CEO/CFO, or senior technology leadership and transformation roles.",
   credentials: [
     "MBA, University of Cape Town GSB",
     "PMP",
@@ -30,7 +30,7 @@ export const profile = {
       title: "Second look at IT",
       subtitle: "Advisory for CEO / CFO / CIO",
       description:
-        "Independent view of roadmap, SI performance, commercial fitness of the stack, cyber and delivery risk — useful when the board wants challenge without replacing the CIO.",
+        "Independent view of roadmap, SI performance, commercial fitness of the stack, AI plans and vendor claims, cyber and delivery risk — useful when the board wants challenge without replacing the CIO.",
     },
     {
       title: "Fractional or full-time lead",
@@ -41,9 +41,9 @@ export const profile = {
   ],
   focusAreas: [
     {
-      title: "Both sides of the table",
+      title: "Every side of the table",
       description:
-        "Client-side Head of IT plus integrator programme leadership — I negotiate, govern, and deliver without the blind spots of either side alone.",
+        "Client-side Head of IT, integrator programme leadership, and a year hands-on with applied AI — I negotiate, govern, and deliver without the blind spots of any one side.",
     },
     {
       title: "Trading & finance systems",
@@ -58,10 +58,22 @@ export const profile = {
     {
       title: "IT operating model",
       description:
-        "Teams, vendors, infrastructure, cybersecurity posture, and continuity when the business cannot pause.",
+        "Teams, vendors, infrastructure, cybersecurity posture, AI adoption and governance, and continuity when the business cannot pause.",
     },
   ],
   experience: [
+    {
+      role: "Independent Applied AI & Product Development",
+      company: "Self-employed",
+      period: "2025–present",
+      description:
+        "Builder side: a year hands-on with generative AI in enterprise technology and digital products.",
+      outcomes: [
+        "Built and tested AI-assisted workflows, agent-based automation, and product prototypes.",
+        "Worked hands-on with model selection, integrations, evaluation, deployment, and human-in-the-loop controls.",
+        "Focused on how AI changes IT operating models, service delivery, and governance — security, reliability, cost, and business value.",
+      ],
+    },
     {
       role: "Head of Information Technology",
       company: "Ashon International DMCC",
