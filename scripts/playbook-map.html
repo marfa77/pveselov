@@ -1,0 +1,159 @@
+<!doctype html>
+<!--
+  Source of public/playbook-map.png. Step labels and links are hand-kept in sync with lib/playbook.ts.
+  Render: Chrome --headless=new --hide-scrollbars --force-device-scale-factor=2 --window-size=1000,<height>
+  --screenshot=public/playbook-map.png file://$PWD/scripts/playbook-map.html  (height = document.title)
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 1000px; background: #ffffff; font-family: -apple-system, "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif; color: #111827; }
+  .wrap { position: relative; padding: 28px 24px 22px; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; margin: 0 8px 22px; }
+  .head h1 { font-size: 22px; font-weight: 650; letter-spacing: -0.01em; }
+  .legend { display: flex; gap: 18px; font-size: 12px; color: #6b7280; align-items: center; }
+  .legend i { display: inline-block; width: 26px; height: 0; vertical-align: middle; margin-right: 6px; }
+  .legend .solid { border-top: 2.5px solid #9ca3af; }
+  .legend .dash { border-top: 2px dashed #d97706; }
+  .grid { display: grid; grid-template-columns: 48px 318px 1fr 318px 48px; padding-bottom: 46px; }
+  .col { display: flex; flex-direction: column; gap: 40px; }
+  .col.right { justify-content: flex-end; }
+  .phase { background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 14px; padding: 12px; }
+  .phase h2 { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin: 2px 4px; }
+  .phase h2 span { color: #9ca3af; margin-right: 6px; }
+  .phase p { font-size: 12px; color: #6b7280; margin: 0 4px 8px; }
+  .step { background: #fff; border: 1px solid #e5e7eb; border-radius: 9px; padding: 7px 10px; font-size: 13px; line-height: 1.3; margin-top: 6px; }
+  .step b { color: #9ca3af; font-weight: 600; margin-right: 6px; font-variant-numeric: tabular-nums; }
+  .step.linked { border-color: #f59e0b; background: #fffdf7; }
+  canvas { position: absolute; left: 0; top: 0; pointer-events: none; }
+  .labels { position: absolute; left: 0; top: 0; }
+  .lbl { position: absolute; transform: translate(-50%, -50%); background: #fffbeb; color: #b45309; border: 1px solid #fcd34d; font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 999px; white-space: nowrap; }
+  .lbl.v { transform: translate(-50%, -50%) rotate(-90deg); }
+  .foot { font-size: 11.5px; color: #9ca3af; display: flex; justify-content: space-between; margin: 0 8px; }
+</style>
+</head>
+<body>
+<div class="wrap" id="wrap">
+  <div class="head">
+    <h1>How the 23 steps connect</h1>
+    <div class="legend"><span><i class="solid"></i>phase order</span><span><i class="dash"></i>an earlier step feeds a later one</span></div>
+  </div>
+  <div class="grid">
+    <div></div>
+    <div class="col">
+      <div class="phase" id="p1"><h2><span>1</span>Diagnose</h2><p>First 30 days, before anything new</p>
+        <div class="step" id="s1-1"><b>1.1</b>Find all AI spend, incl. outside IT</div>
+        <div class="step" id="s1-2"><b>1.2</b>Map shadow AI</div>
+        <div class="step" id="s1-3"><b>1.3</b>Retention curve on top AI licenses</div>
+        <div class="step" id="s1-4"><b>1.4</b>Inventory pilots, stop most</div>
+      </div>
+      <div class="phase" id="p2"><h2><span>2</span>Choose where to play</h2><p>Few domains, cheap to verify</p>
+        <div class="step" id="s2-1"><b>2.1</b>3–5 domains, not a use-case list</div>
+        <div class="step" id="s2-2"><b>2.2</b>Verifiability test</div>
+        <div class="step" id="s2-3"><b>2.3</b>Can the organization absorb it?</div>
+        <div class="step" id="s2-4"><b>2.4</b>Buy, partner or build</div>
+      </div>
+      <div class="phase" id="p3"><h2><span>3</span>Redesign the work</h2><p>Whole workflows, not tasks</p>
+        <div class="step" id="s3-1"><b>3.1</b>Rebuild workflows end to end</div>
+        <div class="step" id="s3-2"><b>3.2</b>Capture judgment, not documentation</div>
+        <div class="step" id="s3-3"><b>3.3</b>Simplest architecture that works</div>
+        <div class="step" id="s3-4"><b>3.4</b>Invest in tools more than prompts</div>
+        <div class="step" id="s3-5"><b>3.5</b>Budget 10% models, 70% people</div>
+      </div>
+    </div>
+    <div></div>
+    <div class="col right">
+      <div class="phase" id="p6"><h2><span>6</span>Fund and scale</h2><p>Only what holds at production volume</p>
+        <div class="step" id="s6-1"><b>6.1</b>One multiyear program</div>
+        <div class="step" id="s6-2"><b>6.2</b>Scale gate: three questions</div>
+      </div>
+      <div class="phase" id="p5"><h2><span>5</span>Measure what the P&amp;L sees</h2><p>Outcomes, cost, retention</p>
+        <div class="step" id="s5-1"><b>5.1</b>Outcomes vs a non-AI baseline</div>
+        <div class="step" id="s5-2"><b>5.2</b>Fully loaded cost per transaction</div>
+        <div class="step" id="s5-3"><b>5.3</b>Track retention, don't mandate</div>
+        <div class="step" id="s5-4"><b>5.4</b>Token budget per workflow</div>
+      </div>
+      <div class="phase" id="p4"><h2><span>4</span>Govern agents</h2><p>Like a workforce</p>
+        <div class="step" id="s4-1"><b>4.1</b>Six controls before autonomy</div>
+        <div class="step" id="s4-2"><b>4.2</b>Human owner and lifecycle per agent</div>
+        <div class="step" id="s4-3"><b>4.3</b>Business, HR and IT decide together</div>
+        <div class="step" id="s4-4"><b>4.4</b>Real authority for whoever runs AI</div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+  <div class="foot"><span>Building AI in the Enterprise: A CIO's Playbook · v1.0</span><span>pveselov.space/ai</span></div>
+  <canvas id="cv"></canvas>
+  <div class="labels" id="labels"></div>
+</div>
+<script>
+const wrap = document.getElementById("wrap");
+const cv = document.getElementById("cv");
+const W = wrap.offsetWidth, H = wrap.offsetHeight;
+const dpr = window.devicePixelRatio || 1;
+cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + "px"; cv.style.height = H + "px";
+const ctx = cv.getContext("2d"); ctx.scale(dpr, dpr);
+const o = wrap.getBoundingClientRect();
+const box = (id) => { const r = document.getElementById(id).getBoundingClientRect(); return { l: r.left - o.left, r: r.right - o.left, t: r.top - o.top, b: r.bottom - o.top, cx: (r.left + r.right) / 2 - o.left, cy: (r.top + r.bottom) / 2 - o.top }; };
+const labels = document.getElementById("labels");
+function label(text, x, y, vertical) { const el = document.createElement("div"); el.className = "lbl" + (vertical ? " v" : ""); el.textContent = text; el.style.left = x + "px"; el.style.top = y + "px"; labels.appendChild(el); }
+function head(x, y, ang, color, size) { ctx.save(); ctx.fillStyle = color; ctx.translate(x, y); ctx.rotate(ang); ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(-size, -size * 0.55); ctx.lineTo(-size, size * 0.55); ctx.closePath(); ctx.fill(); ctx.restore(); }
+function mark(...ids) { ids.forEach((id) => document.getElementById(id).classList.add("linked")); }
+
+function poly(pts, color, width, dash, size) {
+  ctx.strokeStyle = color; ctx.lineWidth = width; ctx.setLineDash(dash);
+  const r = 12;
+  ctx.beginPath(); ctx.moveTo(...pts[0]);
+  for (let i = 1; i < pts.length - 1; i++) ctx.arcTo(pts[i][0], pts[i][1], pts[i + 1][0], pts[i + 1][1], r);
+  const [px, py] = pts[pts.length - 2], [ex, ey] = pts[pts.length - 1];
+  const ang = Math.atan2(ey - py, ex - px);
+  ctx.lineTo(ex - Math.cos(ang) * size * 0.8, ey - Math.sin(ang) * size * 0.8); ctx.stroke();
+  ctx.setLineDash([]); head(ex, ey, ang, color, size);
+}
+function curve(a, b, text, t = 0.5, dy = 0) {
+  const A = box(a), B = box(b);
+  const p0 = [A.r + 1, A.cy], p3 = [B.l - 1, B.cy], d = (p3[0] - p0[0]) * 0.5;
+  const c1 = [p0[0] + d, p0[1]], c2 = [p3[0] - d, p3[1]];
+  ctx.strokeStyle = "#d97706"; ctx.lineWidth = 1.8; ctx.setLineDash([6, 5]);
+  ctx.beginPath(); ctx.moveTo(...p0); ctx.bezierCurveTo(...c1, ...c2, p3[0] - 6, p3[1]); ctx.stroke(); ctx.setLineDash([]);
+  head(p3[0], p3[1], 0, "#d97706", 8);
+  const u = 1 - t, bx = (k) => u*u*u*p0[k] + 3*u*u*t*c1[k] + 3*u*t*t*c2[k] + t*t*t*p3[k];
+  if (text) label(text, bx(0), bx(1) + dy);
+  mark(a, b);
+}
+
+const grey = "#9ca3af";
+const P = (id) => box(id);
+const p1 = P("p1"), p2 = P("p2"), p3 = P("p3"), p4 = P("p4"), p5 = P("p5"), p6 = P("p6");
+poly([[p1.cx, p1.b + 4], [p1.cx, p2.t - 4]], grey, 2.5, [], 10);
+poly([[p2.cx, p2.b + 4], [p2.cx, p3.t - 4]], grey, 2.5, [], 10);
+const yb = Math.max(p3.b, p4.b) + 26;
+poly([[p3.cx, p3.b + 4], [p3.cx, yb], [p4.cx, yb], [p4.cx, p4.b + 4]], grey, 2.5, [], 10);
+poly([[p4.cx, p4.t - 4], [p4.cx, p5.b + 4]], grey, 2.5, [], 10);
+poly([[p5.cx, p5.t - 4], [p5.cx, p6.b + 4]], grey, 2.5, [], 10);
+
+curve("s1-4", "s6-1", "surviving pilots → one program", 0.5);
+curve("s1-3", "s5-3", "retention", 0.5);
+curve("s2-1", "s5-1", "baseline", 0.25);
+curve("s3-1", "s5-1", "baseline", 0.22);
+curve("s3-3", "s4-1", "autonomy only after controls", 0.5);
+
+const amber = "#d97706";
+const a13 = box("s1-3"), a24 = box("s2-4"), xl = a13.l - 26;
+poly([[a13.l - 1, a13.cy], [xl, a13.cy], [xl, a24.cy], [a24.l - 1, a24.cy]], amber, 1.8, [6, 5], 8);
+label("renewals", xl, (a13.cy + a24.cy) / 2, true);
+mark("s1-3", "s2-4");
+
+const a52 = box("s5-2"), a54 = box("s5-4"), a62 = box("s6-2");
+const xr1 = a62.r + 16, xr2 = a62.r + 32;
+poly([[a52.r + 1, a52.cy], [xr1, a52.cy], [xr1, a62.cy + 4], [a62.r + 1, a62.cy + 4]], amber, 1.8, [6, 5], 8);
+poly([[a54.r + 1, a54.cy], [xr2, a54.cy], [xr2, a62.cy - 4], [a62.r + 1, a62.cy - 4]], amber, 1.8, [6, 5], 8);
+label("cost vs manual", xr1, (a52.cy + a62.cy) / 2, true);
+label("cost at volume", xr2, (a54.cy + a52.cy) / 2 + 4, true);
+document.title = String(Math.ceil(document.querySelector(".foot").getBoundingClientRect().bottom + 20));
+mark("s5-2", "s5-4", "s6-2");
+</script>
+</body>
+</html>

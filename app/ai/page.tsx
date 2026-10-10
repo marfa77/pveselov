@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Mail } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
@@ -144,6 +145,25 @@ export default function PlaybookPage() {
               </a>
             ))}
           </nav>
+
+          <figure className="mt-10">
+            <a href="/playbook-map.png" className="block overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800">
+              <Image
+                src="/playbook-map.png"
+                width={2000}
+                height={1882}
+                alt="Map of the playbook: six phases in order, Diagnose, Choose, Redesign, Govern, Measure, Fund and scale, with dashed links where an earlier step feeds a later one."
+                className="h-auto w-full"
+                priority
+              />
+            </a>
+            <figcaption className="mt-3 text-sm leading-6 text-gray-500 dark:text-gray-400">
+              How the steps connect. The retention curve from 1.3 feeds the renewal check in 2.4 and is tracked
+              again in 5.3; the baseline set in 2.1 and 3.1 is what 5.1 measures against; pilots that survive 1.4
+              fold into one program in 6.1; an agent that 3.3 justifies gets autonomy only after the six controls
+              in 4.1; and cost per transaction (5.2) and token budgets (5.4) answer the scale gate in 6.2.
+            </figcaption>
+          </figure>
         </header>
 
         <div className="mx-auto max-w-4xl space-y-16 pb-16">
