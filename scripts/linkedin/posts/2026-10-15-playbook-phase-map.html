@@ -1,0 +1,68 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1080px;height:1350px;background:#fff;color:#111827;font-family:-apple-system,"SF Pro Display","Inter","Helvetica Neue",Arial,sans-serif;position:relative}
+.wrap{position:relative;width:1080px;height:1350px;padding:80px 80px 56px}
+.kicker{font-size:24px;letter-spacing:.16em;text-transform:uppercase;color:#6b7280;font-weight:600}
+h1{font-size:50px;line-height:1.1;font-weight:700;letter-spacing:-.02em;margin-top:18px}
+.col{margin-top:56px;width:560px;display:flex;flex-direction:column;gap:50px;position:relative;z-index:2}
+.ph{border:2px solid #e5e7eb;background:#f8fafc;border-radius:20px;padding:20px 26px;display:flex;gap:20px;align-items:center}
+.ph .n{flex:none;width:52px;height:52px;border-radius:50%;border:3px solid #f59e0b;color:#b45309;font-weight:700;font-size:24px;display:flex;align-items:center;justify-content:center;background:#fff}
+.ph b{display:block;font-size:30px}
+.ph span{display:block;font-size:22px;color:#6b7280;margin-top:3px}
+canvas{position:absolute;left:0;top:0;z-index:1}
+.labels{position:absolute;left:0;top:0;z-index:3}
+.lbl{position:absolute;transform:translate(-50%,-50%);background:#fffbeb;color:#b45309;border:2px solid #fcd34d;font-size:21px;font-weight:600;padding:4px 12px;border-radius:999px;white-space:nowrap}
+.lbl.v{transform:translate(-50%,-50%) rotate(-90deg)}
+.lbl.g{background:#fff;color:#4b5563;border-color:#d1d5db}
+.foot{position:absolute;left:80px;right:80px;bottom:44px;display:flex;justify-content:space-between;font-size:21px;color:#9ca3af}
+</style></head><body>
+<div class="wrap" id="wrap">
+  <div class="kicker">The CIO's AI Playbook</div>
+  <h1>Six phases, and what each one feeds.</h1>
+  <div class="col">
+    <div class="ph" id="p1"><div class="n">1</div><div><b>Diagnose</b><span>spend, shadow AI, pilots</span></div></div>
+    <div class="ph" id="p2"><div class="n">2</div><div><b>Choose</b><span>3–5 domains, cheap to verify</span></div></div>
+    <div class="ph" id="p3"><div class="n">3</div><div><b>Redesign</b><span>whole workflows, 70% people</span></div></div>
+    <div class="ph" id="p4"><div class="n">4</div><div><b>Govern</b><span>controls and owners for agents</span></div></div>
+    <div class="ph" id="p5"><div class="n">5</div><div><b>Measure</b><span>P&amp;L, cost, retention</span></div></div>
+    <div class="ph" id="p6"><div class="n">6</div><div><b>Fund and scale</b><span>one program, a scale gate</span></div></div>
+  </div>
+  <div class="foot"><span>Full map of 23 steps: pveselov.space/ai</span><span>Pavel Veselov</span></div>
+  <canvas id="cv"></canvas>
+  <div class="labels" id="labels"></div>
+</div>
+<script>
+const wrap=document.getElementById("wrap"),cv=document.getElementById("cv");
+const W=1080,H=1350,dpr=window.devicePixelRatio||1;
+cv.width=W*dpr;cv.height=H*dpr;cv.style.width=W+"px";cv.style.height=H+"px";
+const ctx=cv.getContext("2d");ctx.scale(dpr,dpr);
+const o=wrap.getBoundingClientRect();
+const box=id=>{const r=document.getElementById(id).getBoundingClientRect();return{l:r.left-o.left,r:r.right-o.left,t:r.top-o.top,b:r.bottom-o.top,cx:(r.left+r.right)/2-o.left,cy:(r.top+r.bottom)/2-o.top}};
+const labels=document.getElementById("labels");
+function label(t,x,y,cls){const e=document.createElement("div");e.className="lbl "+(cls||"");e.textContent=t;e.style.left=x+"px";e.style.top=y+"px";labels.appendChild(e)}
+function head(x,y,a,c,s){ctx.save();ctx.fillStyle=c;ctx.translate(x,y);ctx.rotate(a);ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(-s,-s*.55);ctx.lineTo(-s,s*.55);ctx.closePath();ctx.fill();ctx.restore()}
+function poly(pts,c,w,dash,s){ctx.strokeStyle=c;ctx.lineWidth=w;ctx.setLineDash(dash);ctx.beginPath();ctx.moveTo(...pts[0]);
+  for(let i=1;i<pts.length-1;i++)ctx.arcTo(pts[i][0],pts[i][1],pts[i+1][0],pts[i+1][1],18);
+  const[px,py]=pts[pts.length-2],[ex,ey]=pts[pts.length-1],a=Math.atan2(ey-py,ex-px);
+  ctx.lineTo(ex-Math.cos(a)*s*.8,ey-Math.sin(a)*s*.8);ctx.stroke();ctx.setLineDash([]);head(ex,ey,a,c,s)}
+const P={};for(let i=1;i<=6;i++)P[i]=box("p"+i);
+const ax=P[1].l+52;
+const adj={1:"renewals",3:"controls before autonomy",5:"cost per transaction"};
+for(let i=1;i<6;i++){
+  poly([[ax,P[i].b+3],[ax,P[i+1].t-3]],"#9ca3af",3,[],14);
+  if(adj[i])label(adj[i],ax+24,(P[i].b+P[i+1].t)/2,"g");
+  if(adj[i])labels.lastChild.style.transform="translate(0,-50%)";
+}
+const amber="#d97706";
+const links=[[3,5,"baseline",700],[2,5,"baseline",780],[1,5,"retention",860],[1,6,"surviving pilots",940]];
+const outY={1:[-14,14],2:[0],3:[0]};const used={1:0};
+for(const[a,b,t,x] of links){
+  const A=P[a],B=P[b];
+  let ya=A.cy; if(a===1){ya=A.cy+outY[1][used[1]++];}
+  const yb=B.cy+(a===3?-18:a===2?-6:a===1&&b===5?6:0);
+  poly([[A.r+2,ya],[x,ya],[x,yb],[B.r+3,yb]],amber,2.6,[10,8],14);
+  label(t,x,(ya+yb)/2+(b===6?60:0),"v");
+}
+</script>
+</body></html>
