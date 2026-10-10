@@ -33,6 +33,15 @@ Gulf and Europe, remote first. From 22.10.2026 the profile location is Porto. Th
 2. CIOs and IT directors who need a second pair of hands for the AI agenda or a big programme. They are both buyers and the network that carries posts.
 3. Interim management firms and consulting boutiques that staff senior people on projects. They decide in ten seconds from the headline, Featured and the last three posts.
 
+## Target company: Trafigura
+
+Pavel would like to work at Trafigura (a role or a project). The aim is to be known there as a friendly, competent voice on trading IT, never as someone asking for a job.
+
+- Quiet visibility first: comment on posts by Trafigura people (technology, digital, finance, trading operations) and on posts that discuss Trafigura's public moves. Same comment rules: short, friendly, joining in. At most one Trafigura-related comment every two weeks.
+- Tag Trafigura once, and only for a really strong reason: one of Pavel's own posts that is built around a public Trafigura fact (a deal, a report, an interview) and says something useful about it. Positive or neutral, no flattery, no "I'd love to work here", no request.
+- Never tag Trafigura in comments, never tag its people uninvited, never post anything that reads as a pitch to them.
+- Claude flags such an opportunity when it appears in the feed or news; Pavel decides.
+
 ## Positioning
 
 Three sides of the table: consulting (IBS, BearingPoint, SAP programmes), client-side Head of IT across six countries (Norilsk, Ashon), and a year hands-on with applied AI. Not "Head of AI", not "Founder", not only Head of IT.
