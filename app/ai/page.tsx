@@ -118,9 +118,18 @@ export default function PlaybookPage() {
             changelog say so.
           </p>
           <p className="mt-4 text-base leading-7 text-gray-500 dark:text-gray-400">
-            I wrote it the way I would run it as a CIO&apos;s right hand: after
-            years as Head of IT and as an SAP integrator, and a year hands-on
-            building with applied AI.
+            I am not writing this as an AI expert. The tools change every few
+            months, and I am learning them together with everyone else. What I
+            bring is 18 years of running IT, on the client side and in
+            consulting, and the last year building with AI myself, hands on.
+          </p>
+          <p className="mt-4 text-base leading-7 text-gray-500 dark:text-gray-400">
+            So the checklist is built on the questions that stay when models
+            change: why we use AI here, who owns it, how we check it works and
+            what it costs. It should still hold when the next model comes out,
+            and it works for any size of company. In a small company one person
+            answers all of it; in a large group each phase has its own owner.
+            If a step doesn&apos;t match what you see, tell me.
           </p>
           <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
             By{" "}
