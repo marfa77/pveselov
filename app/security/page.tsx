@@ -142,9 +142,17 @@ export default function SecurityPlaybookPage() {
             <time dateTime={securityPlaybookMeta.lastUpdated}>{securityPlaybookMeta.lastUpdatedLabel}</time>
           </p>
           <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
-            Also useful:{" "}
-            <Link href="/ai" className="font-medium text-gray-950 underline underline-offset-2 hover:no-underline dark:text-white">
-              AI playbook for CIOs
+            Prefer to listen?{" "}
+            <Link href="/podcast" className="font-medium text-gray-950 underline underline-offset-2 hover:no-underline dark:text-white">
+              Podcast season 2 — Securing the Enterprise
+            </Link>
+            {" · "}
+            <a href="/podcast/feed.xml" className="underline underline-offset-2 hover:no-underline">
+              RSS feed
+            </a>
+            {" · "}
+            <Link href="/ai" className="underline underline-offset-2 hover:no-underline">
+              AI playbook
             </Link>
           </p>
 

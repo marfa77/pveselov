@@ -18,6 +18,9 @@ export function LibraryFooter() {
           <Link href="/security" className="hover:text-gray-950 dark:hover:text-white">
             Security Playbook
           </Link>
+          <Link href="/podcast" className="hover:text-gray-950 dark:hover:text-white">
+            Podcast
+          </Link>
           <Link href="/ai/library" className="hover:text-gray-950 dark:hover:text-white">
             AI Library
           </Link>

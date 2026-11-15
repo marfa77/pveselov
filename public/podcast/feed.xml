@@ -3,15 +3,15 @@
   xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
   xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Building AI in the Enterprise</title>
-    <link>https://pveselov.space/ai/podcast</link>
+    <title>Enterprise IT Playbooks with Pavel Veselov</title>
+    <link>https://pveselov.space/podcast</link>
     <atom:link href="https://pveselov.space/podcast/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>A warm, practical guide for CIOs and IT directors on how to build AI in organisations. Ten episodes from diagnose to scale. Free checklist and sources: https://pveselov.space/ai. Show hub: https://pveselov.space/ai/podcast.</description>
+    <description>Warm, practical guides for CIOs and Heads of IT. Season 1: Building AI in the Enterprise — checklist at https://pveselov.space/ai. Season 2: Securing the Enterprise — checklist at https://pveselov.space/security. Show hub: https://pveselov.space/podcast.</description>
     <language>en</language>
     <copyright>Pavel Veselov</copyright>
     <managingEditor>pveselov@me.com (Pavel Veselov)</managingEditor>
     <itunes:author>Pavel Veselov</itunes:author>
-    <itunes:summary>A warm, practical guide for CIOs and IT directors on how to build AI in organisations. Ten episodes from diagnose to scale. Free checklist and sources: https://pveselov.space/ai. Show hub: https://pveselov.space/ai/podcast.</itunes:summary>
+    <itunes:summary>Warm, practical guides for CIOs and Heads of IT. Season 1: Building AI in the Enterprise — checklist at https://pveselov.space/ai. Season 2: Securing the Enterprise — checklist at https://pveselov.space/security. Show hub: https://pveselov.space/podcast.</itunes:summary>
     <itunes:owner>
       <itunes:name>Pavel Veselov</itunes:name>
       <itunes:email>pveselov@me.com</itunes:email>
@@ -22,147 +22,307 @@
     <itunes:type>serial</itunes:type>
     <image>
       <url>https://pveselov.space/og-image.png</url>
-      <title>Building AI in the Enterprise</title>
-      <link>https://pveselov.space/ai/podcast</link>
+      <title>Enterprise IT Playbooks with Pavel Veselov</title>
+      <link>https://pveselov.space/podcast</link>
     </image>
     <itunes:image href="https://pveselov.space/og-image.png"/>
     <item>
-      <title>01. You're the one they asked</title>
-      <link>https://pveselov.space/ai/podcast#ep01-youre-the-one-they-asked</link>
-      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:1</guid>
+      <title>S1E01. You're the one they asked</title>
+      <link>https://pveselov.space/podcast#ep01-youre-the-one-they-asked</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:1</guid>
       <pubDate>Sun, 15 Nov 2026 10:00:00 +0000</pubDate>
-      <description>Someone asked you to do something with AI. Here is the real job for an IT director. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <description>Someone asked you to do something with AI. Here is the real job for an IT director. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
       <enclosure url="https://pveselov.space/podcast/audio/ep01-youre-the-one-they-asked.mp3" length="1966460" type="audio/mpeg"/>
       <itunes:title>You're the one they asked</itunes:title>
-      <itunes:summary>Someone asked you to do something with AI. Here is the real job for an IT director. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:summary>Someone asked you to do something with AI. Here is the real job for an IT director. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
       <itunes:author>Pavel Veselov</itunes:author>
       <itunes:duration>290</itunes:duration>
+      <itunes:season>1</itunes:season>
       <itunes:episode>1</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>02. Look before you buy</title>
-      <link>https://pveselov.space/ai/podcast#ep02-look-before-you-buy</link>
-      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:2</guid>
+      <title>S1E02. Look before you buy</title>
+      <link>https://pveselov.space/podcast#ep02-look-before-you-buy</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:2</guid>
       <pubDate>Tue, 17 Nov 2026 10:00:00 +0000</pubDate>
-      <description>Find spend, shadow AI, dead licences, and pilots that should stop. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <description>Find spend, shadow AI, dead licences, and pilots that should stop. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
       <enclosure url="https://pveselov.space/podcast/audio/ep02-look-before-you-buy.mp3" length="1729844" type="audio/mpeg"/>
       <itunes:title>Look before you buy</itunes:title>
-      <itunes:summary>Find spend, shadow AI, dead licences, and pilots that should stop. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:summary>Find spend, shadow AI, dead licences, and pilots that should stop. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
       <itunes:author>Pavel Veselov</itunes:author>
       <itunes:duration>257</itunes:duration>
+      <itunes:season>1</itunes:season>
       <itunes:episode>2</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>03. Pick a few fights</title>
-      <link>https://pveselov.space/ai/podcast#ep03-pick-a-few-fights</link>
-      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:3</guid>
+      <title>S1E03. Pick a few fights</title>
+      <link>https://pveselov.space/podcast#ep03-pick-a-few-fights</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:3</guid>
       <pubDate>Thu, 19 Nov 2026 10:00:00 +0000</pubDate>
-      <description>Choose three to five domains where AI can be checked and absorbed. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <description>Choose three to five domains where AI can be checked and absorbed. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
       <enclosure url="https://pveselov.space/podcast/audio/ep03-pick-a-few-fights.mp3" length="1714196" type="audio/mpeg"/>
       <itunes:title>Pick a few fights</itunes:title>
-      <itunes:summary>Choose three to five domains where AI can be checked and absorbed. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:summary>Choose three to five domains where AI can be checked and absorbed. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
       <itunes:author>Pavel Veselov</itunes:author>
       <itunes:duration>256</itunes:duration>
+      <itunes:season>1</itunes:season>
       <itunes:episode>3</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>04. Change the work, not the slide</title>
-      <link>https://pveselov.space/ai/podcast#ep04-change-the-work-not-the-slide</link>
-      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:4</guid>
+      <title>S1E04. Change the work, not the slide</title>
+      <link>https://pveselov.space/podcast#ep04-change-the-work-not-the-slide</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:4</guid>
       <pubDate>Sat, 21 Nov 2026 10:00:00 +0000</pubDate>
-      <description>Rebuild workflows with the people who do them. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <description>Rebuild workflows with the people who do them. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
       <enclosure url="https://pveselov.space/podcast/audio/ep04-change-the-work-not-the-slide.mp3" length="1632500" type="audio/mpeg"/>
       <itunes:title>Change the work, not the slide</itunes:title>
-      <itunes:summary>Rebuild workflows with the people who do them. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:summary>Rebuild workflows with the people who do them. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
       <itunes:author>Pavel Veselov</itunes:author>
       <itunes:duration>242</itunes:duration>
+      <itunes:season>1</itunes:season>
       <itunes:episode>4</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>05. Treat agents like people you hired</title>
-      <link>https://pveselov.space/ai/podcast#ep05-treat-agents-like-people-you-hired</link>
-      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:5</guid>
+      <title>S1E05. Treat agents like people you hired</title>
+      <link>https://pveselov.space/podcast#ep05-treat-agents-like-people-you-hired</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:5</guid>
       <pubDate>Tue, 24 Nov 2026 10:00:00 +0000</pubDate>
-      <description>Six controls and a human owner before autonomy. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <description>Six controls and a human owner before autonomy. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
       <enclosure url="https://pveselov.space/podcast/audio/ep05-treat-agents-like-people-you-hired.mp3" length="1418684" type="audio/mpeg"/>
       <itunes:title>Treat agents like people you hired</itunes:title>
-      <itunes:summary>Six controls and a human owner before autonomy. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:summary>Six controls and a human owner before autonomy. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
       <itunes:author>Pavel Veselov</itunes:author>
       <itunes:duration>208</itunes:duration>
+      <itunes:season>1</itunes:season>
       <itunes:episode>5</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>06. Talk to finance in their language</title>
-      <link>https://pveselov.space/ai/podcast#ep06-talk-to-finance-in-their-language</link>
-      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:6</guid>
+      <title>S1E06. Talk to finance in their language</title>
+      <link>https://pveselov.space/podcast#ep06-talk-to-finance-in-their-language</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:6</guid>
       <pubDate>Thu, 26 Nov 2026 10:00:00 +0000</pubDate>
-      <description>Outcomes, cost per transaction, retention, tokens. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <description>Outcomes, cost per transaction, retention, tokens. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
       <enclosure url="https://pveselov.space/podcast/audio/ep06-talk-to-finance-in-their-language.mp3" length="1476740" type="audio/mpeg"/>
       <itunes:title>Talk to finance in their language</itunes:title>
-      <itunes:summary>Outcomes, cost per transaction, retention, tokens. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:summary>Outcomes, cost per transaction, retention, tokens. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
       <itunes:author>Pavel Veselov</itunes:author>
       <itunes:duration>219</itunes:duration>
+      <itunes:season>1</itunes:season>
       <itunes:episode>6</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>07. Scale only what survives</title>
-      <link>https://pveselov.space/ai/podcast#ep07-scale-only-what-survives</link>
-      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:7</guid>
+      <title>S1E07. Scale only what survives</title>
+      <link>https://pveselov.space/podcast#ep07-scale-only-what-survives</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:7</guid>
       <pubDate>Sat, 28 Nov 2026 10:00:00 +0000</pubDate>
-      <description>One program and a hard scale gate. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <description>One program and a hard scale gate. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
       <enclosure url="https://pveselov.space/podcast/audio/ep07-scale-only-what-survives.mp3" length="1103972" type="audio/mpeg"/>
       <itunes:title>Scale only what survives</itunes:title>
-      <itunes:summary>One program and a hard scale gate. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:summary>One program and a hard scale gate. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
       <itunes:author>Pavel Veselov</itunes:author>
       <itunes:duration>163</itunes:duration>
+      <itunes:season>1</itunes:season>
       <itunes:episode>7</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>08. When the experts disagree</title>
-      <link>https://pveselov.space/ai/podcast#ep08-when-the-experts-disagree</link>
-      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:8</guid>
+      <title>S1E08. When the experts disagree</title>
+      <link>https://pveselov.space/podcast#ep08-when-the-experts-disagree</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:8</guid>
       <pubDate>Tue, 01 Dec 2026 10:00:00 +0000</pubDate>
-      <description>Clear CIO positions when good research pulls both ways. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <description>Clear CIO positions when good research pulls both ways. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
       <enclosure url="https://pveselov.space/podcast/audio/ep08-when-the-experts-disagree.mp3" length="1478780" type="audio/mpeg"/>
       <itunes:title>When the experts disagree</itunes:title>
-      <itunes:summary>Clear CIO positions when good research pulls both ways. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:summary>Clear CIO positions when good research pulls both ways. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
       <itunes:author>Pavel Veselov</itunes:author>
       <itunes:duration>217</itunes:duration>
+      <itunes:season>1</itunes:season>
       <itunes:episode>8</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>09. Your first ninety days</title>
-      <link>https://pveselov.space/ai/podcast#ep09-your-first-ninety-days</link>
-      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:9</guid>
+      <title>S1E09. Your first ninety days</title>
+      <link>https://pveselov.space/podcast#ep09-your-first-ninety-days</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:9</guid>
       <pubDate>Thu, 03 Dec 2026 10:00:00 +0000</pubDate>
-      <description>A calendar from week one to month three. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <description>A calendar from week one to month three. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
       <enclosure url="https://pveselov.space/podcast/audio/ep09-your-first-ninety-days.mp3" length="1210652" type="audio/mpeg"/>
       <itunes:title>Your first ninety days</itunes:title>
-      <itunes:summary>A calendar from week one to month three. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:summary>A calendar from week one to month three. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
       <itunes:author>Pavel Veselov</itunes:author>
       <itunes:duration>180</itunes:duration>
+      <itunes:season>1</itunes:season>
       <itunes:episode>9</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>10. One company, start to finish</title>
-      <link>https://pveselov.space/ai/podcast#ep10-one-company-start-to-finish</link>
-      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:10</guid>
+      <title>S1E10. One company, start to finish</title>
+      <link>https://pveselov.space/podcast#ep10-one-company-start-to-finish</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:10</guid>
       <pubDate>Sat, 05 Dec 2026 10:00:00 +0000</pubDate>
-      <description>Walk one realistic firm through the whole guide. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <description>Walk one realistic firm through the AI guide. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
       <enclosure url="https://pveselov.space/podcast/audio/ep10-one-company-start-to-finish.mp3" length="1636484" type="audio/mpeg"/>
       <itunes:title>One company, start to finish</itunes:title>
-      <itunes:summary>Walk one realistic firm through the whole guide. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:summary>Walk one realistic firm through the AI guide. Season 1 (AI). Full written checklist: https://pveselov.space/ai. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
       <itunes:author>Pavel Veselov</itunes:author>
       <itunes:duration>243</itunes:duration>
+      <itunes:season>1</itunes:season>
+      <itunes:episode>10</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>S2E01. You own security now</title>
+      <link>https://pveselov.space/podcast#sec01-you-own-security-now</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:11</guid>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0000</pubDate>
+      <description>No separate CISO — here is the real security job for a Head of IT. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/sec01-you-own-security-now.mp3" length="1379444" type="audio/mpeg"/>
+      <itunes:title>You own security now</itunes:title>
+      <itunes:summary>No separate CISO — here is the real security job for a Head of IT. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>202</itunes:duration>
+      <itunes:season>2</itunes:season>
+      <itunes:episode>1</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>S2E02. Know what you own</title>
+      <link>https://pveselov.space/podcast#sec02-know-what-you-own</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:12</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 +0000</pubDate>
+      <description>Inventory, crown jewels, shadow IT, and a baseline you can show upstairs. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/sec02-know-what-you-own.mp3" length="1528412" type="audio/mpeg"/>
+      <itunes:title>Know what you own</itunes:title>
+      <itunes:summary>Inventory, crown jewels, shadow IT, and a baseline you can show upstairs. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>228</itunes:duration>
+      <itunes:season>2</itunes:season>
+      <itunes:episode>2</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>S2E03. Identity is the perimeter</title>
+      <link>https://pveselov.space/podcast#sec03-identity-is-the-perimeter</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:13</guid>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 +0000</pubDate>
+      <description>MFA, privilege, joiners and leavers, and keys that are not people. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/sec03-identity-is-the-perimeter.mp3" length="1596284" type="audio/mpeg"/>
+      <itunes:title>Identity is the perimeter</itunes:title>
+      <itunes:summary>MFA, privilege, joiners and leavers, and keys that are not people. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>232</itunes:duration>
+      <itunes:season>2</itunes:season>
+      <itunes:episode>3</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>S2E04. Harden what users touch</title>
+      <link>https://pveselov.space/podcast#sec04-harden-what-users-touch</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:14</guid>
+      <pubDate>Wed, 18 Nov 2026 12:00:00 +0000</pubDate>
+      <description>Endpoints, DMARC, phishing paths, and BEC with finance. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/sec04-harden-what-users-touch.mp3" length="1452956" type="audio/mpeg"/>
+      <itunes:title>Harden what users touch</itunes:title>
+      <itunes:summary>Endpoints, DMARC, phishing paths, and BEC with finance. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>213</itunes:duration>
+      <itunes:season>2</itunes:season>
+      <itunes:episode>4</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>S2E05. Harden what attackers love</title>
+      <link>https://pveselov.space/podcast#sec05-harden-what-attackers-love</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:15</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 +0000</pubDate>
+      <description>Patch SLAs, ransomware-ready backups, segmentation, remote access. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/sec05-harden-what-attackers-love.mp3" length="1551956" type="audio/mpeg"/>
+      <itunes:title>Harden what attackers love</itunes:title>
+      <itunes:summary>Patch SLAs, ransomware-ready backups, segmentation, remote access. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>226</itunes:duration>
+      <itunes:season>2</itunes:season>
+      <itunes:episode>5</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>S2E06. Cloud, SaaS, and the supply chain</title>
+      <link>https://pveselov.space/podcast#sec06-cloud-saas-supply-chain</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:16</guid>
+      <pubDate>Fri, 20 Nov 2026 12:00:00 +0000</pubDate>
+      <description>Misconfigs, OAuth, vendors, and domains as attack surface. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/sec06-cloud-saas-supply-chain.mp3" length="1344260" type="audio/mpeg"/>
+      <itunes:title>Cloud, SaaS, and the supply chain</itunes:title>
+      <itunes:summary>Misconfigs, OAuth, vendors, and domains as attack surface. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>197</itunes:duration>
+      <itunes:season>2</itunes:season>
+      <itunes:episode>6</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>S2E07. Detect without theatre</title>
+      <link>https://pveselov.space/podcast#sec07-detect-without-theatre</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:17</guid>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 +0000</pubDate>
+      <description>Logs, alerts someone sees, ATT&amp;CK on purpose, light hunting. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/sec07-detect-without-theatre.mp3" length="1327940" type="audio/mpeg"/>
+      <itunes:title>Detect without theatre</itunes:title>
+      <itunes:summary>Logs, alerts someone sees, ATT&amp;CK on purpose, light hunting. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>197</itunes:duration>
+      <itunes:season>2</itunes:season>
+      <itunes:episode>7</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>S2E08. Respond and recover</title>
+      <link>https://pveselov.space/podcast#sec08-respond-and-recover</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:18</guid>
+      <pubDate>Sun, 22 Nov 2026 12:00:00 +0000</pubDate>
+      <description>IR plan, ransomware runbook, tabletop, restore with a stopwatch. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/sec08-respond-and-recover.mp3" length="1345100" type="audio/mpeg"/>
+      <itunes:title>Respond and recover</itunes:title>
+      <itunes:summary>IR plan, ransomware runbook, tabletop, restore with a stopwatch. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>198</itunes:duration>
+      <itunes:season>2</itunes:season>
+      <itunes:episode>8</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>S2E09. Prove it — and your first ninety days</title>
+      <link>https://pveselov.space/podcast#sec09-prove-it-ninety-days</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:19</guid>
+      <pubDate>Mon, 23 Nov 2026 12:00:00 +0000</pubDate>
+      <description>Board metrics, control tests, and a ninety-day rhythm. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/sec09-prove-it-ninety-days.mp3" length="1484180" type="audio/mpeg"/>
+      <itunes:title>Prove it — and your first ninety days</itunes:title>
+      <itunes:summary>Board metrics, control tests, and a ninety-day rhythm. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>221</itunes:duration>
+      <itunes:season>2</itunes:season>
+      <itunes:episode>9</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>S2E10. One company under fire</title>
+      <link>https://pveselov.space/podcast#sec10-one-company-under-fire</link>
+      <guid isPermaLink="false">urn:pveselov:playbooks:ep:20</guid>
+      <pubDate>Tue, 24 Nov 2026 12:00:00 +0000</pubDate>
+      <description>Walk one realistic firm through the whole security guide. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/sec10-one-company-under-fire.mp3" length="1727636" type="audio/mpeg"/>
+      <itunes:title>One company under fire</itunes:title>
+      <itunes:summary>Walk one realistic firm through the whole security guide. Season 2 (Security). Full written checklist: https://pveselov.space/security. Show hub: https://pveselov.space/podcast. Come build with the playbooks at https://pveselov.space/ai and https://pveselov.space/security.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>253</itunes:duration>
+      <itunes:season>2</itunes:season>
       <itunes:episode>10</itunes:episode>
       <itunes:explicit>false</itunes:explicit>
     </item>

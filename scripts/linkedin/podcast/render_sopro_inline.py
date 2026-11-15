@@ -19,7 +19,7 @@ VENV_PY = CIPLE / "scripts/podcast/.venv-sopro/bin/python"
 REF_WAV = CIPLE / "scripts/podcast/voices/sopro/en-man.wav"
 MAX_CHARS = 420
 
-EPISODES = [
+AI_EPISODES = [
     (1, "ep01-youre-the-one-they-asked.md", "ep01-youre-the-one-they-asked"),
     (2, "ep02-look-before-you-buy.md", "ep02-look-before-you-buy"),
     (3, "ep03-pick-a-few-fights.md", "ep03-pick-a-few-fights"),
@@ -30,6 +30,19 @@ EPISODES = [
     (8, "ep08-when-the-experts-disagree.md", "ep08-when-the-experts-disagree"),
     (9, "ep09-your-first-ninety-days.md", "ep09-your-first-ninety-days"),
     (10, "ep10-one-company-start-to-finish.md", "ep10-one-company-start-to-finish"),
+]
+
+SEC_EPISODES = [
+    (1, "sec01-you-own-security-now.md", "sec01-you-own-security-now"),
+    (2, "sec02-know-what-you-own.md", "sec02-know-what-you-own"),
+    (3, "sec03-identity-is-the-perimeter.md", "sec03-identity-is-the-perimeter"),
+    (4, "sec04-harden-what-users-touch.md", "sec04-harden-what-users-touch"),
+    (5, "sec05-harden-what-attackers-love.md", "sec05-harden-what-attackers-love"),
+    (6, "sec06-cloud-saas-supply-chain.md", "sec06-cloud-saas-supply-chain"),
+    (7, "sec07-detect-without-theatre.md", "sec07-detect-without-theatre"),
+    (8, "sec08-respond-and-recover.md", "sec08-respond-and-recover"),
+    (9, "sec09-prove-it-ninety-days.md", "sec09-prove-it-ninety-days"),
+    (10, "sec10-one-company-under-fire.md", "sec10-one-company-under-fire"),
 ]
 
 
@@ -153,17 +166,30 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--ep", type=int)
     ap.add_argument("--all", action="store_true")
+    ap.add_argument("--season", choices=["ai", "security", "all"], default="all")
     ap.add_argument("--force", action="store_true")
     args = ap.parse_args()
     if not VENV_PY.exists():
         raise SystemExit(f"missing {VENV_PY}")
-    selected = EPISODES if args.all else [e for e in EPISODES if e[0] == args.ep]
-    if not selected:
+    pool = []
+    if args.season in ("ai", "all"):
+        pool.extend(("ai", e) for e in AI_EPISODES)
+    if args.season in ("security", "all"):
+        pool.extend(("sec", e) for e in SEC_EPISODES)
+    if args.all:
+        selected = pool
+    elif args.ep:
+        selected = [p for p in pool if p[1][0] == args.ep]
+        if args.season == "all" and len(selected) > 1:
+            raise SystemExit("Pass --season ai|security with --ep")
+    else:
         raise SystemExit("Pass --ep N or --all")
-    for num, md_name, stem in selected:
+    if not selected:
+        raise SystemExit("No episodes matched")
+    for label, (num, md_name, stem) in selected:
         t0 = time.time()
         render_one(num, md_name, stem, args.force)
-        print(f"[ep{num:02d}] wall {time.time() - t0:.0f}s")
+        print(f"[{label}{num:02d}] wall {time.time() - t0:.0f}s")
 
 
 if __name__ == "__main__":

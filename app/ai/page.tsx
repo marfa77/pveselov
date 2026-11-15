@@ -144,8 +144,8 @@ export default function PlaybookPage() {
           </p>
           <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
             Prefer to listen?{" "}
-            <Link href="/ai/podcast" className="font-medium text-gray-950 underline underline-offset-2 hover:no-underline dark:text-white">
-              Podcast: Building AI in the Enterprise
+            <Link href="/podcast" className="font-medium text-gray-950 underline underline-offset-2 hover:no-underline dark:text-white">
+              Podcast (AI + Security seasons)
             </Link>
             {" · "}
             <a href="/podcast/feed.xml" className="underline underline-offset-2 hover:no-underline">
