@@ -305,6 +305,39 @@ export default function Home() {
         </section>
 
         <section
+          id="security-playbook"
+          className="border-t border-gray-200 dark:border-gray-800"
+        >
+          <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
+            <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-end">
+              <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500 dark:text-gray-400">
+                Security playbook
+              </p>
+              <div>
+                <h2 className="text-3xl font-semibold tracking-tight text-gray-950 dark:text-white">
+                  How I would secure the estate as Head of IT.
+                </h2>
+                <p className="mt-4 max-w-3xl leading-7 text-gray-600 dark:text-gray-300">
+                  A deep checklist for Heads of IT without a separate CISO:
+                  govern, identity, endpoints, email and BEC, ransomware-ready
+                  backups, cloud and supply chain, detection, response, and board
+                  proof. Built on NIST, CIS, MITRE ATT&amp;CK and CISA.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-6">
+                  <Link
+                    href="/security"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-gray-950 hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
+                  >
+                    Open the security playbook
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
           id="contact"
           className="border-t border-gray-200 dark:border-gray-800"
         >

@@ -1,11 +1,19 @@
 import { siteConfig } from "@/lib/config";
 import { libraryEntries, libraryMeta, readingPath } from "@/lib/library";
 import { playbookMeta, playbookPhases } from "@/lib/playbook";
+import {
+  getAllSecuritySteps,
+  securityPlaybookMeta,
+  securityPlaybookPhases,
+} from "@/lib/security-playbook";
+import { securitySources } from "@/lib/security-sources";
 
 export const dynamic = "force-static";
 
 export function GET() {
   const playbookUrl = `${siteConfig.url}${playbookMeta.path}`;
+  const securityUrl = `${siteConfig.url}${securityPlaybookMeta.path}`;
+  const securityStepCount = getAllSecuritySteps().length;
   const lines = [
     "# Pavel Veselov",
     "",
@@ -19,6 +27,14 @@ export function GET() {
     "",
     `- [${playbookMeta.shortTitle}](${playbookUrl}): living checklist for CIOs building AI in the enterprise, version ${playbookMeta.version}, updated ${playbookMeta.lastUpdatedLabel}. Every step cites its research.`,
     ...playbookPhases.map(
+      (phase, index) =>
+        `- Phase ${index + 1}, ${phase.title}: ${phase.steps.map((step) => `${step.id} ${step.title}`).join("; ")}.`,
+    ),
+    "",
+    `## ${securityPlaybookMeta.title}`,
+    "",
+    `- [${securityPlaybookMeta.shortTitle}](${securityUrl}): ${securityStepCount}-step checklist for Heads of IT without a separate CISO, version ${securityPlaybookMeta.version}, updated ${securityPlaybookMeta.lastUpdatedLabel}. Built on ${securitySources.length} public frameworks (NIST, CIS, MITRE ATT&CK, CISA, and others).`,
+    ...securityPlaybookPhases.map(
       (phase, index) =>
         `- Phase ${index + 1}, ${phase.title}: ${phase.steps.map((step) => `${step.id} ${step.title}`).join("; ")}.`,
     ),

@@ -3,6 +3,7 @@ import { siteConfig } from "@/lib/config";
 import { libraryEntries, libraryMeta } from "@/lib/library";
 import { podcastMeta } from "@/lib/podcast";
 import { playbookMeta } from "@/lib/playbook";
+import { securityPlaybookMeta } from "@/lib/security-playbook";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const libraryReviewed = new Date(libraryMeta.lastReviewed);
@@ -24,6 +25,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date("2026-11-15"),
       changeFrequency: "weekly",
       priority: 0.85,
+    },
+    {
+      url: `${siteConfig.url}${securityPlaybookMeta.path}`,
+      lastModified: new Date(securityPlaybookMeta.lastUpdated),
+      changeFrequency: "weekly",
+      priority: 0.9,
     },
     {
       url: `${siteConfig.url}${libraryMeta.path}`,
