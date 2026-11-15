@@ -109,12 +109,12 @@ def main() -> None:
     <description>{escape(channel_desc)}</description>
     <language>en</language>
     <copyright>Pavel Veselov</copyright>
-    <managingEditor>pv.inform@gmail.com (Pavel Veselov)</managingEditor>
+    <managingEditor>pveselov@me.com (Pavel Veselov)</managingEditor>
     <itunes:author>Pavel Veselov</itunes:author>
     <itunes:summary>{escape(channel_desc)}</itunes:summary>
     <itunes:owner>
       <itunes:name>Pavel Veselov</itunes:name>
-      <itunes:email>pv.inform@gmail.com</itunes:email>
+      <itunes:email>pveselov@me.com</itunes:email>
     </itunes:owner>
     <itunes:category text="Technology"/>
     <itunes:category text="Business"/>

@@ -22,7 +22,7 @@ export const siteConfig = {
     "AI adoption IT leader",
     "UAE Golden Visa IT leader",
   ],
-  email: "pv.inform@gmail.com",
+  email: "pveselov@me.com",
   links: {
     linkedin: "https://www.linkedin.com/in/pveselov/",
     reddit: "https://www.reddit.com/user/ExcellentBrief1537/",

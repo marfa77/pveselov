@@ -3,7 +3,7 @@
 export const podcastMeta = {
   title: "Building AI in the Enterprise",
   author: "Pavel Veselov",
-  email: "pv.inform@gmail.com",
+  email: "pveselov@me.com",
   description:
     "A warm, practical guide for CIOs and IT directors on how to build AI inside organisations — diagnose, choose, redesign, govern, measure and scale. Based on the free checklist at pveselov.space/ai.",
   path: "/ai/podcast",
