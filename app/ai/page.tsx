@@ -142,6 +142,16 @@ export default function PlaybookPage() {
             </Link>{" "}
             · Updated <time dateTime={playbookMeta.lastUpdated}>{playbookMeta.lastUpdatedLabel}</time>
           </p>
+          <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
+            Prefer to listen?{" "}
+            <Link href="/ai/podcast" className="font-medium text-gray-950 underline underline-offset-2 hover:no-underline dark:text-white">
+              Podcast: Building AI in the Enterprise
+            </Link>
+            {" · "}
+            <a href="/podcast/feed.xml" className="underline underline-offset-2 hover:no-underline">
+              RSS feed
+            </a>
+          </p>
 
           <nav aria-label="Phases" className="mt-8 grid gap-2 sm:grid-cols-2">
             {playbookPhases.map((phase, index) => (

@@ -6,6 +6,7 @@ const links = [
   { href: "/#how-i-engage", label: "Engage" },
   { href: "/#experience", label: "Experience" },
   { href: "/ai", label: "AI playbook" },
+  { href: "/ai/podcast", label: "Podcast" },
   { href: "/#contact", label: "Contact" },
 ];
 

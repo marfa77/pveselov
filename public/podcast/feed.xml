@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Building AI in the Enterprise</title>
+    <link>https://pveselov.space/ai/podcast</link>
+    <atom:link href="https://pveselov.space/podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>A warm, practical guide for CIOs and IT directors on how to build AI in organisations. Ten episodes from diagnose to scale. Free checklist and sources: https://pveselov.space/ai. Show hub: https://pveselov.space/ai/podcast.</description>
+    <language>en</language>
+    <copyright>Pavel Veselov</copyright>
+    <managingEditor>pv.inform@gmail.com (Pavel Veselov)</managingEditor>
+    <itunes:author>Pavel Veselov</itunes:author>
+    <itunes:summary>A warm, practical guide for CIOs and IT directors on how to build AI in organisations. Ten episodes from diagnose to scale. Free checklist and sources: https://pveselov.space/ai. Show hub: https://pveselov.space/ai/podcast.</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Pavel Veselov</itunes:name>
+      <itunes:email>pv.inform@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:category text="Technology"/>
+    <itunes:category text="Business"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>serial</itunes:type>
+    <image>
+      <url>https://pveselov.space/og-image.png</url>
+      <title>Building AI in the Enterprise</title>
+      <link>https://pveselov.space/ai/podcast</link>
+    </image>
+    <itunes:image href="https://pveselov.space/og-image.png"/>
+    <item>
+      <title>01. You're the one they asked</title>
+      <link>https://pveselov.space/ai/podcast#ep01-youre-the-one-they-asked</link>
+      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:1</guid>
+      <pubDate>Sun, 15 Nov 2026 10:00:00 +0000</pubDate>
+      <description>Someone asked you to do something with AI. Here is the real job for an IT director. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/ep01-youre-the-one-they-asked.mp3" length="1966460" type="audio/mpeg"/>
+      <itunes:title>You're the one they asked</itunes:title>
+      <itunes:summary>Someone asked you to do something with AI. Here is the real job for an IT director. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>290</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>02. Look before you buy</title>
+      <link>https://pveselov.space/ai/podcast#ep02-look-before-you-buy</link>
+      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:2</guid>
+      <pubDate>Tue, 17 Nov 2026 10:00:00 +0000</pubDate>
+      <description>Find spend, shadow AI, dead licences, and pilots that should stop. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/ep02-look-before-you-buy.mp3" length="1729844" type="audio/mpeg"/>
+      <itunes:title>Look before you buy</itunes:title>
+      <itunes:summary>Find spend, shadow AI, dead licences, and pilots that should stop. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>257</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>03. Pick a few fights</title>
+      <link>https://pveselov.space/ai/podcast#ep03-pick-a-few-fights</link>
+      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:3</guid>
+      <pubDate>Thu, 19 Nov 2026 10:00:00 +0000</pubDate>
+      <description>Choose three to five domains where AI can be checked and absorbed. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/ep03-pick-a-few-fights.mp3" length="1714196" type="audio/mpeg"/>
+      <itunes:title>Pick a few fights</itunes:title>
+      <itunes:summary>Choose three to five domains where AI can be checked and absorbed. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>256</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>04. Change the work, not the slide</title>
+      <link>https://pveselov.space/ai/podcast#ep04-change-the-work-not-the-slide</link>
+      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:4</guid>
+      <pubDate>Sat, 21 Nov 2026 10:00:00 +0000</pubDate>
+      <description>Rebuild workflows with the people who do them. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/ep04-change-the-work-not-the-slide.mp3" length="1632500" type="audio/mpeg"/>
+      <itunes:title>Change the work, not the slide</itunes:title>
+      <itunes:summary>Rebuild workflows with the people who do them. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>242</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>05. Treat agents like people you hired</title>
+      <link>https://pveselov.space/ai/podcast#ep05-treat-agents-like-people-you-hired</link>
+      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:5</guid>
+      <pubDate>Tue, 24 Nov 2026 10:00:00 +0000</pubDate>
+      <description>Six controls and a human owner before autonomy. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/ep05-treat-agents-like-people-you-hired.mp3" length="1418684" type="audio/mpeg"/>
+      <itunes:title>Treat agents like people you hired</itunes:title>
+      <itunes:summary>Six controls and a human owner before autonomy. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>208</itunes:duration>
+      <itunes:episode>5</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>06. Talk to finance in their language</title>
+      <link>https://pveselov.space/ai/podcast#ep06-talk-to-finance-in-their-language</link>
+      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:6</guid>
+      <pubDate>Thu, 26 Nov 2026 10:00:00 +0000</pubDate>
+      <description>Outcomes, cost per transaction, retention, tokens. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/ep06-talk-to-finance-in-their-language.mp3" length="1476740" type="audio/mpeg"/>
+      <itunes:title>Talk to finance in their language</itunes:title>
+      <itunes:summary>Outcomes, cost per transaction, retention, tokens. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>219</itunes:duration>
+      <itunes:episode>6</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>07. Scale only what survives</title>
+      <link>https://pveselov.space/ai/podcast#ep07-scale-only-what-survives</link>
+      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:7</guid>
+      <pubDate>Sat, 28 Nov 2026 10:00:00 +0000</pubDate>
+      <description>One program and a hard scale gate. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/ep07-scale-only-what-survives.mp3" length="1103972" type="audio/mpeg"/>
+      <itunes:title>Scale only what survives</itunes:title>
+      <itunes:summary>One program and a hard scale gate. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>163</itunes:duration>
+      <itunes:episode>7</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>08. When the experts disagree</title>
+      <link>https://pveselov.space/ai/podcast#ep08-when-the-experts-disagree</link>
+      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:8</guid>
+      <pubDate>Tue, 01 Dec 2026 10:00:00 +0000</pubDate>
+      <description>Clear CIO positions when good research pulls both ways. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/ep08-when-the-experts-disagree.mp3" length="1478780" type="audio/mpeg"/>
+      <itunes:title>When the experts disagree</itunes:title>
+      <itunes:summary>Clear CIO positions when good research pulls both ways. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>217</itunes:duration>
+      <itunes:episode>8</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>09. Your first ninety days</title>
+      <link>https://pveselov.space/ai/podcast#ep09-your-first-ninety-days</link>
+      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:9</guid>
+      <pubDate>Thu, 03 Dec 2026 10:00:00 +0000</pubDate>
+      <description>A calendar from week one to month three. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/ep09-your-first-ninety-days.mp3" length="1210652" type="audio/mpeg"/>
+      <itunes:title>Your first ninety days</itunes:title>
+      <itunes:summary>A calendar from week one to month three. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>180</itunes:duration>
+      <itunes:episode>9</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>10. One company, start to finish</title>
+      <link>https://pveselov.space/ai/podcast#ep10-one-company-start-to-finish</link>
+      <guid isPermaLink="false">urn:pveselov:ai-podcast:ep:10</guid>
+      <pubDate>Sat, 05 Dec 2026 10:00:00 +0000</pubDate>
+      <description>Walk one realistic firm through the whole guide. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</description>
+      <enclosure url="https://pveselov.space/podcast/audio/ep10-one-company-start-to-finish.mp3" length="1636484" type="audio/mpeg"/>
+      <itunes:title>One company, start to finish</itunes:title>
+      <itunes:summary>Walk one realistic firm through the whole guide. Full written checklist: https://pveselov.space/ai. Episode page: https://pveselov.space/ai/podcast. Subscribe and share — then come build with the playbook at https://pveselov.space/ai.</itunes:summary>
+      <itunes:author>Pavel Veselov</itunes:author>
+      <itunes:duration>243</itunes:duration>
+      <itunes:episode>10</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>

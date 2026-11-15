@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/config";
 import { libraryEntries, libraryMeta } from "@/lib/library";
+import { podcastMeta } from "@/lib/podcast";
 import { playbookMeta } from "@/lib/playbook";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -17,6 +18,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(playbookMeta.lastUpdated),
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: `${siteConfig.url}${podcastMeta.path}`,
+      lastModified: new Date("2026-11-15"),
+      changeFrequency: "weekly",
+      priority: 0.85,
     },
     {
       url: `${siteConfig.url}${libraryMeta.path}`,
