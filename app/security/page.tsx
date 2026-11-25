@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Mail } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
@@ -115,22 +116,20 @@ export default function SecurityPlaybookPage() {
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
             A working checklist for the Head of IT who owns cybersecurity because there is no
-            separate CISO — or security sits inside IT. Each step says what to do, how you know it
-            is done, which attack classes it reduces, and which public frameworks it rests on.
+            separate security chief, or security sits inside IT. Each step says what to do, how you
+            know it is done, which attacks it reduces, and which public source it rests on.
           </p>
           <p className="mt-4 text-base leading-7 text-gray-500 dark:text-gray-400">
-            I am not writing this as a product vendor. Tools change; attackers reuse the same paths:
-            stolen credentials, phishing and BEC, ransomware, misconfigured cloud, weak remote
-            access, untested backups, and quiet privilege creep. What I bring is eighteen years of
-            running IT on the client side and in consulting — including the unglamorous controls that
-            actually decide whether a bad Monday becomes an existential week.
+            I am not writing this as a product vendor. Tools change. The paths stay the same: a
+            stolen password, a fake invoice, ransomware, an open cloud folder, remote access with
+            no second factor, a backup nobody has restored. What I bring is 18 years of running IT,
+            on the client side and in consulting.
           </p>
           <p className="mt-4 text-base leading-7 text-gray-500 dark:text-gray-400">
-            Honest scope: this is operational readiness against the common enterprise attack classes,
-            mapped through NIST CSF 2.0, CIS Controls, MITRE ATT&CK, and CISA baselines. It does not
-            promise immunity to every zero-day. It does promise a clear job for the Head of IT: know
-            what you own, harden identity and the estate, detect, rehearse recovery, and prove it to
-            the board.
+            So the checklist is the job that stays when the tools change: know what you own, lock
+            identity, harden the estate, notice when something is wrong, rehearse recovery, and
+            show the board an honest page. It does not promise you will stop every new bug. If a
+            step does not match what you see, tell me.
           </p>
           <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
             By{" "}
@@ -142,6 +141,11 @@ export default function SecurityPlaybookPage() {
             <time dateTime={securityPlaybookMeta.lastUpdated}>{securityPlaybookMeta.lastUpdatedLabel}</time>
           </p>
           <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
+            Prefer the pictures?{" "}
+            <Link href="/security/explained" className="font-medium text-gray-950 underline underline-offset-2 hover:no-underline dark:text-white">
+              Security Explained, ten parts
+            </Link>
+            {" · "}
             Prefer to listen?{" "}
             <Link href="/podcast" className="font-medium text-gray-950 underline underline-offset-2 hover:no-underline dark:text-white">
               Podcast season 2 — Securing the Enterprise
@@ -167,6 +171,24 @@ export default function SecurityPlaybookPage() {
               </a>
             ))}
           </nav>
+
+          <figure className="mt-10">
+            <a href="/security-explained/01-map.png" className="block overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800">
+              <Image
+                src="/security-explained/01-map.png"
+                width={1080}
+                height={1350}
+                alt="Map of the security playbook: nine moves in order, Know, Identity, People, The usual doors, Cloud and vendors, Apps and data, Notice, Recover, Prove."
+                className="mx-auto h-auto w-full max-w-2xl"
+                priority
+              />
+            </a>
+            <figcaption className="mt-3 text-sm leading-6 text-gray-500 dark:text-gray-400">
+              How the work is ordered. The inventory in phase 1 names the crown jewels that backups,
+              detection, and the board page keep coming back to. Identity in phase 2 is what a stolen
+              password tries to use. A restore you have timed is what phase 8 and phase 9 both ask for.
+            </figcaption>
+          </figure>
         </header>
 
         <div className="mx-auto max-w-4xl space-y-16 pb-16">

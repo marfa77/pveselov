@@ -7,6 +7,8 @@ import {
   securityPlaybookPhases,
 } from "@/lib/security-playbook";
 import { securitySources } from "@/lib/security-sources";
+import { aiExplainedMeta } from "@/lib/ai-explained";
+import { securityExplainedMeta } from "@/lib/security-explained";
 
 export const dynamic = "force-static";
 
@@ -26,6 +28,7 @@ export function GET() {
     `## ${playbookMeta.title}`,
     "",
     `- [${playbookMeta.shortTitle}](${playbookUrl}): living checklist for CIOs building AI in the enterprise, version ${playbookMeta.version}, updated ${playbookMeta.lastUpdatedLabel}. Every step cites its research.`,
+    `- [${aiExplainedMeta.title}](${siteConfig.url}${aiExplainedMeta.path}): ${aiExplainedMeta.description}`,
     ...playbookPhases.map(
       (phase, index) =>
         `- Phase ${index + 1}, ${phase.title}: ${phase.steps.map((step) => `${step.id} ${step.title}`).join("; ")}.`,
@@ -34,6 +37,7 @@ export function GET() {
     `## ${securityPlaybookMeta.title}`,
     "",
     `- [${securityPlaybookMeta.shortTitle}](${securityUrl}): ${securityStepCount}-step checklist for Heads of IT without a separate CISO, version ${securityPlaybookMeta.version}, updated ${securityPlaybookMeta.lastUpdatedLabel}. Built on ${securitySources.length} public frameworks (NIST, CIS, MITRE ATT&CK, CISA, and others).`,
+    `- [${securityExplainedMeta.title}](${siteConfig.url}${securityExplainedMeta.path}): ${securityExplainedMeta.description}`,
     ...securityPlaybookPhases.map(
       (phase, index) =>
         `- Phase ${index + 1}, ${phase.title}: ${phase.steps.map((step) => `${step.id} ${step.title}`).join("; ")}.`,

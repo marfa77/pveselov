@@ -298,6 +298,12 @@ export default function Home() {
                   >
                     The research behind it
                   </Link>
+                  <Link
+                    href="/ai/explained"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-gray-950 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    Ten pictures
+                  </Link>
                 </div>
               </div>
             </div>
@@ -330,6 +336,12 @@ export default function Home() {
                   >
                     Open the security playbook
                     <ArrowRight className="h-4 w-4" />
+                  </Link>
+                  <Link
+                    href="/security/explained"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-gray-950 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    Ten pictures
                   </Link>
                 </div>
               </div>

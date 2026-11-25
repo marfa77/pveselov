@@ -5,6 +5,7 @@ import { podcastMeta } from "@/lib/podcast";
 import { aiExplainedMeta } from "@/lib/ai-explained";
 import { playbookMeta } from "@/lib/playbook";
 import { securityPlaybookMeta } from "@/lib/security-playbook";
+import { securityExplainedMeta } from "@/lib/security-explained";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const libraryReviewed = new Date(libraryMeta.lastReviewed);
@@ -38,6 +39,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(securityPlaybookMeta.lastUpdated),
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: `${siteConfig.url}${securityExplainedMeta.path}`,
+      lastModified: new Date("2026-11-25"),
+      changeFrequency: "monthly",
+      priority: 0.85,
     },
     {
       url: `${siteConfig.url}${libraryMeta.path}`,
