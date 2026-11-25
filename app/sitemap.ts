@@ -6,6 +6,7 @@ import { aiExplainedMeta } from "@/lib/ai-explained";
 import { playbookMeta } from "@/lib/playbook";
 import { securityPlaybookMeta } from "@/lib/security-playbook";
 import { securityExplainedMeta } from "@/lib/security-explained";
+import { tradingGuides, tradingMeta } from "@/lib/trading";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const libraryReviewed = new Date(libraryMeta.lastReviewed);
@@ -46,6 +47,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.85,
     },
+    {
+      url: `${siteConfig.url}${tradingMeta.path}`,
+      lastModified: new Date(tradingMeta.updated),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    ...tradingGuides.map((guide) => ({
+      url: `${siteConfig.url}${guide.path}`,
+      lastModified: new Date(tradingMeta.updated),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
     {
       url: `${siteConfig.url}${libraryMeta.path}`,
       lastModified: libraryReviewed,

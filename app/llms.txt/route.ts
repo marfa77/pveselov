@@ -9,6 +9,7 @@ import {
 import { securitySources } from "@/lib/security-sources";
 import { aiExplainedMeta } from "@/lib/ai-explained";
 import { securityExplainedMeta } from "@/lib/security-explained";
+import { tradingGuides, tradingMeta } from "@/lib/trading";
 
 export const dynamic = "force-static";
 
@@ -41,6 +42,13 @@ export function GET() {
     ...securityPlaybookPhases.map(
       (phase, index) =>
         `- Phase ${index + 1}, ${phase.title}: ${phase.steps.map((step) => `${step.id} ${step.title}`).join("; ")}.`,
+    ),
+    "",
+    `## ${tradingMeta.title}`,
+    "",
+    `- [${tradingMeta.title}](${siteConfig.url}${tradingMeta.path}): ${tradingMeta.description}`,
+    ...tradingGuides.map(
+      (guide) => `- [${guide.shortTitle}](${siteConfig.url}${guide.path}): ${guide.description}`,
     ),
     "",
     `## ${libraryMeta.title}`,

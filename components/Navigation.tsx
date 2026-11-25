@@ -7,6 +7,7 @@ const links = [
   { href: "/#experience", label: "Experience" },
   { href: "/ai", label: "AI playbook" },
   { href: "/security", label: "Security" },
+  { href: "/trading", label: "Trading" },
   { href: "/podcast", label: "Podcast" },
   { href: "/#contact", label: "Contact" },
 ];

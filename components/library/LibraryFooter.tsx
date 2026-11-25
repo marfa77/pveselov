@@ -24,6 +24,9 @@ export function LibraryFooter() {
           <Link href="/security/explained" className="hover:text-gray-950 dark:hover:text-white">
             Security Explained
           </Link>
+          <Link href="/trading" className="hover:text-gray-950 dark:hover:text-white">
+            Trading
+          </Link>
           <Link href="/podcast" className="hover:text-gray-950 dark:hover:text-white">
             Podcast
           </Link>
