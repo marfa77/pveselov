@@ -93,7 +93,7 @@ function EpisodeList({ episodes }: { episodes: typeof podcastEpisodes }) {
     <ol className="mt-8 space-y-8">
       {episodes.map((ep) => {
         const stem = ep.audioFile.replace(/\.mp3$/, "");
-        const audioSrc = `/podcast/audio/${ep.audioFile}`;
+        const audioSrc = `/podcast/audio/${ep.audioFile}${ep.number === 1 ? "?v=2026-11-25" : ""}`;
         return (
           <li key={ep.audioFile} id={stem} className="border-t border-gray-200 pt-8 dark:border-gray-800">
             <p className="text-sm text-gray-500">

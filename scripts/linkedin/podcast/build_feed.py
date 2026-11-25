@@ -101,6 +101,8 @@ def main() -> None:
         length = mp3.stat().st_size
         dur = duration_sec(mp3)
         audio_url = f"{SITE}/podcast/audio/{stem}.mp3"
+        if stem == "ep01-youre-the-one-they-asked":
+            audio_url += "?v=2026-11-25"
         ep_url = f"{HUB}#{stem}"
         season_label = "AI" if season == 1 else "Security"
         desc = (
