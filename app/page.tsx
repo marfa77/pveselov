@@ -365,8 +365,8 @@ export default function Home() {
                 <p className="mt-4 max-w-3xl leading-7 text-gray-600 dark:text-gray-300">
                   Two guides for a physical book. Live messages for the next
                   action, a file for the close, a warehouse for filings and
-                  questions. Then the six applications, in the order you turn
-                  them on.
+                  questions. Then one deal, walked through the systems and the
+                  people who click.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-6">
                   <Link

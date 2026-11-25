@@ -165,15 +165,53 @@ cards.append(("roles", page(
     "pveselov.space/trading/setup",
 )))
 
+cards.append(("deal", page(
+    "Trading · setup",
+    "One deal. Six steps.",
+    """<div class="chain">
+      <div class="row"><div class="n">1</div><div class="card"><b>Clear the name</b><span>Compliance. CTRM. No firm trade before it.</span></div></div>
+      <div class="row"><div class="n">2</div><div class="card"><b>Book</b><span>Trader. CTRM. Contract, formula, book.</span></div></div>
+      <div class="row"><div class="n">3</div><div class="card"><b>Move the cargo</b><span>Operations. CTRM. Parcel, then title.</span></div></div>
+      <div class="row"><div class="n">4</div><div class="card"><b>Invoice and cash</b><span>Finance. ERP. Provisional, then final, then the payment.</span></div></div>
+      <div class="row"><div class="n">5</div><div class="card"><b>Sign the cut</b><span>Middle office and finance. Official fix. One journal.</span></div></div>
+      <div class="row"><div class="n">6</div><div class="card"><b>Read</b><span>Warehouse. The filing and the question. Nobody books here.</span></div></div>
+    </div>""",
+    "pveselov.space/trading/setup",
+)))
+
+cards.append(("master", page(
+    "Trading · setup",
+    "Six maps. Count the mismatches.",
+    """<div class="chain">
+      <div class="row"><div class="n">1</div><div class="card"><b>Legal entity</b><span>The company that invoices and is invoiced</span></div></div>
+      <div class="row"><div class="n">2</div><div class="card"><b>Counterparty</b><span>Trading name, legal name, tax id, bank</span></div></div>
+      <div class="row"><div class="n">3</div><div class="card"><b>Commodity</b><span>Grade and unit. MT is not a lot.</span></div></div>
+      <div class="row"><div class="n">4</div><div class="card"><b>Place</b><span>Port, plant, tank</span></div></div>
+      <div class="row"><div class="n">5</div><div class="card"><b>Book</b><span>Whose position this is</span></div></div>
+      <div class="row"><div class="n">6</div><div class="card"><b>Index and account</b><span>Which fix, and which line in the ledger</span></div></div>
+    </div>""",
+    "pveselov.space/trading/setup",
+)))
+
+cards.append(("counterparty", page(
+    "Trading · setup",
+    "No firm trade before the name is clear.",
+    """<div class="split">
+      <div class="box live"><div class="cap">Allowed</div><div class="small">Screened. KYC on the counterparty id. A limit. A date that expires.</div></div>
+      <div class="box dead"><div class="cap">Blocked</div><div class="small">The trader cannot click past it. A named person clears it, and writes the date.</div></div>
+    </div>""",
+    "pveselov.space/trading/setup",
+)))
+
 cards.append(("order", page(
     "Trading · setup",
     "Turn them on in this order.",
     """<div class="chain">
-      <div class="row"><div class="n">1</div><div class="card"><b>Four maps</b><span>Legal entity, counterparty, commodity and unit, location. Count the mismatches.</span></div></div>
+      <div class="row"><div class="n">1</div><div class="card"><b>Six maps and the gate</b><span>Entity, counterparty, commodity, place, book, index. A blocked name cannot be booked.</span></div></div>
       <div class="row"><div class="n">2</div><div class="card"><b>New trades in the CTRM</b><span>History loads once. The spreadsheet becomes read-only.</span></div></div>
       <div class="row"><div class="n">3</div><div class="card"><b>Four live flows</b><span>Title, payment, stock, final price.</span></div></div>
       <div class="row"><div class="n">4</div><div class="card"><b>A signed cut</b><span>Valuation and inventory. Totals, then the journal.</span></div></div>
-      <div class="row"><div class="n">5</div><div class="card"><b>Credit and the hedge link</b><span>A trade past the limit needs a name.</span></div></div>
+      <div class="row"><div class="n">5</div><div class="card"><b>The hedge link</b><span>The physical and the paper that covers it. Credit is already the gate.</span></div></div>
       <div class="row"><div class="n">6</div><div class="card"><b>Readers</b><span>Documents on the trade. Then the warehouse, the filed extract, one board page.</span></div></div>
     </div>""",
     "pveselov.space/trading/setup",

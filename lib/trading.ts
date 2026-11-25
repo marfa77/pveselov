@@ -275,11 +275,11 @@ export const setupGuide: TradingGuide = {
   title: "The book, the ledger, and the readers.",
   shortTitle: "Commodity trading setup",
   description:
-    "The application setup I would stand up for a physical commodity firm starting from zero: one home per fact, the order you turn the systems on, and what waits until the book ties out.",
+    "The application setup I would stand up for a physical commodity firm starting from zero. One deal, walked through the people and the systems. Then master data, counterparty clearance, and the order you turn the homes on.",
   kicker: "Commodity trading",
   lede: [
     "Someone says: we'll buy a platform.",
-    "You are standing up a short list of homes. Each fact lives in one of them. I have run this shape on a physical book: a CTRM, SAP Finance, and a warehouse the reports actually used.",
+    "The center of this page is one deal. Who does the step, and which system holds it. Around that deal sit six homes. I have run this shape on a physical book: a CTRM, SAP Finance, and a warehouse the reports actually used.",
     "The products can change. The homes do not. If a sentence below does not match the firm in front of you, the firm is the special case, and it should be written down.",
   ],
   sections: [
@@ -320,6 +320,43 @@ export const setupGuide: TradingGuide = {
       ],
     },
     {
+      id: "deal",
+      title: "One deal, from the name to the cash.",
+      figures: [
+        {
+          src: "/trading/deal.png",
+          alt: "One physical deal in six steps: clear the counterparty, book, move the cargo, invoice and cash, sign the cut, then read from the warehouse.",
+          height: 585,
+        },
+      ],
+      blocks: [
+        {
+          kind: "p",
+          text: "A physical cargo. Coal or iron ore. One contract, one or many parcels, a price that is not known on the day you trade. This is the path. The homes above are only there to hold a step of it.",
+        },
+        {
+          kind: "table",
+          headers: ["Step", "Who", "System", "What happens"],
+          rows: [
+            ["Clear the name", "Compliance, then credit", "CTRM, evidence on the counterparty id", "Screened, KYC, a limit, an expiry. No firm trade before this."],
+            ["Book", "Trader", "CTRM", "Contract, commodity, quantity, incoterm, delivery window, price formula, book."],
+            ["Check the booking", "Middle office", "CTRM", "Codes match. The name is allowed. Credit has room. The formula is complete."],
+            ["Nominate", "Operations", "CTRM", "A parcel under the contract. Vessel or tank. Laycan."],
+            ["Title", "Operations", "CTRM, then the ERP if the invoice is the same day", "Bill of lading or warehouse receipt. Quantity. Stock that can be sold again."],
+            ["Provisional invoice", "Finance", "ERP", "Tax, the commercial reference, the provisional amount."],
+            ["Final price and assay", "Middle office, then finance", "CTRM calculates. ERP amends the same invoice.", "Same trade id. Quantity moves if the assay says so."],
+            ["Cash", "Finance", "ERP, status back to the CTRM", "The payment. Credit falls."],
+            ["The cut", "Middle office proposes. Finance signs.", "CTRM file, ERP journal", "The official fix. Totals. One journal."],
+            ["Read", "The board, a regulator, a question", "Warehouse", "The copy you filed. The bridge. Nobody books a deal here."],
+          ],
+        },
+        {
+          kind: "p",
+          text: "At ten people, two of these names are the same human. The step still has an owner, and the click still has a right. A trader who also clears their own counterparty has no gate.",
+        },
+      ],
+    },
+    {
       id: "ctrm",
       title: "The CTRM already knows the words.",
       figures: [
@@ -337,12 +374,14 @@ export const setupGuide: TradingGuide = {
         {
           kind: "list",
           items: [
-            "Physical and paper in one position.",
-            "A contract with many parcels.",
-            "A price made of an index, a quotational period, a premium, and a provisional that becomes final.",
-            "Inventory in the unit you trade, with quality. An assay can change quantity and the final invoice.",
-            "A hedge linked to the physical it covers. If finance elects hedge accounting, that link has a designation date and an owner. If they do not, keep the economic link anyway, so the desk can see the flat price.",
-            "Title, shipment, and invoice as events on the same trade.",
+            "A physical contract and a paper hedge in one position, by book, commodity, and tenor.",
+            "Many parcels under one contract. Nomination, bill of lading, and title are events on the parcel.",
+            "A price made of an index, a quotational period, a premium, and a provisional that becomes final, on the same trade id.",
+            "The commercial amount. The legal invoice still lives in the ERP.",
+            "Inventory in the unit you trade, with grade. An assay can change quantity and that final amount.",
+            "Credit used against the limit, falling when finance applies the cash.",
+            "A hedge linked to the physical it covers. If finance elects hedge accounting, that link has a designation date and an owner. If they do not, keep the economic link, so the desk can see the flat price.",
+            "A mark to market on the official fix, written as a file for the cut. Not a journal.",
           ],
         },
         {
@@ -361,15 +400,91 @@ export const setupGuide: TradingGuide = {
       blocks: [
         {
           kind: "p",
-          text: "The ERP already knows legal entities, a chart of accounts, tax, a vendor invoice, a customer invoice, and a payment. An invoice on a physical book is often provisional, then adjusted when the price and the assay land. The ERP has to carry that adjustment on the same commercial reference.",
+          text: "The ERP is the legal entity. It already knows these jobs. An invoice on a physical book is often provisional, then adjusted when the price and the assay land. The adjustment stays on the same commercial reference.",
+        },
+        {
+          kind: "list",
+          items: [
+            "Company codes and the chart of accounts.",
+            "The vendor and the customer as a legal entity: tax id, address, bank.",
+            "A purchase invoice and a sales invoice. Provisional, then amended.",
+            "Tax on that invoice.",
+            "The payment, and a status the CTRM can read so credit falls.",
+            "A journal with a quantity and a value that tie to the trading totals.",
+          ],
         },
         {
           kind: "p",
-          text: "It takes a journal with a quantity and a value that tie to a trading total. It does not need a position screen. A project plan that says the position will be built in the ERP is a plan to keep two books.",
+          text: "It does not need a position screen. A project plan that says the position will be built in the ERP is a plan to keep two books.",
         },
         {
           kind: "p",
           text: "Pick the ERP finance can close. On a greenfield that is often the one the group already runs. Pick the CTRM for the commodity words. Making one vendor win both arguments gives you a weaker book or a weaker close.",
+        },
+      ],
+    },
+    {
+      id: "master-data",
+      title: "Master data is the project.",
+      figures: [
+        {
+          src: "/trading/master.png",
+          alt: "Six master-data maps: legal entity, counterparty, commodity and unit, place, book, and the index with its ledger account.",
+          height: 585,
+        },
+      ],
+      blocks: [
+        {
+          kind: "p",
+          text: "Two vendors will not share a code. Until the maps match, every deal, every invoice, and every report is confident and wrong. Write the owner of each field before the first workshop.",
+        },
+        {
+          kind: "table",
+          headers: ["Field", "Who owns the record", "Who else must use that code"],
+          rows: [
+            ["Legal entity", "ERP", "The CTRM company code on every deal"],
+            ["Legal name, tax id, bank", "ERP", "The payment, the tax, the compliance file"],
+            ["Trading name", "CTRM", "The contract the desk actually speaks"],
+            ["Commodity, grade, unit", "One agreed map", "The position and the invoice quantity"],
+            ["Port, plant, tank", "One agreed map", "Inventory and title"],
+            ["Book", "CTRM", "Whose position, whose P&L"],
+            ["Index", "Market data", "The formula and the cut"],
+            ["GL account", "ERP", "The journal line that commodity hits"],
+          ],
+        },
+        {
+          kind: "p",
+          text: "A tonne is not a lot. A wet tonne is not a dry tonne. A trading name is not the company that owns the bank account. Count the rows that do not match. That count is the scope. A fix that exists only in a report is a second copy of the lie.",
+        },
+      ],
+    },
+    {
+      id: "counterparty",
+      title: "No firm trade before the name is clear.",
+      figures: [
+        {
+          src: "/trading/counterparty.png",
+          alt: "A counterparty is allowed only when it is screened, with KYC, a credit limit, and an expiry. A blocked name cannot be traded, and the trader cannot clear it.",
+          height: 298,
+        },
+      ],
+      blocks: [
+        {
+          kind: "p",
+          text: "Someone says: the trader knows them. The counterparty is a record with a status. Allowed, blocked, or expired. The status sits on the name in the CTRM, and the trade cannot become firm against a blocked name.",
+        },
+        {
+          kind: "list",
+          items: [
+            "A sanctions screen, dated.",
+            "The KYC pack on the counterparty id. Who owns them. Where they are. The legal name that matches the ERP.",
+            "A credit limit, fed by what finance has not collected.",
+            "An expiry. A name cleared last year is not cleared today.",
+          ],
+        },
+        {
+          kind: "p",
+          text: "The trader cannot clear their own counterparty. A named person does, and writes the date. Bank details used to pay are the ERP's, for that legal entity. A change of bank is a call to a number finance already has.",
         },
       ],
     },
@@ -386,11 +501,20 @@ export const setupGuide: TradingGuide = {
       blocks: [
         {
           kind: "p",
-          text: "One curve store. The CTRM values the book on it. Each fix has a source and a date. The ledger uses the same fix for the cut.",
+          text: "One curve store. The CTRM values the book on it. The ledger uses the same fix for the cut. The system does these jobs, and it does not book a trade.",
+        },
+        {
+          kind: "list",
+          items: [
+            "Each fix has a source, a date, and the index name the formula uses.",
+            "The official fix is the number on the valuation file and the number on the journal.",
+            "A missing day is a hole, not a copy of yesterday, unless a person writes that rule down.",
+            "A trader's private mark is a scenario. It is labeled. It stays off the journal.",
+          ],
         },
         {
           kind: "p",
-          text: "A trader's private mark is a scenario. It is labeled. It stays off the journal. Two curves in production means two P&Ls, and the meeting will pick the kinder one.",
+          text: "Two curves in production means two P&Ls, and the meeting will pick the kinder one.",
         },
       ],
     },
@@ -407,11 +531,20 @@ export const setupGuide: TradingGuide = {
       blocks: [
         {
           kind: "p",
-          text: "Confirmations, contracts, bills of lading, assays, letters of credit. Each file hangs off a trade id, a parcel id, or a counterparty id. A folder named after the month is how a claim goes missing.",
+          text: "The store holds the evidence. It does not price a deal and it does not post a journal. Each file hangs off an id that already exists.",
+        },
+        {
+          kind: "list",
+          items: [
+            "The contract and the confirmation, on the trade id.",
+            "The bill of lading, the assay, and the warehouse receipt, on the parcel.",
+            "The letter of credit, on the trade or on the invoice reference.",
+            "The KYC pack, on the counterparty id. Not in a folder called Compliance.",
+          ],
         },
         {
           kind: "p",
-          text: "This can start as a store the CTRM already has. A separate contract system waits until legal volume has its own clock. The id it hangs from is decided on day one, so the later system has somewhere to attach.",
+          text: "This can start as the store the CTRM already has. A separate contract system waits until legal volume has its own clock. The id is decided on day one, so the later system has somewhere to attach. A folder named after the month is how a claim goes missing.",
         },
       ],
     },
@@ -428,11 +561,40 @@ export const setupGuide: TradingGuide = {
       blocks: [
         {
           kind: "p",
-          text: "One directory. A trader can capture. Middle office can value and release the cut. Finance can pay. The admin of the CTRM is a separate account, used rarely. A person who leaves loses access the same day.",
+          text: "One directory. The right is the job, not the person. A person who leaves loses access the same day. The admin of the CTRM is a separate account, used rarely.",
+        },
+        {
+          kind: "list",
+          items: [
+            "Trader. Captures the deal. Cannot clear the name and cannot release the cut.",
+            "Operations. Nominates the parcel and records title.",
+            "Middle office. Checks the booking, values the book, releases the cut.",
+            "Compliance. Clears a name, with a date. Cannot book.",
+            "Finance. Invoices and pays. Owns the ledger.",
+          ],
         },
         {
           kind: "p",
-          text: "At ten people, two of these roles are the same human. The access is still split, so the firm can add a seat later. The rest of that job is the security playbook.",
+          text: "At ten people, two of these seats are the same human. The access is still split, so the firm can add a person later without adding a spreadsheet. The rest of that job is the security playbook.",
+        },
+      ],
+    },
+    {
+      id: "readers",
+      title: "What the warehouse is for.",
+      blocks: [
+        {
+          kind: "p",
+          text: "The warehouse arrives after a person has signed a cut. It reads. It does not book, and the CTRM does not ask it whether a cargo can be sold.",
+        },
+        {
+          kind: "list",
+          items: [
+            "The extract as it was filed, with the date and the totals.",
+            "The bridge from the trading totals to the journal.",
+            "The question the board, or a regulator, asks next quarter.",
+            "A dashboard with the load time in the corner. A chart of a book that does not tie is a rumour.",
+          ],
         },
       ],
     },
@@ -442,22 +604,22 @@ export const setupGuide: TradingGuide = {
       figures: [
         {
           src: "/trading/order.png",
-          alt: "Turn the systems on in order: four maps, new trades, four live flows, a signed cut, credit and the hedge link, then readers.",
+          alt: "Turn the systems on in order: six maps and the counterparty gate, new trades, four live flows, a signed cut, the hedge link, then readers.",
           height: 585,
         },
       ],
       blocks: [
         {
           kind: "p",
-          text: "Before any vendor workshop, write four maps and count the rows that do not match. Legal entity. Counterparty, trading name and legal name. Commodity and unit. Location and plant. That count is the plan.",
+          text: "Before any vendor workshop, write the six maps and count the rows that do not match. A name that is not allowed cannot be the first firm trade. That count, and that gate, are the plan.",
         },
         {
           kind: "list",
           items: [
-            "New trades hit the CTRM. History loads once, with the file and the totals kept. The spreadsheet becomes read-only the day the first new trade lands in the book.",
+            "New trades hit the CTRM, and only against a name that is allowed. History loads once, with the file and the totals kept. The spreadsheet becomes read-only the day the first new trade lands in the book.",
             "Invoices and payments hit the ERP. The four live flows: title to invoice, payment back to credit, stock that can be sold, final price on a provisional.",
             "The clock. Valuation and inventory, with totals a person signs, then the journal.",
-            "Credit limit and the hedge link. A trade past the limit needs a name on it.",
+            "The hedge link. The physical and the paper that covers it. Credit is already the gate, not a feature you add after the first close.",
             "Documents on the trade id.",
             "The warehouse, the extract as it was filed, one board page with the load time in the corner.",
           ],
@@ -497,11 +659,11 @@ export const setupGuide: TradingGuide = {
         },
         {
           kind: "p",
-          text: "They buy a CTRM that already has parcels, formula prices, and inventory. They keep the ERP the finance team can already close. Market data is one feed, dated. Documents hang off the trade. Identity is the directory they already use for email, with the three roles split.",
+          text: "They buy a CTRM that already has parcels, formula prices, and inventory. They keep the ERP the finance team can already close. Market data is one feed, dated. Documents hang off the trade and the counterparty. Identity is the directory they already use for email, with the clicks split.",
         },
         {
           kind: "p",
-          text: "Month 1 is master data and new trades in the CTRM. Month 2 is the invoice and the four live flows. Month 3 is the first close a person signed from totals, with the bridge stored. The board page comes after that signature exists. The next desk uses the same six homes.",
+          text: "Month 1 is the six maps, the counterparty gate, and new trades in the CTRM. No firm trade against a name that is not allowed. Month 2 is the invoice and the four live flows. Month 3 is the first close a person signed from totals, with the bridge stored. The board page comes after that signature exists. The next desk uses the same six homes.",
         },
       ],
     },
