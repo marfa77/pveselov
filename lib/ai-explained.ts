@@ -9,6 +9,7 @@ export type ExplainedCard = {
   src: string;
   alt: string;
   source: string;
+  height?: number;
 };
 
 export type ExplainedPart = {
@@ -54,6 +55,7 @@ export const aiExplainedParts: ExplainedPart[] = [
         src: "/ai-explained/02-spend.png",
         alt: "Bar showing 20% of AI spend inside IT and 80% outside IT.",
         source: "BCG Applied AI Index 2026",
+        height: 400,
       },
       {
         src: "/ai-explained/02-shadow.png",
@@ -100,6 +102,7 @@ export const aiExplainedParts: ExplainedPart[] = [
         src: "/ai-explained/04-people.png",
         alt: "Bar split 10% algorithms, 20% tech and data, 70% people and the work.",
         source: "BCG 10-20-70",
+        height: 400,
       },
     ],
   },
@@ -136,6 +139,7 @@ export const aiExplainedParts: ExplainedPart[] = [
         src: "/ai-explained/06-cost.png",
         alt: "Manual cost about $0.80 per document against $12 to $14 for the award-winning AI workflow.",
         source: "Richard Ewing, CIO.com, Oct 2026",
+        height: 400,
       },
     ],
   },

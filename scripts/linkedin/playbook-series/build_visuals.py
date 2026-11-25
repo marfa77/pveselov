@@ -7,14 +7,14 @@ OUT.mkdir(exist_ok=True)
 
 CSS = """
 *{box-sizing:border-box;margin:0;padding:0}
-body{width:1080px;height:700px;background:#fff;color:#111827;
+body{width:1080px;height:__H__px;background:#fff;color:#111827;
  font-family:-apple-system,"SF Pro Display","Inter","Helvetica Neue",Arial,sans-serif;
  padding:36px 48px 24px;display:flex;flex-direction:column}
 .kicker{font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#6b7280;font-weight:650}
 h1{font-size:36px;line-height:1.08;font-weight:700;letter-spacing:-.025em;margin-top:8px}
 .sub{font-size:20px;line-height:1.35;color:#4b5563;margin-top:10px}
 .stage{flex:1;display:flex;flex-direction:column;justify-content:flex-start;gap:14px;margin-top:16px;min-height:0}
-.stage > .split,.stage > .three,.stage > .meters,.stage > .cal,.stage > .chain,.stage > .weeks,.stage > .barwrap,.stage > .gate,.stage > .lock,.stage > .stack{flex:1;min-height:0}
+.stage > .split,.stage > .three,.stage > .meters,.stage > .cal,.stage > .chain,.stage > .weeks,.stage > .gate,.stage > .lock{flex:1;min-height:0}
 .stage > .note,.stage > .legend,.stage > .sub{flex:none}
 .foot{display:flex;justify-content:space-between;gap:16px;font-size:15px;color:#9ca3af;margin-top:12px}
 .row{display:flex;align-items:center;gap:12px;flex:1}
@@ -26,13 +26,13 @@ h1{font-size:36px;line-height:1.08;font-weight:700;letter-spacing:-.025em;margin
 .chain{display:flex;flex-direction:column;gap:8px;justify-content:stretch;height:100%}
 .lbl{font-size:18px;color:#374151;margin-bottom:6px;display:flex;justify-content:space-between}
 .lbl b{font-size:22px;color:#111827}
-.barwrap{display:flex;flex-direction:column;gap:12px;height:100%}
-.barwrap > .track{flex:1;height:auto;min-height:0;display:flex;align-items:stretch;background:#f3f4f6;border-radius:12px;overflow:hidden}
-.barwrap > div:not(.lbl):not(.track){flex:1;display:flex;flex-direction:column;gap:8px;min-height:0}
+.barwrap{display:flex;flex-direction:column;gap:16px}
+.barwrap > .track{flex:none;height:84px;display:flex;align-items:stretch;background:#f3f4f6;border-radius:12px;overflow:hidden}
+.barwrap > div:not(.lbl):not(.track){display:flex;flex-direction:column;gap:8px}
 .seg{height:auto;align-self:stretch;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px}
 .it{width:20%;background:#e5e7eb;color:#111827}
 .out{width:80%;background:#f59e0b;color:#111827}
-.bar{flex:1;height:auto;min-height:28px;border-radius:10px;background:#f59e0b}
+.bar{height:32px;border-radius:8px;background:#f59e0b}
 .bar.g{background:#d1d5db}
 .note{font-size:17px;color:#4b5563;margin-top:0;line-height:1.35}
 .split{display:flex;gap:16px;align-items:stretch;height:100%}
@@ -50,7 +50,7 @@ h1{font-size:36px;line-height:1.08;font-weight:700;letter-spacing:-.025em;margin
 .wk b{display:block;font-size:22px}
 .wk span{display:block;font-size:15px;color:#6b7280;margin-top:6px}
 .wk.on{background:#fffbeb;border-color:#f59e0b}
-.stack{display:flex;height:100%;min-height:0;border-radius:12px;overflow:hidden}
+.stack{display:flex;height:120px;border-radius:12px;overflow:hidden}
 .stack div{display:flex;align-items:center;justify-content:center;font-weight:750;font-size:22px;color:#111827}
 .s10{width:10%;background:#e5e7eb}
 .s20{width:20%;background:#fcd34d}
@@ -69,8 +69,8 @@ h1{font-size:36px;line-height:1.08;font-weight:700;letter-spacing:-.025em;margin
 .cal p{font-size:18px;line-height:1.3}
 """
 
-def page(kicker, title, body, source):
-    return f"""<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head>
+def page(kicker, title, body, source, height=700):
+    return f"""<!doctype html><html><head><meta charset="utf-8"><style>{CSS.replace("__H__", str(height))}</style></head>
 <body>
 <div class="kicker">{kicker}</div>
 <h1>{title}</h1>
@@ -98,12 +98,12 @@ cards.append(("02-spend", page(
     "AI explained · part 2",
     "The IT budget is one fifth of the picture.",
     """<div class="barwrap">
-      <div class="lbl"><span>Where AI money actually sits</span></div>
       <div class="track"><div class="seg it">IT 20%</div><div class="seg out">Outside IT 80%</div></div>
       <p class="note">About 3.3% of revenue goes to AI. Most of it never hits the CIO ledger: business-unit tools, SaaS add-ons, model bills.</p>
-      <p class="sub" style="margin-top:28px">If a line has no owner, that is already a finding.</p>
+      <p class="sub">If a line has no owner, that is already a finding.</p>
     </div>""",
     "BCG Applied AI Index 2026",
+    400,
 )))
 
 cards.append(("02-shadow", page(
@@ -147,6 +147,7 @@ cards.append(("04-people", page(
     <div class="legend"><span>Algorithms</span><span>Tech and data</span><span>People and the work</span></div>
     <p class="note">Speeding up the old steps keeps the old hand-offs. Rebuild the workflow with the people who do the work. Remove steps.</p>""",
     "BCG 10-20-70",
+    400,
 )))
 
 cards.append(("05-controls", page(
@@ -173,6 +174,7 @@ cards.append(("06-cost", page(
     </div>
     <p class="note">About 90% faster. 40% of files still needed a person, who then took longer. Speed and cost sit on the same page.</p>""",
     "Richard Ewing, CIO.com, Oct 2026",
+    400,
 )))
 
 cards.append(("07-gate", page(
