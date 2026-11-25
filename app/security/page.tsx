@@ -177,9 +177,9 @@ export default function SecurityPlaybookPage() {
               <Image
                 src="/security-explained/01-map.png"
                 width={1080}
-                height={1350}
+                height={700}
                 alt="Map of the security playbook: nine moves in order, Know, Identity, People, The usual doors, Cloud and vendors, Apps and data, Notice, Recover, Prove."
-                className="mx-auto h-auto w-full max-w-2xl"
+                className="h-auto w-full rounded-2xl"
                 priority
               />
             </a>

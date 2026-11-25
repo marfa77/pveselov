@@ -81,7 +81,7 @@ export default function AiExplainedPage() {
                     <Image
                       src={card.src}
                       width={1080}
-                      height={1350}
+                      height={700}
                       alt={card.alt}
                       className="h-auto w-full rounded-2xl border border-gray-200 dark:border-gray-800"
                     />

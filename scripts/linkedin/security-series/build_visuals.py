@@ -7,45 +7,44 @@ OUT.mkdir(exist_ok=True)
 
 CSS = """
 *{box-sizing:border-box;margin:0;padding:0}
-body{width:1080px;height:1350px;background:#fff;color:#111827;
+body{width:1080px;height:700px;background:#fff;color:#111827;
  font-family:-apple-system,"SF Pro Display","Inter","Helvetica Neue",Arial,sans-serif;
- padding:72px 76px 56px;display:flex;flex-direction:column}
-.kicker{font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:#6b7280;font-weight:650}
-h1{font-size:52px;line-height:1.08;font-weight:700;letter-spacing:-.025em;margin-top:18px}
-.sub{font-size:28px;line-height:1.35;color:#4b5563;margin-top:18px}
-.stage{flex:1;display:flex;flex-direction:column;justify-content:flex-start;gap:28px;margin-top:36px;min-height:0}
+ padding:36px 48px 24px;display:flex;flex-direction:column}
+.kicker{font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#6b7280;font-weight:650}
+h1{font-size:36px;line-height:1.08;font-weight:700;letter-spacing:-.025em;margin-top:8px}
+.sub{font-size:20px;line-height:1.35;color:#4b5563;margin-top:10px}
+.stage{flex:1;display:flex;flex-direction:column;justify-content:flex-start;gap:14px;margin-top:16px;min-height:0}
 .stage > .split,.stage > .three,.stage > .meters,.stage > .cal,.stage > .chain{flex:1;min-height:0}
 .stage > .note{flex:none}
-.foot{display:flex;justify-content:space-between;gap:24px;font-size:20px;color:#9ca3af;margin-top:28px}
-.row{display:flex;align-items:center;gap:18px}
-.n{flex:none;width:52px;height:52px;border-radius:50%;border:3px solid #f59e0b;color:#b45309;
- font-weight:700;font-size:24px;display:flex;align-items:center;justify-content:center;background:#fff}
-.card{border:2px solid #e5e7eb;background:#f8fafc;border-radius:16px;padding:12px 18px;flex:1}
-.card b{display:block;font-size:26px}
-.card span{display:block;font-size:20px;color:#6b7280;margin-top:2px}
-.chain{display:flex;flex-direction:column;gap:10px}
-.row{flex:1}
-.note{font-size:24px;color:#4b5563;margin-top:0;line-height:1.35}
-.split{display:flex;gap:28px;align-items:stretch}
-.box{flex:1;border-radius:22px;padding:48px 36px;min-height:0;display:flex;flex-direction:column;justify-content:center}
-.box .big{font-size:84px;font-weight:750;letter-spacing:-.04em;line-height:1}
-.box .cap{font-size:28px;margin-top:16px;line-height:1.25;font-weight:650}
-.box .small{font-size:22px;margin-top:12px;line-height:1.35}
+.foot{display:flex;justify-content:space-between;gap:16px;font-size:15px;color:#9ca3af;margin-top:12px}
+.row{display:flex;align-items:center;gap:12px;flex:1}
+.n{flex:none;width:32px;height:32px;border-radius:50%;border:2px solid #f59e0b;color:#b45309;
+ font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;background:#fff}
+.card{border:2px solid #e5e7eb;background:#f8fafc;border-radius:12px;padding:6px 12px;flex:1}
+.card b{display:block;font-size:16px}
+.card span{display:block;font-size:14px;color:#6b7280;margin-top:1px}
+.chain{display:flex;flex-direction:column;gap:6px;height:100%}
+.note{font-size:17px;color:#4b5563;margin-top:0;line-height:1.35}
+.split{display:flex;gap:16px;align-items:stretch;height:100%}
+.box{flex:1;border-radius:16px;padding:18px 20px;min-height:0;display:flex;flex-direction:column;justify-content:center}
+.box .big{font-size:48px;font-weight:750;letter-spacing:-.04em;line-height:1}
+.box .cap{font-size:18px;margin-top:8px;line-height:1.25;font-weight:650}
+.box .small{font-size:15px;margin-top:6px;line-height:1.3}
 .dead{background:#f3f4f6;color:#6b7280}
 .live{background:#fffbeb;border:3px solid #f59e0b;color:#111827}
 .mid{background:#fff;border:2px solid #e5e7eb;color:#111827}
 .firm{background:#f3f4f6;border:2px solid #e5e7eb;color:#111827}
-.three{display:flex;gap:16px;align-items:stretch}
-.three .box{min-height:0;padding:36px 22px}
-.three .big{font-size:40px;letter-spacing:-.03em}
-.meters{display:flex;flex-direction:column;gap:18px}
-.m{flex:1;border:2px solid #e5e7eb;border-radius:16px;padding:28px 32px;background:#f8fafc;display:flex;flex-direction:column;justify-content:center}
-.m b{font-size:32px;display:block}
-.m span{font-size:22px;color:#6b7280}
-.cal{display:flex;flex-direction:column;gap:16px}
-.cal .r{flex:1;display:flex;gap:18px;align-items:center;background:#f8fafc;border:2px solid #e5e7eb;border-radius:18px;padding:0 28px}
-.tag{flex:none;width:210px;font-weight:750;font-size:24px;color:#b45309}
-.cal p{font-size:26px;line-height:1.3}
+.three{display:flex;gap:12px;align-items:stretch;height:100%}
+.three .box{min-height:0;padding:16px 14px}
+.three .big{font-size:28px;letter-spacing:-.03em}
+.meters{display:flex;flex-direction:column;gap:10px;height:100%}
+.m{flex:1;border:2px solid #e5e7eb;border-radius:12px;padding:10px 16px;background:#f8fafc;display:flex;flex-direction:column;justify-content:center}
+.m b{font-size:20px;display:block}
+.m span{font-size:15px;color:#6b7280}
+.cal{display:flex;flex-direction:column;gap:8px;height:100%}
+.cal .r{flex:1;display:flex;gap:14px;align-items:center;background:#f8fafc;border:2px solid #e5e7eb;border-radius:12px;padding:0 16px}
+.tag{flex:none;width:150px;font-weight:750;font-size:16px;color:#b45309}
+.cal p{font-size:16px;line-height:1.3}
 """
 
 def page(kicker, title, body, source):
@@ -81,7 +80,7 @@ cards.append(("02-inventory", page(
     "Two lists. They are not the same list.",
     """<div class="split">
       <div class="box live"><div class="big">95%</div><div class="cap">Company computers with an owner</div><div class="small">Plus every production cloud account.</div></div>
-      <div class="box mid"><div class="big" style="font-size:72px">Few</div><div class="cap">Systems that stop the company</div><div class="small">Finance, customer data, identity, backups. Not every laptop.</div></div>
+      <div class="box mid"><div class="big">Few</div><div class="cap">Systems that stop the company</div><div class="small">Finance, customer data, identity, backups. Not every laptop.</div></div>
     </div>
     <p class="note">Finance knows what you pay for. The network knows what is plugged in. Reconcile both.</p>""",
     "Checklist bar · asset inventory",
@@ -103,8 +102,8 @@ cards.append(("03-identity", page(
     "Security explained · part 3",
     "A password is not a wall.",
     """<div class="split">
-      <div class="box dead"><div class="big" style="font-size:64px">Daily</div><div class="cap">Mail, files, the normal day</div><div class="small">One directory. One login.</div></div>
-      <div class="box live"><div class="big" style="font-size:64px">Admin</div><div class="cap">A different account</div><div class="small">Phishing-resistant key. Not a text message.</div></div>
+      <div class="box dead"><div class="big">Daily</div><div class="cap">Mail, files, the normal day</div><div class="small">One directory. One login.</div></div>
+      <div class="box live"><div class="big">Admin</div><div class="cap">A different account</div><div class="small">Phishing-resistant key. Not a text message.</div></div>
     </div>
     <p class="note">MFA on email, remote access, cloud, and finance. The checklist bar is 99% of the apps that matter.</p>""",
     "Checklist bar · identity",
@@ -138,8 +137,8 @@ cards.append(("04-payment", page(
     "Security explained · part 4",
     "Do not pay the email.",
     """<div class="split">
-      <div class="box dead"><div class="big" style="font-size:56px">Reply</div><div class="cap">The email says the bank details changed</div><div class="small">That is the attack.</div></div>
-      <div class="box live"><div class="big" style="font-size:56px">Call</div><div class="cap">The number finance already has</div><div class="small">A second person on a large payment.</div></div>
+      <div class="box dead"><div class="big">Reply</div><div class="cap">The email says the bank details changed</div><div class="small">That is the attack.</div></div>
+      <div class="box live"><div class="big">Call</div><div class="cap">The number finance already has</div><div class="small">A second person on a large payment.</div></div>
     </div>
     <p class="note">IT never asks for a password. If a mailbox looks wrong, check the forwarding rules the same day.</p>""",
     "Payment fraud is a finance process",
@@ -149,8 +148,8 @@ cards.append(("05-backup", page(
     "Security explained · part 5",
     "A backup the attacker can reach is not a backup.",
     """<div class="split">
-      <div class="box dead"><div class="big" style="font-size:52px">Same network</div><div class="cap">Ransomware encrypts this copy too</div></div>
-      <div class="box live"><div class="big" style="font-size:52px">Offline or locked</div><div class="cap">One copy they cannot change</div><div class="small">Its own login. Its own MFA.</div></div>
+      <div class="box dead"><div class="big">Same network</div><div class="cap">Ransomware encrypts this copy too</div></div>
+      <div class="box live"><div class="big">Offline or locked</div><div class="cap">One copy they cannot change</div><div class="small">Its own login. Its own MFA.</div></div>
     </div>
     <p class="note">Restore one important system into a test room and time it. Write the time down. A copy you have never restored is a hope.</p>""",
     "CISA #StopRansomware",
@@ -160,8 +159,8 @@ cards.append(("05-remote", page(
     "Security explained · part 5",
     "One PC should not see everything.",
     """<div class="split">
-      <div class="box dead"><div class="big" style="font-size:52px">Open</div><div class="cap">Remote desktop on the internet</div><div class="small">A laptop that can reach every server.</div></div>
-      <div class="box live"><div class="big" style="font-size:52px">Jump</div><div class="cap">MFA, then only the apps they need</div><div class="small">Servers and users are not one flat room.</div></div>
+      <div class="box dead"><div class="big">Open</div><div class="cap">Remote desktop on the internet</div><div class="small">A laptop that can reach every server.</div></div>
+      <div class="box live"><div class="big">Jump</div><div class="cap">MFA, then only the apps they need</div><div class="small">Servers and users are not one flat room.</div></div>
     </div>
     <p class="note">A known hole on an internet-facing system has an owner and a date. Critical means days, not a quarter.</p>""",
     "Remote access and segmentation",
