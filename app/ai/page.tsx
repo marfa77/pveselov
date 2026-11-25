@@ -143,6 +143,11 @@ export default function PlaybookPage() {
             · Updated <time dateTime={playbookMeta.lastUpdated}>{playbookMeta.lastUpdatedLabel}</time>
           </p>
           <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
+            Prefer the pictures?{" "}
+            <Link href="/ai/explained" className="font-medium text-gray-950 underline underline-offset-2 hover:no-underline dark:text-white">
+              AI Explained, ten parts
+            </Link>
+            {" · "}
             Prefer to listen?{" "}
             <Link href="/podcast" className="font-medium text-gray-950 underline underline-offset-2 hover:no-underline dark:text-white">
               Podcast (AI + Security seasons)

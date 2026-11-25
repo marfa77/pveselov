@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/config";
 import { libraryEntries, libraryMeta } from "@/lib/library";
 import { podcastMeta } from "@/lib/podcast";
+import { aiExplainedMeta } from "@/lib/ai-explained";
 import { playbookMeta } from "@/lib/playbook";
 import { securityPlaybookMeta } from "@/lib/security-playbook";
 
@@ -19,6 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(playbookMeta.lastUpdated),
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: `${siteConfig.url}${aiExplainedMeta.path}`,
+      lastModified: new Date("2026-11-25"),
+      changeFrequency: "monthly",
+      priority: 0.85,
     },
     {
       url: `${siteConfig.url}${podcastMeta.path}`,
