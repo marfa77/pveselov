@@ -104,13 +104,27 @@ export function GuideArticle({ guide }: { guide: TradingGuide }) {
                 }
                 if (block.kind === "list") {
                   return (
-                    <ul key={index} className="mt-4 space-y-3 text-lg leading-8 text-gray-700 dark:text-gray-300">
-                      {block.items.map((item) => (
-                        <li key={item} className="flex gap-3">
-                          <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-gray-400 dark:bg-gray-500" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
+                    <ul key={index} className="mt-6 grid gap-3 sm:grid-cols-2">
+                      {block.items.map((item) => {
+                        const split = item.match(/^(.{2,48}?)\.\s+([\s\S]+)$/);
+                        const title = split?.[1];
+                        const body = split?.[2] ?? item;
+                        return (
+                          <li
+                            key={item}
+                            className="rounded-2xl border border-gray-200 px-4 py-4 dark:border-gray-800"
+                          >
+                            {title ? (
+                              <>
+                                <p className="font-medium text-gray-950 dark:text-white">{title}</p>
+                                <p className="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-300">{body}</p>
+                              </>
+                            ) : (
+                              <p className="text-base leading-6 text-gray-700 dark:text-gray-300">{body}</p>
+                            )}
+                          </li>
+                        );
+                      })}
                     </ul>
                   );
                 }
