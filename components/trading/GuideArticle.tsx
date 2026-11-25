@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Navigation } from "@/components/Navigation";
 import { JsonLd } from "@/components/library/JsonLd";
@@ -82,6 +83,17 @@ export function GuideArticle({ guide }: { guide: TradingGuide }) {
           {guide.sections.map((section) => (
             <article key={section.id} id={section.id} className="border-t border-gray-200 py-14 dark:border-gray-800">
               <h2 className="text-3xl font-semibold tracking-tight">{section.title}</h2>
+              {section.figures?.map((figure) => (
+                <figure key={figure.src} className="mt-6">
+                  <Image
+                    src={figure.src}
+                    width={1080}
+                    height={figure.height}
+                    alt={figure.alt}
+                    className="h-auto w-full rounded-2xl border border-gray-200 dark:border-gray-800"
+                  />
+                </figure>
+              ))}
               {section.blocks.map((block, index) => {
                 if (block.kind === "p") {
                   return (

@@ -12,9 +12,16 @@ export type GuideBlock =
   | { kind: "list"; items: string[] }
   | { kind: "table"; headers: string[]; rows: string[][] };
 
+export type GuideFigure = {
+  src: string;
+  alt: string;
+  height: number;
+};
+
 export type GuideSection = {
   id: string;
   title: string;
+  figures?: GuideFigure[];
   blocks: GuideBlock[];
 };
 
@@ -44,6 +51,18 @@ export const integrationGuide: TradingGuide = {
     {
       id: "three-jobs",
       title: "We'll integrate them.",
+      figures: [
+        {
+          src: "/trading/pipes.png",
+          alt: "Three pipes: live for the next action, a clock for the cut finance signs, a warehouse for the question and the filing.",
+          height: 335,
+        },
+        {
+          src: "/trading/owners.png",
+          alt: "The CTRM owns the trade, parcel, price, and position. The ERP owns the ledger, invoice, tax, and payment.",
+          height: 314,
+        },
+      ],
       blocks: [
         {
           kind: "p",
@@ -58,6 +77,13 @@ export const integrationGuide: TradingGuide = {
     {
       id: "live",
       title: "Live, both ways.",
+      figures: [
+        {
+          src: "/trading/key.png",
+          alt: "The same key sent twice updates one invoice. With no key, the retry becomes a second invoice.",
+          height: 317,
+        },
+      ],
       blocks: [
         {
           kind: "p",
@@ -85,6 +111,13 @@ export const integrationGuide: TradingGuide = {
     {
       id: "clock",
       title: "Once, or on a clock.",
+      figures: [
+        {
+          src: "/trading/window.png",
+          alt: "Tuesday's file carries count, quantity, and value. A rerun replaces that window.",
+          height: 387,
+        },
+      ],
       blocks: [
         {
           kind: "p",
@@ -103,6 +136,13 @@ export const integrationGuide: TradingGuide = {
     {
       id: "warehouse",
       title: "Through a warehouse.",
+      figures: [
+        {
+          src: "/trading/warehouse.png",
+          alt: "The CTRM and the ERP write into the warehouse. Filings and questions read out. Deals and journals stay in the source systems.",
+          height: 335,
+        },
+      ],
       blocks: [
         {
           kind: "p",
@@ -246,6 +286,13 @@ export const setupGuide: TradingGuide = {
     {
       id: "six-homes",
       title: "Six homes.",
+      figures: [
+        {
+          src: "/trading/homes.png",
+          alt: "Six homes in order: CTRM, ERP, market data, documents, identity, and a warehouse later.",
+          height: 585,
+        },
+      ],
       blocks: [
         {
           kind: "p",
@@ -275,6 +322,13 @@ export const setupGuide: TradingGuide = {
     {
       id: "ctrm",
       title: "The CTRM already knows the words.",
+      figures: [
+        {
+          src: "/trading/formula.png",
+          alt: "A commodity price is an index, a quotational period, a premium, then a provisional invoice that a final price updates.",
+          height: 447,
+        },
+      ],
       blocks: [
         {
           kind: "p",
@@ -322,6 +376,13 @@ export const setupGuide: TradingGuide = {
     {
       id: "price",
       title: "One official price.",
+      figures: [
+        {
+          src: "/trading/one-price.png",
+          alt: "The official fix, dated, values the book and the journal. A private mark stays a labeled scenario.",
+          height: 335,
+        },
+      ],
       blocks: [
         {
           kind: "p",
@@ -336,6 +397,13 @@ export const setupGuide: TradingGuide = {
     {
       id: "documents",
       title: "The file hangs off the trade.",
+      figures: [
+        {
+          src: "/trading/document.png",
+          alt: "Contract, bill of lading, assay, and letter of credit hang off the trade id, rather than a folder named after the month.",
+          height: 277,
+        },
+      ],
       blocks: [
         {
           kind: "p",
@@ -350,6 +418,13 @@ export const setupGuide: TradingGuide = {
     {
       id: "identity",
       title: "Who is allowed to click.",
+      figures: [
+        {
+          src: "/trading/roles.png",
+          alt: "A trader captures, middle office values and releases the cut, finance pays. The access stays split.",
+          height: 314,
+        },
+      ],
       blocks: [
         {
           kind: "p",
@@ -364,6 +439,13 @@ export const setupGuide: TradingGuide = {
     {
       id: "order",
       title: "The order you turn them on.",
+      figures: [
+        {
+          src: "/trading/order.png",
+          alt: "Turn the systems on in order: four maps, new trades, four live flows, a signed cut, credit and the hedge link, then readers.",
+          height: 585,
+        },
+      ],
       blocks: [
         {
           kind: "p",
