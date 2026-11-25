@@ -324,6 +324,11 @@ export const setupGuide: TradingGuide = {
       title: "One deal, from the name to the cash.",
       figures: [
         {
+          src: "/trading/deal-map.png",
+          alt: "A process map of one physical deal. Lanes are compliance, the trader, middle office, operations, finance, and the readers. Gray arrows are the next step. Amber arrows cross to the other system, and the payment comes back so credit falls.",
+          height: 791,
+        },
+        {
           src: "/trading/deal.png",
           alt: "One physical deal in six steps: clear the counterparty, book, move the cargo, invoice and cash, sign the cut, then read from the warehouse.",
           height: 585,
@@ -332,7 +337,7 @@ export const setupGuide: TradingGuide = {
       blocks: [
         {
           kind: "p",
-          text: "A physical cargo. Coal or iron ore. One contract, one or many parcels, a price that is not known on the day you trade. This is the path. The homes above are only there to hold a step of it.",
+          text: "A physical cargo. Coal or iron ore. One contract, one or many parcels, a price that is not known on the day you trade. The lanes are the people. A gray line is the next step. An amber line crosses to the other system, or comes back. The homes above are only there to hold a step of it.",
         },
         {
           kind: "table",
