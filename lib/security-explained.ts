@@ -9,6 +9,7 @@ export type ExplainedCard = {
   src: string;
   alt: string;
   source: string;
+  height?: number;
 };
 
 export type ExplainedPart = {
@@ -35,6 +36,7 @@ export const securityExplainedParts: ExplainedPart[] = [
         src: "/security-explained/01-map.png",
         alt: "Nine moves in order: Know, Identity, People, The usual doors, Cloud and vendors, Apps and data, Notice, Recover, Prove.",
         source: "Full checklist on the playbook",
+        height: 694,
       },
     ],
   },
@@ -54,11 +56,13 @@ export const securityExplainedParts: ExplainedPart[] = [
         src: "/security-explained/02-inventory.png",
         alt: "95% of company computers with an owner, beside a short list of systems that stop the company.",
         source: "Checklist bar · asset inventory",
+        height: 362,
       },
       {
         src: "/security-explained/02-shadow.png",
         alt: "Three tags for a tool IT did not buy: keep, replace, or block.",
         source: "Shadow IT",
+        height: 335,
       },
     ],
   },
@@ -77,11 +81,13 @@ export const securityExplainedParts: ExplainedPart[] = [
         src: "/security-explained/03-identity.png",
         alt: "A daily account beside a separate admin account that uses a phishing-resistant key.",
         source: "Checklist bar · identity",
+        height: 361,
       },
       {
         src: "/security-explained/03-leaver.png",
         alt: "Access is removed on exit day. Sample the last 20 leavers. Keys have an owner and an expiry.",
         source: "Joiner, mover, leaver",
+        height: 376,
       },
     ],
   },
@@ -100,11 +106,13 @@ export const securityExplainedParts: ExplainedPart[] = [
         src: "/security-explained/04-endpoint.png",
         alt: "98% healthy endpoint agents, encrypted disks, and domains that reject spoofed mail.",
         source: "Checklist bar · endpoints and email",
+        height: 448,
       },
       {
         src: "/security-explained/04-payment.png",
         alt: "Do not reply to an email that changes bank details. Call the number finance already has.",
         source: "Payment fraud is a finance process",
+        height: 361,
       },
     ],
   },
@@ -123,11 +131,13 @@ export const securityExplainedParts: ExplainedPart[] = [
         src: "/security-explained/05-backup.png",
         alt: "A backup on the same network, which ransomware can encrypt, beside an offline or locked copy.",
         source: "CISA #StopRansomware",
+        height: 361,
       },
       {
         src: "/security-explained/05-remote.png",
         alt: "Open remote desktop on the internet beside access that requires MFA and only the apps a person needs.",
         source: "Remote access and segmentation",
+        height: 362,
       },
     ],
   },
@@ -146,6 +156,7 @@ export const securityExplainedParts: ExplainedPart[] = [
         src: "/security-explained/06-cloud.png",
         alt: "Root login with MFA, no public crown-jewel storage, and a vendor login you can turn off.",
         source: "Cloud, SaaS, and suppliers",
+        height: 448,
       },
     ],
   },
@@ -164,6 +175,7 @@ export const securityExplainedParts: ExplainedPart[] = [
         src: "/security-explained/07-notice.png",
         alt: "More than 90% of critical logs arrive, a named person watches them, and ten techniques each have a control or a gap.",
         source: "Checklist bar · logging",
+        height: 449,
       },
     ],
   },
@@ -182,6 +194,7 @@ export const securityExplainedParts: ExplainedPart[] = [
         src: "/security-explained/08-clock.png",
         alt: "A short plan the CEO has seen, two exercises a year, and a timed restore.",
         source: "Respond and recover",
+        height: 340,
       },
     ],
   },
@@ -200,6 +213,7 @@ export const securityExplainedParts: ExplainedPart[] = [
         src: "/security-explained/09-board.png",
         alt: "An honest board page: coverage, open holes, and the top three risks with an ask.",
         source: "One honest page",
+        height: 449,
       },
     ],
   },
@@ -221,6 +235,7 @@ export const securityExplainedParts: ExplainedPart[] = [
         src: "/security-explained/10-one-company.png",
         alt: "One company walked through six moves, from naming an owner to an honest board page.",
         source: "A worked example, not a client",
+        height: 520,
       },
     ],
   },

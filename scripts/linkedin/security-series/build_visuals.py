@@ -7,25 +7,23 @@ OUT.mkdir(exist_ok=True)
 
 CSS = """
 *{box-sizing:border-box;margin:0;padding:0}
-body{width:1080px;height:700px;background:#fff;color:#111827;
- font-family:-apple-system,"SF Pro Display","Inter","Helvetica Neue",Arial,sans-serif;
- padding:36px 48px 24px;display:flex;flex-direction:column}
+html,body{width:1080px;height:auto;background:#fff;color:#111827;
+ font-family:-apple-system,"SF Pro Display","Inter","Helvetica Neue",Arial,sans-serif}
+body{padding:36px 48px 28px;display:flex;flex-direction:column}
 .kicker{font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#6b7280;font-weight:650}
 h1{font-size:36px;line-height:1.08;font-weight:700;letter-spacing:-.025em;margin-top:8px}
 .sub{font-size:20px;line-height:1.35;color:#4b5563;margin-top:10px}
-.stage{flex:1;display:flex;flex-direction:column;justify-content:flex-start;gap:14px;margin-top:16px;min-height:0}
-.stage > .split,.stage > .three,.stage > .meters,.stage > .cal,.stage > .chain{flex:1;min-height:0}
-.stage > .note{flex:none}
-.foot{display:flex;justify-content:space-between;gap:16px;font-size:15px;color:#9ca3af;margin-top:12px}
-.row{display:flex;align-items:center;gap:12px;flex:1}
+.stage{display:flex;flex-direction:column;gap:14px;margin-top:16px}
+.foot{display:flex;justify-content:space-between;gap:16px;font-size:15px;color:#9ca3af;margin-top:16px}
+.row{display:flex;align-items:center;gap:12px}
 .n{flex:none;width:32px;height:32px;border-radius:50%;border:2px solid #f59e0b;color:#b45309;
  font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;background:#fff}
 .card{border:2px solid #e5e7eb;background:#f8fafc;border-radius:12px;padding:6px 12px;flex:1}
 .card b{display:block;font-size:16px}
 .card span{display:block;font-size:14px;color:#6b7280;margin-top:1px}
-.chain{display:flex;flex-direction:column;gap:6px;height:100%}
+.chain{display:flex;flex-direction:column;gap:6px}
 .note{font-size:17px;color:#4b5563;margin-top:0;line-height:1.35}
-.split{display:flex;gap:16px;align-items:stretch;height:100%}
+.split{display:flex;gap:16px;align-items:stretch}
 .box{flex:1;border-radius:16px;padding:18px 20px;min-height:0;display:flex;flex-direction:column;justify-content:center}
 .box .big{font-size:48px;font-weight:750;letter-spacing:-.04em;line-height:1}
 .box .cap{font-size:18px;margin-top:8px;line-height:1.25;font-weight:650}
@@ -34,15 +32,15 @@ h1{font-size:36px;line-height:1.08;font-weight:700;letter-spacing:-.025em;margin
 .live{background:#fffbeb;border:3px solid #f59e0b;color:#111827}
 .mid{background:#fff;border:2px solid #e5e7eb;color:#111827}
 .firm{background:#f3f4f6;border:2px solid #e5e7eb;color:#111827}
-.three{display:flex;gap:12px;align-items:stretch;height:100%}
+.three{display:flex;gap:12px;align-items:stretch}
 .three .box{min-height:0;padding:16px 14px}
 .three .big{font-size:28px;letter-spacing:-.03em}
-.meters{display:flex;flex-direction:column;gap:10px;height:100%}
-.m{flex:1;border:2px solid #e5e7eb;border-radius:12px;padding:10px 16px;background:#f8fafc;display:flex;flex-direction:column;justify-content:center}
+.meters{display:flex;flex-direction:column;gap:10px}
+.m{border:2px solid #e5e7eb;border-radius:12px;padding:12px 16px;background:#f8fafc}
 .m b{font-size:20px;display:block}
 .m span{font-size:15px;color:#6b7280}
-.cal{display:flex;flex-direction:column;gap:8px;height:100%}
-.cal .r{flex:1;display:flex;gap:14px;align-items:center;background:#f8fafc;border:2px solid #e5e7eb;border-radius:12px;padding:0 16px}
+.cal{display:flex;flex-direction:column;gap:8px}
+.cal .r{display:flex;gap:14px;align-items:center;background:#f8fafc;border:2px solid #e5e7eb;border-radius:12px;padding:12px 16px}
 .tag{flex:none;width:150px;font-weight:750;font-size:16px;color:#b45309}
 .cal p{font-size:16px;line-height:1.3}
 """
