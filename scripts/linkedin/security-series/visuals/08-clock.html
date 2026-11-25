@@ -6,7 +6,9 @@ body{width:1080px;height:1350px;background:#fff;color:#111827;
 .kicker{font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:#6b7280;font-weight:650}
 h1{font-size:52px;line-height:1.08;font-weight:700;letter-spacing:-.025em;margin-top:18px}
 .sub{font-size:28px;line-height:1.35;color:#4b5563;margin-top:18px}
-.stage{flex:1;display:flex;flex-direction:column;justify-content:center;margin-top:28px}
+.stage{flex:1;display:flex;flex-direction:column;justify-content:flex-start;gap:28px;margin-top:36px;min-height:0}
+.stage > .split,.stage > .three,.stage > .meters,.stage > .cal,.stage > .chain{flex:1;min-height:0}
+.stage > .note{flex:none}
 .foot{display:flex;justify-content:space-between;gap:24px;font-size:20px;color:#9ca3af;margin-top:28px}
 .row{display:flex;align-items:center;gap:18px}
 .n{flex:none;width:52px;height:52px;border-radius:50%;border:3px solid #f59e0b;color:#b45309;
@@ -15,9 +17,10 @@ h1{font-size:52px;line-height:1.08;font-weight:700;letter-spacing:-.025em;margin
 .card b{display:block;font-size:26px}
 .card span{display:block;font-size:20px;color:#6b7280;margin-top:2px}
 .chain{display:flex;flex-direction:column;gap:10px}
-.note{font-size:22px;color:#6b7280;margin-top:22px;line-height:1.35}
-.split{display:flex;gap:28px}
-.box{flex:1;border-radius:22px;padding:36px 28px;min-height:280px}
+.row{flex:1}
+.note{font-size:24px;color:#4b5563;margin-top:0;line-height:1.35}
+.split{display:flex;gap:28px;align-items:stretch}
+.box{flex:1;border-radius:22px;padding:48px 36px;min-height:0;display:flex;flex-direction:column;justify-content:center}
 .box .big{font-size:84px;font-weight:750;letter-spacing:-.04em;line-height:1}
 .box .cap{font-size:28px;margin-top:16px;line-height:1.25;font-weight:650}
 .box .small{font-size:22px;margin-top:12px;line-height:1.35}
@@ -25,15 +28,15 @@ h1{font-size:52px;line-height:1.08;font-weight:700;letter-spacing:-.025em;margin
 .live{background:#fffbeb;border:3px solid #f59e0b;color:#111827}
 .mid{background:#fff;border:2px solid #e5e7eb;color:#111827}
 .firm{background:#f3f4f6;border:2px solid #e5e7eb;color:#111827}
-.three{display:flex;gap:16px}
-.three .box{min-height:240px;padding:28px 20px}
+.three{display:flex;gap:16px;align-items:stretch}
+.three .box{min-height:0;padding:36px 22px}
 .three .big{font-size:40px;letter-spacing:-.03em}
 .meters{display:flex;flex-direction:column;gap:18px}
-.m{border:2px solid #e5e7eb;border-radius:16px;padding:22px 24px;background:#f8fafc}
+.m{flex:1;border:2px solid #e5e7eb;border-radius:16px;padding:28px 32px;background:#f8fafc;display:flex;flex-direction:column;justify-content:center}
 .m b{font-size:32px;display:block}
 .m span{font-size:22px;color:#6b7280}
-.cal{display:flex;flex-direction:column;gap:18px}
-.cal .r{display:flex;gap:18px;align-items:center}
+.cal{display:flex;flex-direction:column;gap:16px}
+.cal .r{flex:1;display:flex;gap:18px;align-items:center;background:#f8fafc;border:2px solid #e5e7eb;border-radius:18px;padding:0 28px}
 .tag{flex:none;width:210px;font-weight:750;font-size:24px;color:#b45309}
 .cal p{font-size:26px;line-height:1.3}
 </style></head>
